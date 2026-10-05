@@ -148,7 +148,7 @@ The application is built with Flutter and Supabase, combining a modern responsiv
       "/hg5.png",
     ],
     tags: ["Next.js", "Tailwind CSS", "ShadCN/UI", "Framer Motion", "TypeScript"],
-    liveUrl: "https://hempon-group.vercel.app/",
+    liveUrl: "https://hempongroup.co.ke/",
   },
 {
     slug: "flutter-invoice-app",

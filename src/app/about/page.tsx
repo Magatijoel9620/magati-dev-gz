@@ -66,7 +66,7 @@ export default function AboutPage() {
             </div>
             <div className="rounded-xl border border-white/6 p-6">
               <h4 className="font-semibold">Problem Solving</h4>
-              <p className="mt-2 text-white/75">I enjoy dissecting complex problems and engineering practical, efficient solutions.</p>
+              <p className="mt-2 text-white/75">I enjoy dissecting complex problems and developing practical, efficient solutions.</p>
             </div>
             <div className="rounded-xl border border-white/6 p-6">
               <h4 className="font-semibold">User-Centric Design</h4>

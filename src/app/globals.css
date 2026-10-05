@@ -9,3 +9,8 @@
 .hero-grid{background-image:linear-gradient(90deg,transparent 49.9%,rgba(255,255,255,.08) 50%,transparent 50.1%)}
 @media(max-width:700px){.container{width:min(100% - 28px,1240px)}.grid-noise{background-size:44px 44px}.pointer-layer{display:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.cursor-orb{display:none}}
+.status-ripple{position:relative;vertical-align:middle}
+.status-ripple::before,.status-ripple::after{position:absolute;inset:0;border:1px solid #34d399;border-radius:inherit;content:"";pointer-events:none;animation:status-ripple 2s ease-out infinite}
+.status-ripple::after{animation-delay:1s}
+@keyframes status-ripple{0%{transform:scale(1);opacity:.75}100%{transform:scale(3.5);opacity:0}}
+@media(prefers-reduced-motion:reduce){.status-ripple::before,.status-ripple::after{animation:none;content:none}}
