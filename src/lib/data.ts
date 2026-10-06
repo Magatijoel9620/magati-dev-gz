@@ -103,7 +103,7 @@ The application is built with Flutter and Supabase, combining a modern responsiv
     "/farmora/dashboard.png",
     "/farmora/livestock.png",
     "/farmora/inventory.jpg",
-    "/farmora/analytics.png",
+    "/farmora/dashboard3.png",
     
     "/farmora/categories.png",
     "/farmora/reports.png",

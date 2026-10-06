@@ -9,6 +9,7 @@ export type AppDefinition = {
   downloadUrl: string;
   driveUrl: string;
   webUrl?: string;
+  projectSlug?: string;
   guideUrl: string;
   features: string[];
   accent: string;
@@ -23,7 +24,9 @@ export const apps: AppDefinition[] = [
       "A practical farm operations workspace for livestock, inventory, sales, expenses, reporting and everyday farm records.",
     image: "/farmora/cover_landscape.jpg",
     version: "0.9.3",
-    platform: "Android APK",
+    platform: "Android APK + PWA",
+    webUrl: "https://farmora.hempongroup.co.ke/",
+    projectSlug: "farmora",
     downloadUrl:
       "https://drive.google.com/uc?export=download&id=1Lz7FVccW3VzDvRDXT1bb-bYTL69iQEso",
     driveUrl:
@@ -47,6 +50,7 @@ export const apps: AppDefinition[] = [
       "A focused invoicing workspace for businesses that need customers, products, payments, PDFs, receipts and reporting in one place.",
     image: "/invoice-easy/cover_landscape.jpg",
     platform: "Android APK",
+    projectSlug: "flutter-invoice-app",
     downloadUrl:
       "https://drive.google.com/uc?export=download&id=1qQ35YejR8Ti9kVLyQEW3FAHVctK6dW39",
     driveUrl:
@@ -70,12 +74,13 @@ export const apps: AppDefinition[] = [
       "A property management system for landlords and managers covering units, tenants, rent, payments, arrears, maintenance and reporting.",
     image: "/landlord-ledger/cover_landscape.jpg",
     version: "1.3.0 · Build 4",
-    platform: "Android APK + web",
+    platform: "Android APK + PWA",
+    webUrl: "https://ledger.hempongroup.co.ke/",
+    projectSlug: "landlord-ledger",
     downloadUrl:
       "https://drive.google.com/uc?export=download&id=1TR5KPfD1F0EQzR7IABBiYRKKck68CdIV",
     driveUrl:
       "https://drive.google.com/file/d/1TR5KPfD1F0EQzR7IABBiYRKKck68CdIV/view?usp=drive_link",
-    webUrl: "https://landlord-ledger-brown.vercel.app/",
     guideUrl: "/landlord-ledger/user-guide",
     features: [
       "Property and unit management",
@@ -91,4 +96,8 @@ export const apps: AppDefinition[] = [
 
 export function getApp(slug: string) {
   return apps.find((app) => app.slug === slug);
+}
+
+export function getAppByProjectSlug(slug: string) {
+  return apps.find((app) => app.projectSlug === slug || app.slug === slug);
 }

@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { projects } from "@/lib/data";
-import { getApp } from "@/lib/apps";
+import { getAppByProjectSlug } from "@/lib/apps";
+import ScreenshotGallery from "@/components/ScreenshotGallery";
 
 export function generateStaticParams() {
   return projects.map((project) => ({ slug: project.slug }));
@@ -12,7 +13,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   const { slug } = await params;
   const project = projects.find((item) => item.slug === slug);
   if (!project) notFound();
-  const app = getApp(slug);
+  const app = getAppByProjectSlug(slug);
 
   return (
     <main className="container max-w-6xl py-12 md:py-20">
@@ -52,14 +53,8 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
 
       {project.screenshots.length > 0 && (
         <section className="mt-20">
-          <p className="eyebrow">Screenshots</p>
-          <div className="mt-6 grid gap-5 sm:grid-cols-2">
-            {project.screenshots.map((src, index) => (
-              <div key={`${src}-${index}`} className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#101213]">
-                <Image src={src} alt={`${project.title} screenshot ${index + 1}`} fill sizes="(max-width: 640px) 92vw, 45vw" className="object-cover transition duration-700 hover:scale-[1.02]" />
-              </div>
-            ))}
-          </div>
+          <p className="eyebrow">Screenshots · tap to expand</p>
+          <ScreenshotGallery title={project.title} screenshots={project.screenshots} />
         </section>
       )}
     </main>

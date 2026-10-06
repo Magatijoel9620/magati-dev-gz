@@ -119,7 +119,7 @@ export default function AppPage({ app }: { app: AppDefinition }) {
               See the project case study.
             </h2>
             <Link
-              href={`/projects/${app.slug}`}
+              href={`/projects/${app.projectSlug ?? app.slug}`}
               className="mt-6 inline-flex rounded-full border border-white/15 px-5 py-2.5 text-sm text-white/75"
             >
               Open project ↗

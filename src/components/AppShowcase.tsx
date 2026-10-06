@@ -18,7 +18,10 @@ export default function AppShowcase() {
               <span className="text-white/25">You can actually use them.</span>
             </h2>
           </div>
-          <Link href="/apps" className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-white">
+          <Link
+            href="/apps"
+            className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-white"
+          >
             Open app hub <span>↗</span>
           </Link>
         </div>
@@ -35,7 +38,13 @@ export default function AppShowcase() {
             >
               <Link href={`/${app.slug}`} className="block">
                 <div className="relative aspect-[1.65] overflow-hidden border-b border-white/10">
-                  <Image src={app.image} alt={`${app.name} application`} fill sizes="(max-width: 1024px) 100vw, 33vw" className="object-cover transition duration-700 group-hover:scale-[1.035]" />
+                  <Image
+                    src={app.image}
+                    alt={`${app.name} application`}
+                    fill
+                    sizes="(max-width: 1024px) 100vw, 33vw"
+                    className="object-cover transition duration-700 group-hover:scale-[1.035]"
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/10" />
                   <div className="absolute left-4 top-4 rounded-full border border-white/15 bg-black/35 px-3 py-1.5 text-[9px] uppercase tracking-[.18em] text-white/60 backdrop-blur-md">
                     {app.kicker}
@@ -44,15 +53,26 @@ export default function AppShowcase() {
                 <div className="p-6">
                   <div className="flex items-start justify-between gap-4">
                     <div>
-                      <p className="mono text-[9px] uppercase tracking-[.2em] text-[#d7ff65]/70">{app.accent}</p>
+                      <p className="mono text-[9px] uppercase tracking-[.2em] text-[#d7ff65]/70">
+                        {app.accent}
+                      </p>
                       <h3 className="mt-2 text-2xl font-medium">{app.name}</h3>
                     </div>
-                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-white/15 text-lg transition group-hover:bg-white group-hover:text-black">↗</span>
+                    <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-white/15 text-lg transition group-hover:bg-white group-hover:text-black">
+                      ↗
+                    </span>
                   </div>
-                  <p className="mt-4 text-sm leading-6 text-white/45">{app.description}</p>
+                  <p className="mt-4 text-sm leading-6 text-white/45">
+                    {app.description}
+                  </p>
                   <div className="mt-5 flex flex-wrap gap-2">
                     {app.features.slice(0, 3).map((feature) => (
-                      <span key={feature} className="rounded-full border border-white/10 px-2.5 py-1.5 text-[9px] uppercase tracking-[.1em] text-white/35">{feature}</span>
+                      <span
+                        key={feature}
+                        className="rounded-full border border-white/10 px-2.5 py-1.5 text-[9px] uppercase tracking-[.1em] text-white/35"
+                      >
+                        {feature}
+                      </span>
                     ))}
                   </div>
                 </div>
