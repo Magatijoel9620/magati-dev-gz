@@ -3,6 +3,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import CursorGlow from "@/components/CursorGlow";
 import SiteNav from "@/components/SiteNav";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://magati.dev"),
@@ -19,5 +20,5 @@ export const metadata: Metadata = {
 export const viewport: Viewport = { themeColor: "#08090a", colorScheme: "dark" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body><SmoothScroll /><CursorGlow /><SiteNav />{children}</body></html>;
+  return <html lang="en"><body><SmoothScroll /><CursorGlow /><SiteNav />{children}<Analytics /></body></html>;
 }
