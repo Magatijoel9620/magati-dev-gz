@@ -57,11 +57,13 @@ The application is built with Flutter and Supabase, combining a modern cross-pla
 
     screenshots: [
       "/projects/landlord-ledger/dashboard.jpg",
-      "/projects/landlord-ledger/dashboard1.jpg",
-      "/projects/landlord-ledger/dashboard2.jpg",
+      "/projects/landlord-ledger/dashboard.png",
+      "/projects/landlord-ledger/dashboard2.png",
       "/projects/landlord-ledger/properties.jpg",
-      "/projects/landlord-ledger/payments.jpg",
+      "/projects/landlord-ledger/payments.png",
       "/projects/landlord-ledger/arrears.jpg",
+      "/projects/landlord-ledger/analytics.png",
+      "/projects/landlord-ledger/reports.png",
 
     ],
 
@@ -98,14 +100,15 @@ The application is built with Flutter and Supabase, combining a modern responsiv
   imageUrl: "/farmora/cover_landscape.jpg",
 
   screenshots: [
-    "/farmora/dashboard_light.jpg",
-    "/farmora/livestock.jpg",
+    "/farmora/dashboard.png",
+    "/farmora/livestock.png",
     "/farmora/inventory.jpg",
-    "/farmora/sales.jpg",
+    "/farmora/analytics.png",
     
-    "/farmora/customers.jpg",
-    "/farmora/reports.jpg",
-    "/farmora/settings.jpg",
+    "/farmora/categories.png",
+    "/farmora/reports.png",
+    "/farmora/reports2.png",
+    "/farmora/farm_setup.png",
   ],
 
   tags: [
@@ -157,9 +160,11 @@ The application is built with Flutter and Supabase, combining a modern responsiv
     longDescription: "A modern, cross-platform Flutter application for managing invoices. Features include creating, viewing, editing, and deleting invoices, archiving, light/dark mode, PDF generation/printing, and local data storage. It's designed for web and mobile with a responsive UI based on Material Design 3 principles.",
     imageUrl: "/invoice-easy/cover_landscape.jpg",
     screenshots: [
-      "/invoice-easy/dashboard_dark.jpg",
+      "/invoice-easy/dashboard_light.jpg",
       "/invoice-easy/invoice_preview.jpg",
-      "/invoice-easy/print_preview.jpg"
+      "/invoice-easy/print_preview.jpg",
+      "/invoice-easy/reports_analytics.jpg",
+      "/invoice-easy/recent_invoices.jpg",
     ],
     tags: ["Flutter", "Dart", "Mobile App", "PDF Generation", "State Management"],
     //caseStudyUrl: "/invoice-easy",
