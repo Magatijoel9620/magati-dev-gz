@@ -37,48 +37,53 @@ export type Project = {
  */
 
 export const projects: Project[] = [
-    {
-    slug: "landlord-ledger",
-    title: "Landlord Ledger",
-    description:
-        "A modern property management application designed to help landlords manage properties, units, tenants, rent, payments, arrears and financial records from one place.",
+ {
+  slug: "landlord-ledger",
+  title: "Landlord Ledger",
+  description:
+    "A modern property management application that helps landlords manage properties, units, tenants, rent, payments, arrears and financial records, while connecting landlords with prospective tenants through an integrated property marketplace.",
 
-    longDescription: `
-Landlord Ledger is a property management application built to simplify the day-to-day financial and administrative work of landlords and property managers.
+  longDescription: `
+Landlord Ledger is a modern property management application built to simplify the day-to-day financial and administrative work of landlords and property managers.
 
 The application provides a centralized system for managing properties, rental units, tenants, tenancies, rent charges, payments and outstanding balances.
 
 The system is designed around real-world rental workflows, including payment allocation, rent generation, tenant statements, arrears tracking, payment receipts and financial reporting.
 
+Landlord Ledger also includes an integrated property marketplace that connects landlords with prospective tenants. Landlords can showcase available rental units and properties, while prospective tenants can discover available listings and connect with landlords directly.
+
+The marketplace extends Landlord Ledger beyond property administration into tenant acquisition, creating a more connected experience between property owners and renters.
+
 The application is built with Flutter and Supabase, combining a modern cross-platform interface with a scalable backend and database architecture.
 `,
 
-    imageUrl: "/landlord-ledger/cover_landscape.jpg",
+  imageUrl: "/landlord-ledger/cover_landscape.jpg",
 
-    screenshots: [
-      "/projects/landlord-ledger/dashboard.jpg",
-      "/projects/landlord-ledger/dashboard.png",
-      "/projects/landlord-ledger/dashboard2.png",
-      "/projects/landlord-ledger/properties.jpg",
-      "/projects/landlord-ledger/payments.png",
-      "/projects/landlord-ledger/arrears.jpg",
-      "/projects/landlord-ledger/analytics.png",
-      "/projects/landlord-ledger/reports.png",
+  screenshots: [
+    "/projects/landlord-ledger/dashboard.jpg",
+    "/projects/landlord-ledger/dashboard.png",
+    "/projects/landlord-ledger/dashboard2.png",
+    "/projects/landlord-ledger/properties.jpg",
+    "/projects/landlord-ledger/payments.png",
+    "/projects/landlord-ledger/arrears.jpg",
+    "/projects/landlord-ledger/analytics.png",
+    "/projects/landlord-ledger/reports.png",
+  ],
 
-    ],
+  tags: [
+    "Flutter",
+    "Dart",
+    "Supabase",
+    "PostgreSQL",
+    "Riverpod",
+    "Property Management",
+    "Rental Marketplace",
+    "Tenant Discovery",
+    "FinTech",
+  ],
 
-    tags: [
-      "Flutter",
-      "Dart",
-      "Supabase",
-      "PostgreSQL",
-      "Riverpod",
-      "Property Management",
-      "FinTech",
-    ],
-
-    liveUrl: "/landlord-ledger",
-  },
+  liveUrl: "/landlord-ledger",
+},
     {
   slug: "farmora",
   title: "Farmora",
@@ -138,21 +143,60 @@ The application is built with Flutter and Supabase, combining a modern responsiv
     caseStudyUrl: "/clarity-solution",
   },
   {
-    slug: "hempon-group-website",
-    title: "HEMPON GROUP - Modern Website",
-    description: "A modern, fully responsive website for a digital agency, built with Next.js and Tailwind CSS, featuring smooth animations and a sleek design.",
-    longDescription: "HEMPON GROUP is a digital agency specializing in crafting stunning, high-performance websites. This project showcases their services, portfolio, and expertise through a sleek, animated, and user-friendly interface. It features a professional design, smooth animations, and a seamless user experience, including a fully functional contact form and dark mode.",
-    imageUrl: "/hg-app.png",
-    screenshots: [
-      "/hg1.png",
-      "/hg2.png",
-      "/hg3.png",
-      "/hg4.png",
-      "/hg5.png",
-    ],
-    tags: ["Next.js", "Tailwind CSS", "ShadCN/UI", "Framer Motion", "TypeScript"],
-    liveUrl: "https://hempongroup.co.ke/",
-  },
+  slug: "hempon-group-website",
+  title: "HEMPON GROUP - Modern Digital Agency Website",
+  description:
+    "A modern, fully responsive website for Hempon Group, designed to showcase its digital products, services, projects, and technology expertise through a polished and engaging user experience.",
+  longDescription:
+    "The Hempon Group website was designed as a modern digital presence for a technology-focused company and its growing portfolio of products and services. The project combines a clean visual system with responsive layouts, smooth animations, clear content hierarchy, and an engaging presentation of the company's work. Built with a focus on performance, usability, and scalability, the website provides a professional foundation for showcasing Hempon Group's digital products, services, and portfolio.",
+  imageUrl: "/hg-app.png",
+  screenshots: [
+    "/hg1.png",
+    "/hg2.png",
+    "/hg3.png",
+    "/hg4.png",
+    "/hg5.png",
+    "/hg6.png",
+  ],
+  tags: [
+    "Next.js",
+    "Tailwind CSS",
+    "ShadCN/UI",
+    "Framer Motion",
+    "TypeScript",
+    "Responsive Design",
+  ],
+  liveUrl: "https://hempongroup.co.ke/",
+},
+{
+  slug: "kanyi-j-advocates-website",
+  title: "KANYI J & COMPANY ADVOCATES - Law Firm Website Redesign",
+  description:
+    "A modern, professional website redesign for Kanyi J & Company Advocates, focused on presenting the firm's services and professional identity through a responsive digital experience.",
+  longDescription:
+    "The Kanyi J & Company Advocates website redesign focuses on creating a modern and professional online presence for a legal practice. The project emphasizes clear information hierarchy, responsive layouts, polished visual presentation, intuitive navigation, and an accessible experience across desktop and mobile devices. The redesign demonstrates how a professional law firm can present its services and identity through a contemporary digital experience while maintaining a clear and credible visual direction.",
+  imageUrl: "/kanyi-j-app.png",
+  screenshots: [
+    "/kanyi-j1.png",
+    "/kanyi-j2.png",
+    "/kanyi-j3.png",
+    "/kanyi-j4.png",
+    "/kanyi-j5.png",
+    "/kanyi-j6.png",
+    "/kanyi-j7.png",
+  ],
+  tags: [
+    "Next.js",
+    "Tailwind CSS",
+    "ShadCN/UI",
+    "Framer Motion",
+    "TypeScript",
+    "Responsive Design",
+    "Law Firm",
+    "Website Redesign",
+  ],
+  liveUrl: "https://www.kanyij-advocates.co.ke/",
+},
 {
     slug: "flutter-invoice-app",
     title: "Flutter Invoice App",
@@ -337,27 +381,35 @@ The project showcases scalable React architecture, reusable components, configur
     ],
     tags: ["React", "AI", "Travel"],
   },
-  {
-    slug: "personal-portfolio",
-    title: "Magati.dev",
-    description: "A sleek and modern personal portfolio website to showcase my work.",
-    longDescription: "Magati.dev is the very site you're on now! It's a personal portfolio built with Next.js and ShadCN UI, designed to be a central hub for my projects and blog posts. It features a clean, minimal aesthetic, is fully responsive, and includes an AI-powered SEO assistant to help optimize content. The goal was to create a professional online presence that is both visually appealing and highly functional.",
-    // To use your own image, place it in `public/` and update the path here, e.g., "/personal-portfolio.png"
-    imageUrl: "/portfolio/hero.png",
-    screenshots: [
-      // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/portfolio/project.png",
-      "/portfolio/project2.png",
-      "/portfolio/project3.png",
-      // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/portfolio/blog.png",
-      // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/portfolio/profile.png",
-      "/portfolio/profile2.png",
-    ],
-    tags: ["Next.js", "ShadCN UI", "Web Dev", "Portfolio"],
-     liveUrl: "https://portfolio-mjs.vercel.app/",
-  },
+ {
+  slug: "personal-portfolio",
+  title: "HEMPON GROUP - Professional Portfolio",
+  description:
+    "A modern portfolio website showcasing web development projects, digital solutions, and professional work by Hempon Group.",
+  longDescription:
+    "The Hempon Group portfolio is a modern digital showcase built to present web development projects, digital solutions, and professional work in a polished and engaging way. The website combines a clean visual identity with responsive layouts, smooth animations, and carefully structured project case studies. It serves as a central portfolio for showcasing websites, applications, and custom digital solutions developed by Hempon Group, while providing prospective clients with a clear view of the company's capabilities and previous work.",
+  imageUrl: "/portfolio/hero.png",
+  screenshots: [
+    "/portfolio/project.png",
+    "/portfolio/project2.png",
+    "/portfolio/project3.png",
+    "/portfolio/blog.png",
+    "/portfolio/apps.png",
+    "/portfolio/profile.png",
+    "/portfolio/profile2.png",
+    "/portfolio/profile3.png",
+  ],
+  tags: [
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "ShadCN UI",
+    "Framer Motion",
+    "Responsive Design",
+    "Portfolio",
+  ],
+  liveUrl: "https://portfolio.hempongroup.co.ke/",
+},
   {
     slug: "real-time-chat-app",
     title: "Real-Time Chat App",
@@ -396,11 +448,15 @@ The project showcases scalable React architecture, reusable components, configur
     title: "Law Firm Website ",
     description: "A professional legal-services website featuring practice areas, attorneys, case results, consultation calls-to-action, and client-focused content.",
     longDescription: "The Law Firm Website  provides a clean and credible online presence for advocates, law firms, and legal consultants. It includes practice-area presentations, attorney profiles, case-result highlights, legal FAQs, consultation calls-to-action, contact details, responsive navigation, dark and light modes, and client-specific configuration. The template can be customized for individual firms without changing the shared rendering engine.",
-    imageUrl: "/projects/starter-kits/law/light/law-hero.png",
+    imageUrl: "/kanyi-j-app.png",
     screenshots: [
-      "/projects/starter-kits/law/light/law-contact.png",
-      "/projects/starter-kits/law/light/law-practice.png",
-      "/projects/starter-kits/law/light/law-team.png"
+     "/kanyi-j1.png",
+    "/kanyi-j2.png",
+    "/kanyi-j3.png",
+    "/kanyi-j4.png",
+    "/kanyi-j5.png",
+    "/kanyi-j6.png",
+    "/kanyi-j7.png"
     ],
     tags: ["React", "TypeScript", "Legal Website", "Tailwind CSS", ""],
     liveUrl: "https://law-kanyi-j.vercel.app/",
