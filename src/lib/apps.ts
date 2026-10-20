@@ -7,7 +7,6 @@ export type AppDefinition = {
   version?: string;
   platform: string;
   downloadUrl: string;
-  driveUrl: string;
   webUrl?: string;
   projectSlug?: string;
   guideUrl: string;
@@ -27,10 +26,7 @@ export const apps: AppDefinition[] = [
     platform: "Android APK + PWA",
     webUrl: "https://farmora.hempongroup.co.ke/",
     projectSlug: "farmora",
-    downloadUrl:
-      "https://drive.google.com/uc?export=download&id=1Lz7FVccW3VzDvRDXT1bb-bYTL69iQEso",
-    driveUrl:
-      "https://drive.google.com/file/d/1Lz7FVccW3VzDvRDXT1bb-bYTL69iQEso/view?usp=sharing",
+    downloadUrl: "/api/download/farmora",
     guideUrl: "/farmora/user-guide",
     features: [
       "Livestock management",
@@ -51,10 +47,7 @@ export const apps: AppDefinition[] = [
     image: "/invoice-easy/cover_landscape.jpg",
     platform: "Android APK",
     projectSlug: "flutter-invoice-app",
-    downloadUrl:
-      "https://drive.google.com/uc?export=download&id=1qQ35YejR8Ti9kVLyQEW3FAHVctK6dW39",
-    driveUrl:
-      "https://drive.google.com/file/d/1qQ35YejR8Ti9kVLyQEW3FAHVctK6dW39/view?usp=sharing",
+    downloadUrl: "/api/download/invoice-easy",
     guideUrl: "/invoice-easy/user-guide",
     features: [
       "Professional invoices",
@@ -77,10 +70,7 @@ export const apps: AppDefinition[] = [
     platform: "Android APK + PWA",
     webUrl: "https://ledger.hempongroup.co.ke/",
     projectSlug: "landlord-ledger",
-    downloadUrl:
-      "https://drive.google.com/uc?export=download&id=1TR5KPfD1F0EQzR7IABBiYRKKck68CdIV",
-    driveUrl:
-      "https://drive.google.com/file/d/1TR5KPfD1F0EQzR7IABBiYRKKck68CdIV/view?usp=drive_link",
+    downloadUrl: "/api/download/landlord-ledger",
     guideUrl: "/landlord-ledger/user-guide",
     features: [
       "Property and unit management",
