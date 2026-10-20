@@ -1,4 +1,3 @@
-
 export type Project = {
   slug: string;
   title: string;
@@ -37,13 +36,13 @@ export type Project = {
  */
 
 export const projects: Project[] = [
- {
-  slug: "landlord-ledger",
-  title: "Landlord Ledger",
-  description:
-    "A modern property management application that helps landlords manage properties, units, tenants, rent, payments, arrears and financial records, while connecting landlords with prospective tenants through an integrated property marketplace.",
+  {
+    slug: "landlord-ledger",
+    title: "Landlord Ledger",
+    description:
+      "A modern property management application that helps landlords manage properties, units, tenants, rent, payments, arrears and financial records, while connecting landlords with prospective tenants through an integrated property marketplace.",
 
-  longDescription: `
+    longDescription: `
 Landlord Ledger is a modern property management application built to simplify the day-to-day financial and administrative work of landlords and property managers.
 
 The application provides a centralized system for managing properties, rental units, tenants, tenancies, rent charges, payments and outstanding balances.
@@ -57,40 +56,40 @@ The marketplace extends Landlord Ledger beyond property administration into tena
 The application is built with Flutter and Supabase, combining a modern cross-platform interface with a scalable backend and database architecture.
 `,
 
-  imageUrl: "/landlord-ledger/cover_landscape.jpg",
+    imageUrl: "/landlord-ledger/cover_landscape.jpg",
 
-  screenshots: [
-    "/projects/landlord-ledger/dashboard.jpg",
-    "/projects/landlord-ledger/dashboard.png",
-    "/projects/landlord-ledger/dashboard2.png",
-    "/projects/landlord-ledger/properties.jpg",
-    "/projects/landlord-ledger/payments.png",
-    "/projects/landlord-ledger/arrears.jpg",
-    "/projects/landlord-ledger/analytics.png",
-    "/projects/landlord-ledger/reports.png",
-  ],
+    screenshots: [
+      "/projects/landlord-ledger/dashboard.jpg",
+      "/projects/landlord-ledger/dashboard.png",
+      "/projects/landlord-ledger/dashboard2.png",
+      "/projects/landlord-ledger/properties.jpg",
+      "/projects/landlord-ledger/payments.png",
+      "/projects/landlord-ledger/arrears.jpg",
+      "/projects/landlord-ledger/analytics.png",
+      "/projects/landlord-ledger/reports.png",
+    ],
 
-  tags: [
-    "Flutter",
-    "Dart",
-    "Supabase",
-    "PostgreSQL",
-    "Riverpod",
-    "Property Management",
-    "Rental Marketplace",
-    "Tenant Discovery",
-    "FinTech",
-  ],
+    tags: [
+      "Flutter",
+      "Dart",
+      "Supabase",
+      "PostgreSQL",
+      "Riverpod",
+      "Property Management",
+      "Rental Marketplace",
+      "Tenant Discovery",
+      "FinTech",
+    ],
 
-  liveUrl: "/landlord-ledger",
-},
-    {
-  slug: "farmora",
-  title: "Farmora",
-  description:
-    "A modern farm management application designed to help farm owners and managers manage livestock, inventory, sales, expenses, customers and day-to-day farm operations from one place.",
+    liveUrl: "/landlord-ledger",
+  },
+  {
+    slug: "farmora",
+    title: "Farmora",
+    description:
+      "A modern farm management application designed to help farm owners and managers manage livestock, inventory, sales, expenses, customers and day-to-day farm operations from one place.",
 
-  longDescription: `
+    longDescription: `
 Farmora is a farm management application built to simplify the day-to-day operational and financial work involved in running a modern farm.
 
 The application provides a centralized system for managing livestock, farm activities, inventory, products, customers, vendors, sales, expenses and financial records.
@@ -102,33 +101,88 @@ Farmora is designed for farms with multiple operational areas and different live
 The application is built with Flutter and Supabase, combining a modern responsive cross-platform interface with a scalable PostgreSQL backend, authentication and farm-level data isolation.
 `,
 
-  imageUrl: "/farmora/cover_landscape.jpg",
+    imageUrl: "/farmora/cover_landscape.jpg",
+
+    screenshots: [
+      "/farmora/dashboard.png",
+      "/farmora/livestock.png",
+      "/farmora/inventory.jpg",
+      "/farmora/dashboard3.png",
+
+      "/farmora/categories.png",
+      "/farmora/reports.png",
+      "/farmora/reports2.png",
+      "/farmora/farm_setup.png",
+    ],
+
+    tags: [
+      "Flutter",
+      "Dart",
+      "Supabase",
+      "PostgreSQL",
+      "Riverpod",
+      "Farm Management",
+      "Livestock Management",
+      "Inventory",
+      "Sales & Expenses",
+    ],
+
+    liveUrl: "/farmora",
+  },
+    {
+    slug: "flutter-invoice-app",
+    title: "Flutter Invoice App",
+    description:
+      "A modern, cross-platform Flutter application for managing invoices, with PDF generation and archiving.",
+    longDescription:
+      "A modern, cross-platform Flutter application for managing invoices. Features include creating, viewing, editing, and deleting invoices, archiving, light/dark mode, PDF generation/printing, and local data storage. It's designed for web and mobile with a responsive UI based on Material Design 3 principles.",
+    imageUrl: "/invoice-easy/cover_landscape.jpg",
+    screenshots: [
+      "/invoice-easy/dashboard_light.jpg",
+      "/invoice-easy/invoice_preview.jpg",
+      "/invoice-easy/print_preview.jpg",
+      "/invoice-easy/reports_analytics.jpg",
+      "/invoice-easy/recent_invoices.jpg",
+    ],
+    tags: [
+      "Flutter",
+      "Dart",
+      "Mobile App",
+      "PDF Generation",
+      "State Management",
+    ],
+    //caseStudyUrl: "/invoice-easy",
+    liveUrl: "/invoice-easy",
+  },
+    {
+  slug: "building-devpilot-personal-productivity-app",
+
+  title: "DevPilot — Personal Productivity and Project Management App",
+
+  description:
+    "An independent software project exploring how personal productivity, task management and project planning can come together in a focused digital workspace.",
+
+  longDescription:
+    "DevPilot is a personal productivity and project management application built to help organize projects, tasks, daily plans and ongoing work in one place. The project explores responsive UI/UX, cloud-backed data persistence, authentication and a practical workflow for managing multiple projects without unnecessary complexity. Built independently as a personal-first product, DevPilot is designed to evolve into a reliable productivity platform.",
+
+  imageUrl: "/devpilot/cover_landscape.png",
 
   screenshots: [
-    "/farmora/dashboard.png",
-    "/farmora/livestock.png",
-    "/farmora/inventory.jpg",
-    "/farmora/dashboard3.png",
-    
-    "/farmora/categories.png",
-    "/farmora/reports.png",
-    "/farmora/reports2.png",
-    "/farmora/farm_setup.png",
+    "/devpilot/cover_light.png",
+    "/devpilot/cover_dark.png",
   ],
 
   tags: [
-    "Flutter",
-    "Dart",
+    "Next.js",
+    "TypeScript",
     "Supabase",
     "PostgreSQL",
-    "Riverpod",
-    "Farm Management",
-    "Livestock Management",
-    "Inventory",
-    "Sales & Expenses",
+    "UI/UX",
+    "Productivity",
+    "PWA",
   ],
 
-  liveUrl: "/farmora",
+  caseStudyUrl: "/devpilot",
 },
   {
     slug: "clarity-solutions-digital-experience-concept",
@@ -139,88 +193,78 @@ The application is built with Flutter and Supabase, combining a modern responsiv
       "This concept project brings together web design, UI/UX, graphic design and digital-signage direction. It was created independently as part of an application for the Website & Graphic Designer position and is not commissioned work or an official Clarity Solutions design.",
     imageUrl: "/placeholder.png",
     screenshots: [],
-    tags: ["UI/UX", "Web Design", "Branding", "Digital Signage", "Graphic Design"],
+    tags: [
+      "UI/UX",
+      "Web Design",
+      "Branding",
+      "Digital Signage",
+      "Graphic Design",
+    ],
     caseStudyUrl: "/clarity-solution",
   },
   {
-  slug: "hempon-group-website",
-  title: "HEMPON GROUP - Modern Digital Agency Website",
-  description:
-    "A modern, fully responsive website for Hempon Group, designed to showcase its digital products, services, projects, and technology expertise through a polished and engaging user experience.",
-  longDescription:
-    "The Hempon Group website was designed as a modern digital presence for a technology-focused company and its growing portfolio of products and services. The project combines a clean visual system with responsive layouts, smooth animations, clear content hierarchy, and an engaging presentation of the company's work. Built with a focus on performance, usability, and scalability, the website provides a professional foundation for showcasing Hempon Group's digital products, services, and portfolio.",
-  imageUrl: "/hg-app.png",
-  screenshots: [
-    "/hg1.png",
-    "/hg2.png",
-    "/hg3.png",
-    "/hg4.png",
-    "/hg5.png",
-    "/hg6.png",
-  ],
-  tags: [
-    "Next.js",
-    "Tailwind CSS",
-    "ShadCN/UI",
-    "Framer Motion",
-    "TypeScript",
-    "Responsive Design",
-  ],
-  liveUrl: "https://hempongroup.co.ke/",
-},
-{
-  slug: "kanyi-j-advocates-website",
-  title: "KANYI J & COMPANY ADVOCATES - Law Firm Website Redesign",
-  description:
-    "A modern, professional website redesign for Kanyi J & Company Advocates, focused on presenting the firm's services and professional identity through a responsive digital experience.",
-  longDescription:
-    "The Kanyi J & Company Advocates website redesign focuses on creating a modern and professional online presence for a legal practice. The project emphasizes clear information hierarchy, responsive layouts, polished visual presentation, intuitive navigation, and an accessible experience across desktop and mobile devices. The redesign demonstrates how a professional law firm can present its services and identity through a contemporary digital experience while maintaining a clear and credible visual direction.",
-  imageUrl: "/kanyi-j-app.png",
-  screenshots: [
-    "/kanyi-j1.png",
-    "/kanyi-j2.png",
-    "/kanyi-j3.png",
-    "/kanyi-j4.png",
-    "/kanyi-j5.png",
-    "/kanyi-j6.png",
-    "/kanyi-j7.png",
-  ],
-  tags: [
-    "Next.js",
-    "Tailwind CSS",
-    "ShadCN/UI",
-    "Framer Motion",
-    "TypeScript",
-    "Responsive Design",
-    "Law Firm",
-    "Website Redesign",
-  ],
-  liveUrl: "https://www.kanyij-advocates.co.ke/",
-},
-{
-    slug: "flutter-invoice-app",
-    title: "Flutter Invoice App",
-    description: "A modern, cross-platform Flutter application for managing invoices, with PDF generation and archiving.",
-    longDescription: "A modern, cross-platform Flutter application for managing invoices. Features include creating, viewing, editing, and deleting invoices, archiving, light/dark mode, PDF generation/printing, and local data storage. It's designed for web and mobile with a responsive UI based on Material Design 3 principles.",
-    imageUrl: "/invoice-easy/cover_landscape.jpg",
+    slug: "hempon-group-website",
+    title: "HEMPON GROUP - Modern Digital Agency Website",
+    description:
+      "A modern, fully responsive website for Hempon Group, designed to showcase its digital products, services, projects, and technology expertise through a polished and engaging user experience.",
+    longDescription:
+      "The Hempon Group website was designed as a modern digital presence for a technology-focused company and its growing portfolio of products and services. The project combines a clean visual system with responsive layouts, smooth animations, clear content hierarchy, and an engaging presentation of the company's work. Built with a focus on performance, usability, and scalability, the website provides a professional foundation for showcasing Hempon Group's digital products, services, and portfolio.",
+    imageUrl: "/hg-app.png",
     screenshots: [
-      "/invoice-easy/dashboard_light.jpg",
-      "/invoice-easy/invoice_preview.jpg",
-      "/invoice-easy/print_preview.jpg",
-      "/invoice-easy/reports_analytics.jpg",
-      "/invoice-easy/recent_invoices.jpg",
+      "/hg1.png",
+      "/hg2.png",
+      "/hg3.png",
+      "/hg4.png",
+      "/hg5.png",
+      "/hg6.png",
     ],
-    tags: ["Flutter", "Dart", "Mobile App", "PDF Generation", "State Management"],
-    //caseStudyUrl: "/invoice-easy",
-    liveUrl: "/invoice-easy",
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "ShadCN/UI",
+      "Framer Motion",
+      "TypeScript",
+      "Responsive Design",
+    ],
+    liveUrl: "https://hempongroup.co.ke/",
   },
   {
-  slug: "config-driven-logistics-website-starter-kit",
-  title: "Logistics Website",
-  description:
-    "A production-ready logistics website starter kit featuring shipment tracking, fleet management, service coverage, and a modular configuration system.",
+    slug: "kanyi-j-advocates-website",
+    title: "KANYI J & COMPANY ADVOCATES - Law Firm Website Redesign",
+    description:
+      "A modern, professional website redesign for Kanyi J & Company Advocates, focused on presenting the firm's services and professional identity through a responsive digital experience.",
+    longDescription:
+      "The Kanyi J & Company Advocates website redesign focuses on creating a modern and professional online presence for a legal practice. The project emphasizes clear information hierarchy, responsive layouts, polished visual presentation, intuitive navigation, and an accessible experience across desktop and mobile devices. The redesign demonstrates how a professional law firm can present its services and identity through a contemporary digital experience while maintaining a clear and credible visual direction.",
+    imageUrl: "/kanyi-j-app.png",
+    screenshots: [
+      "/kanyi-j1.png",
+      "/kanyi-j2.png",
+      "/kanyi-j3.png",
+      "/kanyi-j4.png",
+      "/kanyi-j5.png",
+      "/kanyi-j6.png",
+      "/kanyi-j7.png",
+    ],
+    tags: [
+      "Next.js",
+      "Tailwind CSS",
+      "ShadCN/UI",
+      "Framer Motion",
+      "TypeScript",
+      "Responsive Design",
+      "Law Firm",
+      "Website Redesign",
+    ],
+    liveUrl: "https://www.kanyij-advocates.co.ke/",
+  },
 
-  longDescription: `
+  {
+    slug: "config-driven-logistics-website-starter-kit",
+    title: "Logistics Website",
+    description:
+      "A production-ready logistics website starter kit featuring shipment tracking, fleet management, service coverage, and a modular configuration system.",
+
+    longDescription: `
 This project extends my multi-industry website platform with a dedicated logistics solution designed for courier companies, transport businesses, freight providers, and delivery services.
 
 Rather than building another standalone website, I reused the same configuration-driven architecture powering the other industry templates. The logistics version introduces industry-specific sections including shipment tracking, fleet showcase, logistics services, coverage areas, industries served, FAQs and customer testimonials while maintaining a single reusable codebase.
@@ -230,33 +274,35 @@ The shipment tracking interface demonstrates how a production system would integ
 The project showcases scalable React architecture, reusable components, configuration-based rendering and responsive UI design suitable for modern logistics businesses.
 `,
 
-  imageUrl: "/projects/logistics/homepage.png",
+    imageUrl: "/projects/logistics/homepage.png",
 
-  screenshots: [
-    "/projects/logistics/homepage.png",
-    "/projects/logistics/services.png",
-    "/projects/logistics/tracking.png",
-    "/projects/logistics/fleet.png",
-    "/projects/logistics/contact.png",
-  ],
+    screenshots: [
+      "/projects/logistics/homepage.png",
+      "/projects/logistics/services.png",
+      "/projects/logistics/tracking.png",
+      "/projects/logistics/fleet.png",
+      "/projects/logistics/contact.png",
+    ],
 
-  tags: [
-    "React",
-    "TypeScript",
-    "Vite",
-    "Tailwind CSS",
-    "Configuration Driven",
-    "Logistics",
-    "Starter Kit",
-  ],
+    tags: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Configuration Driven",
+      "Logistics",
+      "Starter Kit",
+    ],
 
-  liveUrl: "https://logistics-starter-kit.vercel.app",
-},
+    liveUrl: "https://logistics-starter-kit.vercel.app",
+  },
   {
     slug: "google-apps-script-automation",
     title: "Google Sheets Data Automation",
-    description: "An advanced Google Apps Script to automate the processing of Google Form data into structured summaries and dynamic charts.",
-    longDescription: "This project showcases a powerful Google Apps Script designed to automate the transformation of raw Google Form responses into insightful, presentation-ready formats. The script automatically categorizes questions, generates multiple summary views (including table and card styles), and creates dynamic charts to visualize key metrics, all triggered on form submission. It includes a custom menu within Google Sheets for on-demand report generation, significantly improving data analysis workflows.",
+    description:
+      "An advanced Google Apps Script to automate the processing of Google Form data into structured summaries and dynamic charts.",
+    longDescription:
+      "This project showcases a powerful Google Apps Script designed to automate the transformation of raw Google Form responses into insightful, presentation-ready formats. The script automatically categorizes questions, generates multiple summary views (including table and card styles), and creates dynamic charts to visualize key metrics, all triggered on form submission. It includes a custom menu within Google Sheets for on-demand report generation, significantly improving data analysis workflows.",
     // To use your own image, place it in `public/` and update the path here, e.g., "/google-script-project.png"
     imageUrl: "/hero-gs.png",
     screenshots: [
@@ -267,15 +313,17 @@ The project showcases scalable React architecture, reusable components, configur
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
       "/rt-gs.jpg",
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/i-gs.jpg"
+      "/i-gs.jpg",
     ],
     tags: ["Google Apps Script", "JavaScript", "Automation", "Data Analysis"],
   },
   {
     slug: "fintrack-ai",
     title: "FinTrack AI - Intelligent Finance Tracker",
-    description: "An AI-powered app for expense tracking, receipt scanning, and personalized financial advice.",
-    longDescription: "FinTrack AI is an intelligent personal finance application designed to help you take full control of your money. It leverages Google's Gemini model to provide smart insights, automated expense tracking via receipt scanning, and personalized financial advice from a chat-based assistant.",
+    description:
+      "An AI-powered app for expense tracking, receipt scanning, and personalized financial advice.",
+    longDescription:
+      "FinTrack AI is an intelligent personal finance application designed to help you take full control of your money. It leverages Google's Gemini model to provide smart insights, automated expense tracking via receipt scanning, and personalized financial advice from a chat-based assistant.",
     // To use your own image, place it in `public/` and update the path here, e.g., "/fintrack-ai.png"
     imageUrl: "/fin-app.png",
     screenshots: [
@@ -286,16 +334,18 @@ The project showcases scalable React architecture, reusable components, configur
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
       "/fin-filled.png",
       "/fin-expe.png",
-      "/fin-budget.png"
+      "/fin-budget.png",
     ],
     tags: ["Next.js", "AI", "TypeScript", "Finance"],
   },
-  
+
   {
     slug: "church-website-django",
     title: "Church Website with Django",
-    description: "A fully functional church website built using Django, featuring a blog, event management, and member engagement tools.",
-    longDescription: "This project is a comprehensive church website built with the Django framework. It includes key features like a blog system for sermons and articles, an event manager for church activities, and a secure user authentication system for administrators. The frontend is built with HTML, CSS, and Bootstrap for a responsive design that works across all devices. The powerful Django Admin panel allows for easy content management.",
+    description:
+      "A fully functional church website built using Django, featuring a blog, event management, and member engagement tools.",
+    longDescription:
+      "This project is a comprehensive church website built with the Django framework. It includes key features like a blog system for sermons and articles, an event manager for church activities, and a secure user authentication system for administrators. The frontend is built with HTML, CSS, and Bootstrap for a responsive design that works across all devices. The powerful Django Admin panel allows for easy content management.",
     // To use your own image, place it in `public/` and update the path here, e.g., "/church-website.png"
     imageUrl: "/church/hero.png",
     screenshots: [
@@ -311,13 +361,15 @@ The project showcases scalable React architecture, reusable components, configur
       "/church/admin.png",
     ],
     tags: ["Django", "Python", "Bootstrap", "Web Development"],
-     liveUrl: "https://church-blog-1fse.onrender.com/",
+    liveUrl: "https://church-blog-1fse.onrender.com/",
   },
   {
     slug: "stayzen-accommodation-booking-app",
     title: "StayZen - Accommodation Booking App",
-    description: "A Next.js web application for finding and booking accommodations, with a user-facing app and an admin dashboard.",
-    longDescription: "This is a full-stack Next.js web application for finding and booking accommodations. It features a user-facing PWA for browsing and booking, and a complete admin dashboard for managing properties and bookings. Built with Next.js App Router, TypeScript, ShadCN UI, and Tailwind CSS, it uses in-memory data stores for development and is configured for AI integration. The admin panel includes robust forms with React Hook Form and Zod for validation.",
+    description:
+      "A Next.js web application for finding and booking accommodations, with a user-facing app and an admin dashboard.",
+    longDescription:
+      "This is a full-stack Next.js web application for finding and booking accommodations. It features a user-facing PWA for browsing and booking, and a complete admin dashboard for managing properties and bookings. Built with Next.js App Router, TypeScript, ShadCN UI, and Tailwind CSS, it uses in-memory data stores for development and is configured for AI integration. The admin panel includes robust forms with React Hook Form and Zod for validation.",
     // To use your own image, place it in `public/` and update the path here, e.g., "/stayzen-app.png"
     imageUrl: "/sz-app.png",
     screenshots: [
@@ -326,15 +378,17 @@ The project showcases scalable React architecture, reusable components, configur
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
       "/sz-light.png",
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/sz-stays.png"
+      "/sz-stays.png",
     ],
     tags: ["Next.js", "TypeScript", "ShadCN UI", "PWA"],
   },
   {
     slug: "foodie-app-firebase",
     title: "Foodie App (Firebase Edition)",
-    description: "A Flutter-based mobile application for browsing restaurant menus and simulating a food order checkout process.",
-    longDescription: "A Flutter-based mobile application for browsing restaurant menus, adding items to a cart, and simulating a food order checkout process. This project utilizes Firebase for backend services including authentication, real-time menu data from Firestore, and user data storage. Features include real-time menu browsing with a shimmer effect, an interactive shopping cart with slidable delete actions, and a simulated order and receipt generation process.",
+    description:
+      "A Flutter-based mobile application for browsing restaurant menus and simulating a food order checkout process.",
+    longDescription:
+      "A Flutter-based mobile application for browsing restaurant menus, adding items to a cart, and simulating a food order checkout process. This project utilizes Firebase for backend services including authentication, real-time menu data from Firestore, and user data storage. Features include real-time menu browsing with a shimmer effect, an interactive shopping cart with slidable delete actions, and a simulated order and receipt generation process.",
     // To use your own image, place it in `public/` and update the path here, e.g., "/foodie-app.png"
     imageUrl: "/foodie_app.png",
     screenshots: [
@@ -343,15 +397,17 @@ The project showcases scalable React architecture, reusable components, configur
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
       "/foodie_in.png",
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/foodie_menu.png"
+      "/foodie_menu.png",
     ],
     tags: ["Flutter", "Firebase", "Mobile App", "Dart"],
   },
   {
     slug: "flutter-expense-tracker",
     title: "Flutter Expense Tracker",
-    description: "A mobile app to track daily expenses with a weekly summary and bar graph.",
-    longDescription: "A mobile application built with Flutter to help you track your daily expenses efficiently. Features include adding, editing, and deleting expenses, viewing a weekly summary, and visualizing spending patterns with an interactive bar graph using the `fl_chart` package. It uses a modern modal bottom sheet for quick expense entry and manages state efficiently with the `provider` package, ensuring a clean and user-friendly interface.",
+    description:
+      "A mobile app to track daily expenses with a weekly summary and bar graph.",
+    longDescription:
+      "A mobile application built with Flutter to help you track your daily expenses efficiently. Features include adding, editing, and deleting expenses, viewing a weekly summary, and visualizing spending patterns with an interactive bar graph using the `fl_chart` package. It uses a modern modal bottom sheet for quick expense entry and manages state efficiently with the `provider` package, ensuring a clean and user-friendly interface.",
     // To use your own image, place it in `public/` and update the path here, e.g., "/flutter-expense-tracker.png"
     imageUrl: "/ET_app.png",
     screenshots: [
@@ -360,15 +416,17 @@ The project showcases scalable React architecture, reusable components, configur
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
       "/ET_app.png",
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/et_filled.png"
+      "/et_filled.png",
     ],
     tags: ["Flutter", "Dart", "Mobile App", "State Management"],
   },
   {
     slug: "ai-travel-planner",
     title: "AI Travel Planner",
-    description: "A web app that generates personalized travel itineraries using generative AI.",
-    longDescription: "This AI-powered travel planner helps users create custom trip itineraries in seconds. Built with React and using an AI workflow for AI capabilities, it considers user preferences for destinations, activities, and budget to generate a detailed day-by-day plan. It's designed to be intuitive and user-friendly, making travel planning effortless.",
+    description:
+      "A web app that generates personalized travel itineraries using generative AI.",
+    longDescription:
+      "This AI-powered travel planner helps users create custom trip itineraries in seconds. Built with React and using an AI workflow for AI capabilities, it considers user preferences for destinations, activities, and budget to generate a detailed day-by-day plan. It's designed to be intuitive and user-friendly, making travel planning effortless.",
     // To use your own image, place it in `public/` and update the path here, e.g., "/ai-travel-planner.png"
     imageUrl: "/ait.png",
     screenshots: [
@@ -377,44 +435,45 @@ The project showcases scalable React architecture, reusable components, configur
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
       "/ait.png",
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/placeholder.png"
+      "/placeholder.png",
     ],
     tags: ["React", "AI", "Travel"],
   },
- {
-  slug: "personal-portfolio",
-  title: "HEMPON GROUP - Professional Portfolio",
-  description:
-    "A modern portfolio website showcasing web development projects, digital solutions, and professional work by Hempon Group.",
-  longDescription:
-    "The Hempon Group portfolio is a modern digital showcase built to present web development projects, digital solutions, and professional work in a polished and engaging way. The website combines a clean visual identity with responsive layouts, smooth animations, and carefully structured project case studies. It serves as a central portfolio for showcasing websites, applications, and custom digital solutions developed by Hempon Group, while providing prospective clients with a clear view of the company's capabilities and previous work.",
-  imageUrl: "/portfolio/hero.png",
-  screenshots: [
-    "/portfolio/project.png",
-    "/portfolio/project2.png",
-    "/portfolio/project3.png",
-    "/portfolio/blog.png",
-    "/portfolio/apps.png",
-    "/portfolio/profile.png",
-    "/portfolio/profile2.png",
-    "/portfolio/profile3.png",
-  ],
-  tags: [
-    "Next.js",
-    "TypeScript",
-    "Tailwind CSS",
-    "ShadCN UI",
-    "Framer Motion",
-    "Responsive Design",
-    "Portfolio",
-  ],
-  liveUrl: "https://portfolio.hempongroup.co.ke/",
-},
+  {
+    slug: "personal-portfolio",
+    title: "HEMPON GROUP - Professional Portfolio",
+    description:
+      "A modern portfolio website showcasing web development projects, digital solutions, and professional work by Hempon Group.",
+    longDescription:
+      "The Hempon Group portfolio is a modern digital showcase built to present web development projects, digital solutions, and professional work in a polished and engaging way. The website combines a clean visual identity with responsive layouts, smooth animations, and carefully structured project case studies. It serves as a central portfolio for showcasing websites, applications, and custom digital solutions developed by Hempon Group, while providing prospective clients with a clear view of the company's capabilities and previous work.",
+    imageUrl: "/portfolio/hero.png",
+    screenshots: [
+      "/portfolio/project.png",
+      "/portfolio/project2.png",
+      "/portfolio/project3.png",
+      "/portfolio/blog.png",
+      "/portfolio/apps.png",
+      "/portfolio/profile.png",
+      "/portfolio/profile2.png",
+      "/portfolio/profile3.png",
+    ],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "ShadCN UI",
+      "Framer Motion",
+      "Responsive Design",
+      "Portfolio",
+    ],
+    liveUrl: "https://portfolio.hempongroup.co.ke/",
+  },
   {
     slug: "real-time-chat-app",
     title: "Real-Time Chat App",
     description: "A real-time chat application using WebSockets and React.",
-    longDescription: "This is a real-time chat application that allows users to communicate instantly. It's built with React on the frontend and a Node.js backend using WebSockets for live messaging. Features include private messaging, user online status, and a simple, intuitive interface.",
+    longDescription:
+      "This is a real-time chat application that allows users to communicate instantly. It's built with React on the frontend and a Node.js backend using WebSockets for live messaging. Features include private messaging, user online status, and a simple, intuitive interface.",
     // To use your own image, place it in `public/` and update the path here, e.g., "/real-time-chat-app.png"
     imageUrl: "/hero-rt.png",
     screenshots: [
@@ -423,21 +482,23 @@ The project showcases scalable React architecture, reusable components, configur
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
       "/rt2.jpg",
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-"/rt3.jpg",
-"/rt4.jpg",
+      "/rt3.jpg",
+      "/rt4.jpg",
     ],
     tags: ["React", "Node.js", "WebSockets", "Chat"],
   },
   {
     slug: "multi-industry-business-starter-kit",
     title: "Corporate Business Website",
-    description: "A polished corporate website template with reusable sections, theme controls, responsive navigation, and configurable client content.",
-    longDescription: "The Corporate Business Starter Kit is part of a larger multi-industry website platform built with React, Vite, TypeScript, Tailwind CSS, and Motion. It includes a modern hero, services, features, statistics, portfolio, pricing, team, testimonials, FAQ, contact forms, theme switching, and production-ready configuration. The same core architecture can be reused for agencies, consultancies, technology companies, and professional service businesses.",
+    description:
+      "A polished corporate website template with reusable sections, theme controls, responsive navigation, and configurable client content.",
+    longDescription:
+      "The Corporate Business Starter Kit is part of a larger multi-industry website platform built with React, Vite, TypeScript, Tailwind CSS, and Motion. It includes a modern hero, services, features, statistics, portfolio, pricing, team, testimonials, FAQ, contact forms, theme switching, and production-ready configuration. The same core architecture can be reused for agencies, consultancies, technology companies, and professional service businesses.",
     imageUrl: "/projects/starter-kits/business/hero.png",
     screenshots: [
       "/projects/starter-kits/business/homepage.png",
       "/projects/starter-kits/business/features.png",
-      "/projects/starter-kits/business/pricing.png"
+      "/projects/starter-kits/business/pricing.png",
     ],
     tags: ["React", "Vite", "TypeScript", "Tailwind CSS", "Website "],
     liveUrl: "https://business-website-starter-kit.vercel.app/",
@@ -446,17 +507,19 @@ The project showcases scalable React architecture, reusable components, configur
   {
     slug: "law-firm-website",
     title: "Law Firm Website ",
-    description: "A professional legal-services website featuring practice areas, attorneys, case results, consultation calls-to-action, and client-focused content.",
-    longDescription: "The Law Firm Website  provides a clean and credible online presence for advocates, law firms, and legal consultants. It includes practice-area presentations, attorney profiles, case-result highlights, legal FAQs, consultation calls-to-action, contact details, responsive navigation, dark and light modes, and client-specific configuration. The template can be customized for individual firms without changing the shared rendering engine.",
+    description:
+      "A professional legal-services website featuring practice areas, attorneys, case results, consultation calls-to-action, and client-focused content.",
+    longDescription:
+      "The Law Firm Website  provides a clean and credible online presence for advocates, law firms, and legal consultants. It includes practice-area presentations, attorney profiles, case-result highlights, legal FAQs, consultation calls-to-action, contact details, responsive navigation, dark and light modes, and client-specific configuration. The template can be customized for individual firms without changing the shared rendering engine.",
     imageUrl: "/kanyi-j-app.png",
     screenshots: [
-     "/kanyi-j1.png",
-    "/kanyi-j2.png",
-    "/kanyi-j3.png",
-    "/kanyi-j4.png",
-    "/kanyi-j5.png",
-    "/kanyi-j6.png",
-    "/kanyi-j7.png"
+      "/kanyi-j1.png",
+      "/kanyi-j2.png",
+      "/kanyi-j3.png",
+      "/kanyi-j4.png",
+      "/kanyi-j5.png",
+      "/kanyi-j6.png",
+      "/kanyi-j7.png",
     ],
     tags: ["React", "TypeScript", "Legal Website", "Tailwind CSS", ""],
     liveUrl: "https://law-kanyi-j.vercel.app/",
@@ -465,15 +528,17 @@ The project showcases scalable React architecture, reusable components, configur
   {
     slug: "medical-clinic-website",
     title: "Medical Clinic Website ",
-    description: "A healthcare-focused website with departments, doctors, opening hours, insurance information, appointment calls-to-action, and patient resources.",
-    longDescription: "The Medical Clinic Website  is designed for clinics, wellness centres, dental practices, and healthcare providers. Its sections include medical departments, physician profiles, opening hours, accepted insurance, patient portal guidance, FAQs, appointment prompts, and direct contact details. The design emphasizes trust, accessibility, responsiveness, and clear patient journeys.",
+    description:
+      "A healthcare-focused website with departments, doctors, opening hours, insurance information, appointment calls-to-action, and patient resources.",
+    longDescription:
+      "The Medical Clinic Website  is designed for clinics, wellness centres, dental practices, and healthcare providers. Its sections include medical departments, physician profiles, opening hours, accepted insurance, patient portal guidance, FAQs, appointment prompts, and direct contact details. The design emphasizes trust, accessibility, responsiveness, and clear patient journeys.",
     imageUrl: "/projects/starter-kits/clinic/light/clinic-hero.png",
     screenshots: [
       "/projects/starter-kits/clinic/dark/clinic-departments.png",
       "/projects/starter-kits/clinic/light/clinic-opening-hours.png",
       "/projects/starter-kits/clinic/light/contact.png",
       "/projects/starter-kits/clinic/light/clinic-doctors.png",
-      "/projects/starter-kits/clinic/light/clinic-insurance.png"
+      "/projects/starter-kits/clinic/light/clinic-insurance.png",
     ],
     tags: ["React", "Healthcare", "TypeScript", "Tailwind CSS", ""],
     liveUrl: "https://clinic-starter-kit.vercel.app/",
@@ -482,8 +547,10 @@ The project showcases scalable React architecture, reusable components, configur
   {
     slug: "school-academy-website",
     title: "School & Academy Website ",
-    description: "An education website template for programs, admissions, faculty, events, student life, school information, and prospective-parent engagement.",
-    longDescription: "The School and Academy Website  supports educational institutions that need a modern and informative online presence. It features academic programs, admissions information, faculty profiles, upcoming events, student life, school-focused footer links, application calls-to-action, responsive layouts, and configurable branding. It can be adapted for primary schools, secondary schools, colleges, academies, and training institutions.",
+    description:
+      "An education website template for programs, admissions, faculty, events, student life, school information, and prospective-parent engagement.",
+    longDescription:
+      "The School and Academy Website  supports educational institutions that need a modern and informative online presence. It features academic programs, admissions information, faculty profiles, upcoming events, student life, school-focused footer links, application calls-to-action, responsive layouts, and configurable branding. It can be adapted for primary schools, secondary schools, colleges, academies, and training institutions.",
     imageUrl: "/projects/starter-kits/school/dark/hero.png",
     screenshots: [
       "/projects/starter-kits/school/light/school-homepage.png",
@@ -499,78 +566,112 @@ The project showcases scalable React architecture, reusable components, configur
   {
     slug: "restaurant-website",
     title: "Restaurant Website ",
-    description: "A rich restaurant website with menu, specials, chef profile, gallery, opening hours, and table reservation sections.",
-    longDescription: "The Restaurant Website  presents dining brands through a visually rich and responsive interface. It includes menu displays, daily specials, chef introductions, image galleries, opening hours, a dedicated reservation form, contact information, and industry-specific calls-to-action. It is suitable for restaurants, cafés, bistros, hotels with dining services, and catering businesses.",
+    description:
+      "A rich restaurant website with menu, specials, chef profile, gallery, opening hours, and table reservation sections.",
+    longDescription:
+      "The Restaurant Website  presents dining brands through a visually rich and responsive interface. It includes menu displays, daily specials, chef introductions, image galleries, opening hours, a dedicated reservation form, contact information, and industry-specific calls-to-action. It is suitable for restaurants, cafés, bistros, hotels with dining services, and catering businesses.",
     imageUrl: "/projects/starter-kits/restaurant/light/hero.png",
     screenshots: [
       "/projects/starter-kits/restaurant/dark/homepage.png",
       "/projects/starter-kits/restaurant/light/restaurant-menu.png",
       "/projects/starter-kits/restaurant/dark/contact.png",
-      "/projects/starter-kits/restaurant/light/restaurant-gallery.png"
+      "/projects/starter-kits/restaurant/light/restaurant-gallery.png",
     ],
-    tags: ["React", "Restaurant Website", "Reservations", "TypeScript", "Tailwind CSS"],
+    tags: [
+      "React",
+      "Restaurant Website",
+      "Reservations",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
     liveUrl: "https://restaurant-starter-kit.vercel.app/",
     //repositoryUrl: "https://github.com/Magatijoel9620/YOUR-RESTAURANT-REPOSITORY"
   },
   {
     slug: "hotel-resort-website",
     title: "Hotel & Resort Website ",
-    description: "A hospitality website featuring rooms, amenities, nearby attractions, guest reviews, booking calls-to-action, and contact information.",
-    longDescription: "The Hotel and Resort Website  is designed for hotels, resorts, lodges, serviced apartments, and guest houses. Its configurable sections include room and suite showcases, property amenities, local attractions, guest reviews, booking-focused calls-to-action, contact details, and responsive navigation. The design supports luxury and modern hospitality branding while keeping the code reusable.",
+    description:
+      "A hospitality website featuring rooms, amenities, nearby attractions, guest reviews, booking calls-to-action, and contact information.",
+    longDescription:
+      "The Hotel and Resort Website  is designed for hotels, resorts, lodges, serviced apartments, and guest houses. Its configurable sections include room and suite showcases, property amenities, local attractions, guest reviews, booking-focused calls-to-action, contact details, and responsive navigation. The design supports luxury and modern hospitality branding while keeping the code reusable.",
     imageUrl: "/projects/starter-kits/hotel/dark/hero.png",
     screenshots: [
       "/projects/starter-kits/hotel/light/homepage.png",
       "/projects/starter-kits/hotel/dark/hotel-rooms.png",
       "/projects/starter-kits/hotel/light/hotel-amenities.png",
-      "/projects/starter-kits/hotel/dark/hotel-attractions.png"
+      "/projects/starter-kits/hotel/dark/hotel-attractions.png",
     ],
-    tags: ["React", "Hospitality", "Hotel Website", "TypeScript", "Tailwind CSS"],
+    tags: [
+      "React",
+      "Hospitality",
+      "Hotel Website",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
     liveUrl: "https://hotel-starter-kit.vercel.app/",
     //repositoryUrl: "https://github.com/Magatijoel9620/YOUR-HOTEL-REPOSITORY"
   },
   {
     slug: "construction-company-website",
     title: "Construction Company Website ",
-    description: "A robust construction website showcasing projects, safety standards, equipment, industries served, and quote requests.",
-    longDescription: "The Construction Company Website  gives contractors, engineering firms, builders, and infrastructure companies a professional way to present their capabilities. It includes project portfolios, safety information, equipment and fleet sections, industries served, contact and quotation calls-to-action, responsive layouts, and configurable brand content.",
+    description:
+      "A robust construction website showcasing projects, safety standards, equipment, industries served, and quote requests.",
+    longDescription:
+      "The Construction Company Website  gives contractors, engineering firms, builders, and infrastructure companies a professional way to present their capabilities. It includes project portfolios, safety information, equipment and fleet sections, industries served, contact and quotation calls-to-action, responsive layouts, and configurable brand content.",
     imageUrl: "/projects/starter-kits/construction/light/hero.png",
     screenshots: [
       "/projects/starter-kits/construction/dark/homepage.png",
       "/projects/starter-kits/construction/light/construction-projects.png",
       "/projects/starter-kits/construction/dark/construction-equipment.png",
-      "/projects/starter-kits/construction/light/contact.png"
+      "/projects/starter-kits/construction/light/contact.png",
     ],
-    tags: ["React", "Construction", "Engineering", "TypeScript", "Tailwind CSS"],
+    tags: [
+      "React",
+      "Construction",
+      "Engineering",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
     liveUrl: "https://construction-starter-kit.vercel.app/",
     //repositoryUrl: "https://github.com/Magatijoel9620/YOUR-CONSTRUCTION-REPOSITORY"
   },
   {
     slug: "real-estate-website",
     title: "Real Estate Website ",
-    description: "A modern property website with listings, advanced search, agent profiles, neighborhood guides, market statistics, and viewing requests.",
-    longDescription: "The Real Estate Website  supports agencies, property developers, brokers, and independent agents. It features premium property listings, search tools, agent profiles, neighborhood guides, market statistics, inquiry calls-to-action, and client-specific branding. The reusable architecture makes it easy to create different property websites from the same codebase.",
+    description:
+      "A modern property website with listings, advanced search, agent profiles, neighborhood guides, market statistics, and viewing requests.",
+    longDescription:
+      "The Real Estate Website  supports agencies, property developers, brokers, and independent agents. It features premium property listings, search tools, agent profiles, neighborhood guides, market statistics, inquiry calls-to-action, and client-specific branding. The reusable architecture makes it easy to create different property websites from the same codebase.",
     imageUrl: "/projects/starter-kits/real-estate/dark/hero.png",
     screenshots: [
       "/projects/starter-kits/real-estate/light/homepage.png",
       "/projects/starter-kits/real-estate/dark/real-estate-properties.png",
       "/projects/starter-kits/real-estate/light/real-estate-agents.png",
-      "/projects/starter-kits/real-estate/light/contact.png"
+      "/projects/starter-kits/real-estate/light/contact.png",
     ],
-    tags: ["React", "Real Estate", "Property Listings", "TypeScript", "Tailwind CSS"],
+    tags: [
+      "React",
+      "Real Estate",
+      "Property Listings",
+      "TypeScript",
+      "Tailwind CSS",
+    ],
     liveUrl: "https://real-estate-starter-kit.vercel.app/",
     //repositoryUrl: "https://github.com/Magatijoel9620/YOUR-REAL-ESTATE-REPOSITORY"
   },
   {
     slug: "ecommerce-storefront",
     title: "eCommerce Storefront ",
-    description: "A responsive online-store template with products, categories, promotions, best sellers, shopping-focused calls-to-action, and customer support.",
-    longDescription: "The eCommerce Storefront  provides a modern base for online shops and product catalogues. It includes product grids, categories, promotional sections, best sellers, responsive navigation, theme support, customer-service links, and configurable brand content. The current starter focuses on storefront presentation and can be extended with a cart, authentication, payments, inventory, and order management.",
+    description:
+      "A responsive online-store template with products, categories, promotions, best sellers, shopping-focused calls-to-action, and customer support.",
+    longDescription:
+      "The eCommerce Storefront  provides a modern base for online shops and product catalogues. It includes product grids, categories, promotional sections, best sellers, responsive navigation, theme support, customer-service links, and configurable brand content. The current starter focuses on storefront presentation and can be extended with a cart, authentication, payments, inventory, and order management.",
     imageUrl: "/projects/starter-kits/ecommerce/light/hero.png",
     screenshots: [
       "/projects/starter-kits/ecommerce/dark/homepage.png",
       "/projects/starter-kits/ecommerce/light/ecommerce-products.png",
       "/projects/starter-kits/ecommerce/dark/ecommerce-categories.png",
-      "/projects/starter-kits/ecommerce/light/contact.png"
+      "/projects/starter-kits/ecommerce/light/contact.png",
     ],
     tags: ["React", "eCommerce", "TypeScript", "Tailwind CSS", "Storefront"],
     liveUrl: "https://ecommerce-starter-kit-mu.vercel.app/",
@@ -595,12 +696,13 @@ export const posts: Post[] = [
   {
     slug: "building-landlord-ledger-property-management-app",
 
-    title: "Building Landlord Ledger: A Property Management App for Modern Landlords",
+    title:
+      "Building Landlord Ledger: A Property Management App for Modern Landlords",
 
     date: "2026-08-09",
 
     excerpt:
-        "How I built Landlord Ledger to simplify property, tenant, rent and payment management using Flutter, Supabase and PostgreSQL.",
+      "How I built Landlord Ledger to simplify property, tenant, rent and payment management using Flutter, Supabase and PostgreSQL.",
 
     author: "Magati Joel",
 
@@ -837,22 +939,22 @@ That's what made Landlord Ledger one of the more interesting applications I've w
 `,
   },
   {
-  slug: "building-farmora-farm-management-app",
+    slug: "building-farmora-farm-management-app",
 
-  title: "Building Farmora: A Farm Management App for Modern Farm Operations",
+    title: "Building Farmora: A Farm Management App for Modern Farm Operations",
 
-  date: "2026-09-17",
+    date: "2026-09-17",
 
-  excerpt:
-    "How I built Farmora to bring livestock, inventory, sales, expenses and day-to-day farm operations into one centralized management system using Flutter, Supabase and PostgreSQL.",
+    excerpt:
+      "How I built Farmora to bring livestock, inventory, sales, expenses and day-to-day farm operations into one centralized management system using Flutter, Supabase and PostgreSQL.",
 
-  author: "Magati Joel",
+    author: "Magati Joel",
 
-  authorImage: "/profile.png",
+    authorImage: "/profile.png",
 
-  imageUrl: "/farmora/cover_landscape.jpg",
+    imageUrl: "/farmora/cover_landscape.jpg",
 
-  content: `
+    content: `
 # Why I Built Farmora
 
 Running a farm involves much more than keeping livestock.
@@ -1221,25 +1323,289 @@ And all of these records contribute to the bigger picture of how the farm is per
 
 That is what makes Farmora one of the most interesting applications I have worked on.
 `,
+  },
+{
+  slug: "building-devpilot-personal-productivity-and-project-management-app",
+
+  title:
+    "Building DevPilot: A Personal Productivity and Project Management App",
+
+  date: "2026-10-20",
+
+  excerpt:
+    "How I built DevPilot to bring projects, tasks, daily planning and productivity workflows into one cloud-backed workspace using Next.js, TypeScript and Supabase.",
+
+  author: "Magati Joel",
+
+  authorImage: "/profile.png",
+
+  imageUrl: "/devpilot/cover_landscape.png",
+
+  content: `
+# Why I Built DevPilot
+
+Working on multiple software projects at the same time creates a different kind of challenge.
+
+There are features to build, bugs to fix, releases to prepare, business decisions to make and smaller tasks that are easy to forget. When everything is spread across notes, browser tabs, checklists and separate applications, it becomes difficult to maintain a clear picture of what needs attention.
+
+I wanted a single place where I could organize my projects, plan my day and keep track of the work that actually matters.
+
+That idea became **DevPilot**.
+
+DevPilot is a personal productivity and project management application designed to bring projects, tasks, daily planning and work organization into one focused workspace.
+
+---
+
+# The Problem
+
+Managing work across several projects is not simply a matter of creating a to-do list.
+
+Each project has its own priorities, deadlines, milestones and outstanding issues. Some tasks require immediate attention, while others are important but can wait.
+
+Without a structured system, it becomes easy to spend the day responding to whatever appears next instead of making progress on the most important work.
+
+I wanted to build something that could help answer a few practical questions:
+
+- What am I working on?
+- Which tasks need my attention today?
+- What should I prioritize next?
+- Am I taking on more work than I can realistically complete?
+- What progress have I made across my projects?
+
+DevPilot was designed around these everyday workflow challenges.
+
+---
+
+# The Goal
+
+The goal was to build a personal-first productivity tool that feels like a practical command center rather than another complicated project management platform.
+
+The application needed to make it easier to organize work, see priorities and move between projects without losing context.
+
+The main objectives were to:
+
+- Keep projects and tasks organized in one workspace
+- Support daily planning and task prioritization
+- Make it easier to track ongoing work
+- Provide a place for notes, checklists and focus sessions
+- Preserve data through cloud-backed storage
+- Support a responsive experience across desktop and mobile devices
+
+The intention was to build a tool around how I actually work, while keeping the foundation flexible enough to serve other users in the future.
+
+---
+
+# Core Features
+
+## Project Management
+
+Projects provide the foundation for organizing work.
+
+Instead of treating every task as an isolated item, DevPilot allows tasks to be associated with the projects they belong to.
+
+This makes it easier to distinguish between different areas of responsibility, track outstanding work and understand where attention is needed.
+
+A project can represent a software application, a client assignment, a product launch or another ongoing responsibility.
+
+---
+
+## Task Management
+
+Tasks turn project goals into actionable work.
+
+DevPilot brings task organization into the same workspace as project management, helping keep individual actions connected to their broader objectives.
+
+The application is designed to support practical task workflows such as:
+
+- Creating and updating tasks
+- Organizing work by project
+- Tracking task status and priorities
+- Managing due dates
+- Reviewing outstanding work
+
+The aim is to reduce the mental effort required to remember what needs to be done.
+
+---
+
+## Daily Planning
+
+A task list tells you what exists. A daily plan helps you decide what deserves attention today.
+
+DevPilot includes a daily planning workflow intended to make it easier to select priorities, organize the day's work and maintain focus.
+
+Rather than assuming every outstanding task can be completed immediately, the planning experience encourages a more deliberate approach to workload management.
+
+This is particularly useful when several projects compete for the same limited time.
+
+---
+
+## Notes and Checklists
+
+Tasks often involve details that do not belong in a short title.
+
+Notes and checklists provide space for supporting information, smaller steps and reminders associated with ongoing work.
+
+Keeping these details close to the relevant project or task reduces the need to search through unrelated documents and messages.
+
+---
+
+## Focus Sessions
+
+Productivity is not only about organizing tasks. It is also about creating time to work on them.
+
+Focus sessions introduce a more intentional approach to individual work periods.
+
+The idea is simple: identify the task, dedicate time to it and make progress without constantly switching between competing priorities.
+
+---
+
+## A Workspace That Persists
+
+One of the most important steps in developing DevPilot was moving beyond a demonstration experience.
+
+A productivity application becomes useful only when users can trust it to preserve their work.
+
+DevPilot uses Supabase for authentication and cloud-backed workspace persistence, allowing an authenticated user's workspace to remain available across sessions.
+
+This shifts the application from a temporary local experience toward a more dependable personal productivity tool.
+
+Data isolation is also an important part of the design: each account should access its own workspace rather than another user's projects or tasks.
+
+---
+
+# Technology Stack
+
+DevPilot is built using:
+
+- **Next.js** — application framework and routing
+- **React** — interactive user interface
+- **TypeScript** — type-safe application development
+- **Supabase** — authentication and cloud data services
+- **PostgreSQL** — relational database infrastructure
+- **Tailwind CSS** — responsive interface styling
+- **Progressive Web App technologies** — supporting an app-like experience across compatible devices
+
+This stack provides a practical foundation for developing a modern web application while keeping future improvements possible.
+
+---
+
+# Architecture and Data Management
+
+A productivity application needs more than a collection of screens.
+
+Authentication, workspace loading, persistence and data ownership all influence how reliable the application feels.
+
+DevPilot uses Supabase to authenticate users and persist workspace data in the cloud.
+
+The initial implementation uses a workspace snapshot approach, allowing related workspace information to be stored and restored together.
+
+This provides a straightforward foundation for a personal-first product. As the application grows, the data layer can evolve toward more granular repositories and normalized database operations where they provide clear benefits.
+
+Another important consideration is concurrency. When workspace data changes, the application needs to avoid silently overwriting a newer version with an older one.
+
+These architectural decisions matter because reliability is part of the product experience, not just an implementation detail.
+
+---
+
+# Designing for a Focused Workflow
+
+One of the main design considerations was avoiding unnecessary complexity.
+
+A productivity tool should help users understand their work, not create another system that requires constant administration.
+
+DevPilot brings related activities into one workspace so users can move between projects, tasks, planning and notes without treating each as a completely separate workflow.
+
+The broader design principle is to make the next useful action easier to identify.
+
+This also means the interface needs to remain usable on different screen sizes, particularly when someone wants to check a task or update a plan away from their main computer.
+
+---
+
+# From MVP to a Real Product
+
+Building the first version helped establish the main workflows and interface.
+
+However, an MVP is only the starting point.
+
+Moving toward a reliable product involves removing demo behavior, ensuring new accounts start with their own clean workspace, validating authentication and data isolation, and improving how the application loads and synchronizes data.
+
+Performance is another important part of this process. Unnecessary network requests and repeated loading operations can make a cloud-backed application feel slower than it needs to be.
+
+The next stage of development focuses on making DevPilot faster, more dependable and easier to use as a daily tool.
+
+---
+
+# What I Learned
+
+DevPilot has provided an opportunity to explore several areas of product development together.
+
+Some of the key lessons include:
+
+- Turning personal workflow problems into product requirements
+- Designing project and task management experiences
+- Building responsive interfaces with Next.js and TypeScript
+- Integrating Supabase authentication
+- Persisting user work in the cloud
+- Thinking about account isolation and data ownership
+- Managing asynchronous loading and synchronization
+- Balancing a useful MVP with a maintainable architecture
+- Designing a product that can evolve beyond its original personal use case
+
+The project has reinforced an important lesson: a productivity application is only as useful as the confidence users have in it.
+
+---
+
+# What's Next?
+
+DevPilot is intended to grow gradually, guided by real usage rather than unnecessary features.
+
+Potential areas of improvement include:
+
+- Smarter task prioritization
+- Workload and overload warnings
+- Better daily planning suggestions
+- Faster workspace startup
+- Improved synchronization and conflict handling
+- More granular cloud data management
+- Enhanced reporting on completed work
+- Additional productivity insights
+- A more polished installable PWA experience
+
+The longer-term vision is to create a practical productivity companion that helps individuals manage projects, make better decisions about their time and maintain momentum across competing responsibilities.
+
+---
+
+# Final Thoughts
+
+DevPilot started with a simple question:
+
+**Can I make managing my work easier by building a tool around the way I actually work?**
+
+Building it has shown me that the challenge goes beyond task creation and attractive dashboards.
+
+A useful productivity tool needs to help people decide what matters, preserve their work reliably and make progress easier to sustain.
+
+That is the direction I want to take DevPilot: a focused, dependable workspace that helps turn a growing list of responsibilities into clear, manageable action.
+`,
 },
 
-{
-slug: "building-a-reusable-payment-engine-for-multiple-saas-products",
+  {
+    slug: "building-a-reusable-payment-engine-for-multiple-saas-products",
 
-title: "Building a Reusable Payment Engine for Multiple SaaS Products",
+    title: "Building a Reusable Payment Engine for Multiple SaaS Products",
 
-date: "2026-10-04",
+    date: "2026-10-04",
 
-excerpt:
-"How I designed a reusable payment infrastructure layer to handle payment initiation, verification, webhooks, idempotency and billing integrations across multiple applications using Supabase, PostgreSQL, Flutter and IntaSend.",
+    excerpt:
+      "How I designed a reusable payment infrastructure layer to handle payment initiation, verification, webhooks, idempotency and billing integrations across multiple applications using Supabase, PostgreSQL, Flutter and IntaSend.",
 
-author: "Magati Joel",
+    author: "Magati Joel",
 
-authorImage: "/profile.png",
+    authorImage: "/profile.png",
 
-imageUrl: "/payment-engine/cover_landscape.png",
+    imageUrl: "/payment-engine/cover_landscape.png",
 
-content: `
+    content: `
 
 # Why I Built a Payment Engine
 
@@ -1512,475 +1878,14 @@ It sits behind the applications rather than being something users necessarily se
 
 The next step is continuing to improve provider resilience, reconciliation, observability and the developer experience for applications integrating with the platform.
 `,
-},
-
-  {
-    slug: "designing-clarity-solutions-digital-experience-concept",
-
-    title: "Designing a Digital Experience for Clarity Solutions: LED, Signage & Visual Technology",
-
-    date: "2026-09-01",
-
-    excerpt:
-        "How I created an unofficial digital experience concept for Clarity Solutions, combining web design, UI/UX, graphic design, social media creatives and LED digital signage.",
-
-    author: "Magati Joel",
-
-    authorImage: "/profile.png",
-
-    imageUrl: "/clarity/hero-led-wall.webp",
-
-    content: `
-# Why I Created the Clarity Solutions Concept
-
-When applying for a creative role, a CV can describe what you know, but a project can demonstrate what you can actually do.
-
-While exploring the **Website & Graphic Designer** opportunity at Clarity Solutions, I decided to create an independent concept project based on the company's work in LED video walls, digital signage and audio-visual solutions.
-
-The result is the **Clarity Solutions — Digital Experience Concept**.
-
-This is an **unofficial concept project** created independently as part of my application process. It is not an official Clarity Solutions project or commissioned work.
-
-The goal was to explore how web design, UI/UX, graphic design and digital marketing materials could work together as one cohesive visual experience.
-
----
-
-# Understanding the Challenge
-
-Clarity Solutions operates in a highly visual industry.
-
-LED video walls, digital signage and audio-visual installations are designed to capture attention and communicate information through visual experiences.
-
-That creates an interesting design challenge.
-
-A website for a company like this should not simply explain what the company does.
-
-It should also **show what the technology can do**.
-
-For this concept, I wanted to create a digital experience that feels:
-
-- Modern
-- Professional
-- Technology-focused
-- Visually immersive
-- Corporate
-- Easy to navigate
-
-The design needed to communicate the company's capabilities quickly while giving potential clients a reason to explore its services and projects.
-
----
-
-# The Concept
-
-The concept brings several different design disciplines together:
-
-**Website Design → UI/UX → Graphic Design → Social Media → Digital Signage → Corporate Communication**
-
-Instead of treating each deliverable as a separate design, I approached them as parts of one visual system.
-
-The same design language can therefore be adapted across a website, social media campaign, LED display and company-profile material.
-
----
-
-# Website Hero Section
-
-The website concept begins with a strong visual hero section.
-
-The objective was to immediately communicate the relationship between Clarity Solutions and large-scale visual technology.
-
-Rather than filling the first screen with information, the concept uses:
-
-- Large typography
-- Strong imagery
-- High-contrast visual elements
-- Clear calls to action
-- LED display imagery
-
-The idea is to create an immediate impression while allowing visitors to discover more about the company's services as they scroll.
-
----
-
-# LED Digital Signage
-
-LED digital signage is one of the most visually important parts of the concept.
-
-I wanted to show the technology in an environment rather than presenting it as an isolated product.
-
-This helps communicate the potential impact of digital signage to a prospective client.
-
-The concept focuses on the idea:
-
-> **Your message. Magnified.**
-
-A large LED display can transform a physical environment into a communication platform.
-
-Whether used for advertising, corporate communication, events or public information, the visual experience becomes part of the environment itself.
-
----
-
-# Digital Signage Creative
-
-I also created a standalone digital-signage creative that could be displayed on an LED screen.
-
-The design uses minimal messaging, strong typography and a clear visual hierarchy.
-
-This is particularly important for large-format displays because viewers may only have a few seconds to understand the message.
-
-The creative therefore focuses on:
-
-- Short messaging
-- Strong visual hierarchy
-- Brand visibility
-- Readability
-- High-impact composition
-
----
-
-# Social Media Design
-
-A company's digital presence extends beyond its website.
-
-For the concept, I explored how the visual identity could be adapted for social platforms including:
-
-- Instagram
-- LinkedIn
-- TikTok
-- WhatsApp
-
-The goal was to create graphics that remain recognisable as part of the same brand while being adapted to the requirements of different platforms.
-
-For example, a LinkedIn creative can communicate a project or corporate announcement, while an Instagram or TikTok graphic can focus more heavily on visual impact.
-
----
-
-# Responsive Website Design
-
-The website concept was designed with responsive behaviour in mind.
-
-The desktop version provides space for large visual elements, service presentations and project showcases.
-
-The mobile version simplifies the layout while maintaining the same visual hierarchy.
-
-Important considerations included:
-
-- Responsive layouts
-- Clear navigation
-- Mobile usability
-- Typography
-- Spacing
-- Visual hierarchy
-- Accessible interaction
-- Strong calls to action
-
-The objective was to make the experience work effectively across desktop, tablet and mobile devices.
-
----
-
-# Corporate Company Profile
-
-The visual concept also extends beyond digital screens.
-
-I created a company-profile direction that could form the basis for corporate materials such as:
-
-- Company profiles
-- Brochures
-- Presentations
-- Marketing documents
-- Project proposals
-- Sales materials
-
-This helps demonstrate how a visual identity can remain consistent across different communication channels.
-
----
-
-# Building a Consistent Visual System
-
-One of the main ideas behind the project was consistency.
-
-A website, Instagram post, LinkedIn graphic and company profile should not feel like completely different designs.
-
-They should feel like parts of the same brand.
-
-The concept therefore uses shared principles across the different materials:
-
-- Typography
-- Layout
-- Visual hierarchy
-- Spacing
-- Imagery
-- Technology-focused visuals
-- Consistent messaging
-
-This makes it easier to extend the design into future marketing materials.
-
----
-
-# Technology & Tools
-
-The concept combines my design and web-development experience.
-
-For design and visual development, I work with:
-
-- Figma
-- Canva
-- Adobe Photoshop
-- Adobe Illustrator
-
-For web development, my experience includes:
-
-- HTML5
-- CSS3
-- JavaScript
-- TypeScript
-- React
-- Next.js
-- Tailwind CSS
-- WordPress
-- Elementor
-
-The interactive portfolio implementation uses a modern component-based approach with responsive layouts and animation.
-
----
-
-# Designing and Building
-
-One of the advantages I bring to web projects is the ability to work across both design and development.
-
-I can take an idea from:
-
-**Concept → Wireframe → Visual Design → Development → Responsive Implementation → Deployment**
-
-This makes it possible to consider technical limitations during the design process rather than designing something that becomes difficult to implement later.
-
-For this concept, the same approach was used to turn the visual direction into an interactive portfolio case study.
-
----
-
-# What I Wanted to Demonstrate
-
-This project was created to demonstrate more than graphic design ability.
-
-I wanted to show that I can think about a company's digital presence as a complete system.
-
-That includes:
-
-- Website design
-- UI/UX
-- Responsive development
-- Graphic design
-- Branding
-- Social media content
-- Digital advertising
-- Digital signage
-- Corporate communication
-
-The individual deliverables are important, but the ability to connect them into one consistent experience is what I found most interesting.
-
----
-
-# What I Learned
-
-Creating this concept reinforced an important principle:
-
-**Good design starts with understanding the business.**
-
-Before deciding on colours, typography or layouts, it is important to understand:
-
-- What the company does
-- Who its customers are
-- What it needs to communicate
-- Where the communication will be consumed
-- What action the user should take
-
-For a company involved in LED and audio-visual technology, the design itself needs to communicate visual impact.
-
-That became one of the central ideas behind the project.
-
----
-
-# Final Concept
-
-The final concept brings together several pieces of work:
-
-- Website hero experience
-- LED digital signage concept
-- Social media creatives
-- Responsive website UI
-- Corporate company-profile design
-
-Together, they form a proposed digital experience for a modern audio-visual technology company.
-
-Again, this is an **unofficial concept project** created independently for portfolio and application purposes. It is not an official Clarity Solutions project.
-
----
-
-# View the Concept
-
-The complete interactive concept is available on my portfolio:
-
-**https://portfolio-mjs.vercel.app/clarity-solution**
-
-The project demonstrates how the different visual assets can come together as one responsive digital experience.
-
----
-
-# Final Thoughts
-
-Creating this project was an opportunity to combine two areas I enjoy working in:
-
-**Design and technology.**
-
-A strong website should look good, but it should also communicate clearly, work across devices and support the goals of the business behind it.
-
-For a company working with LED displays, digital signage and audio-visual technology, that becomes even more important.
-
-The digital experience should be as clear, modern and visually engaging as the technology being presented.
-
-That was the idea behind the Clarity Solutions concept.
-`,
-},
-  {
-    slug: "building-a-config-driven-multi-industry-website-starter-kit",
-    title:
-      "Building a Config-Driven Multi-Industry Website with React and TypeScript",
-    date: "2026-07-12",
-    excerpt:
-      "How I designed one reusable React codebase to power business, law, clinic, school, restaurant, hotel, construction, real-estate, and eCommerce websites.",
-    content: `
-## Why This Project Exists
-
-Building websites for different clients often starts with the same familiar routine.
-
-Create a new project. Copy components from an older website. Replace the logo. Change the colors. Rewrite the hero section. Adjust the navigation. Then repeat the process for the next client.
-
-At first, this approach feels fast. However, after building websites for businesses, law firms, clinics, schools, restaurants, hotels, construction companies, real-estate agencies, and online stores, I noticed that most of the code was almost identical.
-
-The industries were different, but the foundations were not.
-
-I wanted to stop rebuilding the same website and start building a system that could produce many websites from one reusable codebase.
-
-## The Problem
-
-Most business websites rely on a similar collection of sections:
-
-- Navigation
-- Hero content
-- Services
-- About information
-- Testimonials
-- Frequently asked questions
-- Contact forms
-- Calls to action
-- Footers
-
-The real differences are usually the wording, images, colors, industry-specific sections, and branding.
-
-Maintaining a separate repository for every client created several problems. A bug fixed in one project still existed in the others. A new feature had to be copied manually across multiple codebases. Design improvements became difficult to distribute consistently.
-
-I needed an architecture where presentation could remain reusable while each client still had a unique identity.
-
-## My Approach
-
-I built a config-driven website platform using React and TypeScript.
-
-Instead of hardcoding one client's content directly into the components, I separated the application into several layers.
-
-The active deployment is selected through \`APP_CONFIG\`. Each industry has a definition in \`clientConfigs\`, including its default section order and available components. Complete website data is stored in \`configMap\`, while \`componentRegistry\` maps section names to reusable React components.
-
-A central \`TemplateRenderer\` reads the active configuration and renders the selected sections in the correct order.
-
-The general flow looks like this:
-
-1. Select the active client or industry.
-2. Load the matching website configuration.
-3. Retrieve the default section list.
-4. Resolve each section through the component registry.
-5. Render the finished website.
-
-This allows the same application to produce websites for multiple industries without duplicating the entire frontend.
-
-## Interesting Challenges
-
-One of the most frustrating bugs came from inconsistent identifiers.
-
-The value in \`APP_CONFIG.client\` needed to match the corresponding keys in both \`configMap\` and \`clientConfigs\`. A single mismatch returned an undefined configuration and caused the application to fail when it attempted to access values such as \`config.theme\`.
-
-The blank screen looked like a rendering problem, but the real cause was a naming inconsistency.
-
-I solved this by introducing stronger TypeScript types, shared identifiers, and defensive fallbacks.
-
-Another challenge was supporting two operating modes.
-
-Builder mode allows me to:
-
-- Switch industries
-- Reorder sections
-- Change themes
-- Customize content
-- Save configuration in local storage
-
-Production mode must behave differently. It hides all editing controls, ignores old builder data, locks the selected client, and presents a finished website.
-
-Keeping builder state from leaking into production required clear boundaries around local storage and configuration loading.
-
-## The Tech Stack
-
-The project uses:
-
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- Motion
-- Lucide React
-- Local Storage
-- Playwright
-- Config-driven architecture
-
-TypeScript became especially valuable as the number of industries and components increased. Strongly typed configurations made it easier to add new templates without accidentally breaking existing ones.
-
-Playwright was later added to automate screenshots across every industry, section, and theme.
-
-## Lessons Learned
-
-The biggest lesson was that configuration deserves the same discipline as application code.
-
-A config-driven system becomes powerful only when its identifiers, interfaces, defaults, and fallbacks are reliable.
-
-I also learned that reuse is not simply about creating generic components. Good reuse requires separating what changes from what remains stable.
-
-In this project:
-
-- Components provide presentation.
-- Configurations provide identity and content.
-- Registries provide discoverability.
-- Renderers provide composition.
-
-That separation made the platform much easier to extend.
-
-## Final Thoughts
-
-This project changed the way I think about website development.
-
-Instead of creating isolated websites, I now have a platform that can generate unique client experiences from one maintainable foundation.
-
-Adding a new client usually involves creating a configuration, selecting sections, replacing images, and registering the deployment URL.
-
-The most rewarding part is that each new website improves the platform rather than creating another codebase to maintain.
-
-I am no longer only building websites. I am building a system that makes future websites faster, cleaner, and more consistent.
-`,
-    author: "Magati Joel",
-    authorImage: "/profile.png",
-    imageUrl: "/projects/starter-kits/business/homepage.png",
   },
-   {
-slug: "building-a-cross-platform-invoice-app-with-flutter",
-title: "Building a Cross-Platform Invoice App with Flutter",
-date: "2026-09-14",
-excerpt:
-"How I evolved InvoiceEasy from a lightweight local invoice generator into an offline-first, cloud-enabled business invoicing platform built with Flutter, Supabase, and a modern cross-platform architecture.",
-content: `
+  {
+    slug: "building-a-cross-platform-invoice-app-with-flutter",
+    title: "Building a Cross-Platform Invoice App with Flutter",
+    date: "2026-09-14",
+    excerpt:
+      "How I evolved InvoiceEasy from a lightweight local invoice generator into an offline-first, cloud-enabled business invoicing platform built with Flutter, Supabase, and a modern cross-platform architecture.",
+    content: `
 
 ## Why This Project Exists
 
@@ -2405,27 +2310,970 @@ That focus is what makes the project interesting.
 
 The challenge is no longer simply building an invoice screen. It is building the infrastructure around that screen so the product can remain simple for the user while becoming significantly more capable underneath.
 `,
-author: "Magati Joel",
-authorImage: "/profile.png",
-imageUrl: "/invoice-easy/cover_landscape.jpg",
-},
-{
-  slug: "building-a-config-driven-logistics-website-starter-kit",
+    author: "Magati Joel",
+    authorImage: "/profile.png",
+    imageUrl: "/invoice-easy/cover_landscape.jpg",
+  },
+  {
+  slug: "redesigning-kanyi-j-company-advocates-website",
 
-  title: "Building a Logistics Website",
+  title:
+    "Redesigning Kanyi J & Company Advocates: A Modern Digital Presence for a Law Firm",
 
-  date: "2026-08-05",
+  date: "2026-10-20",
 
   excerpt:
-    "How I extended my multi-industry website platform with a complete logistics template featuring shipment tracking, fleet management and reusable architecture.",
+    "How I approached the redesign of Kanyi J & Company Advocates' website to create a more professional, accessible and cohesive digital presence for a legal practice.",
 
   author: "Magati Joel",
 
   authorImage: "/profile.png",
 
-  imageUrl: "/projects/logistics/homepage.png",
+  imageUrl: "/kanyi-advocates/cover_landscape.png",
 
   content: `
+# Redesigning Kanyi J & Company Advocates
+
+A professional website is an important part of how a law firm presents itself to prospective clients, existing clients and the wider business community.
+
+For a legal practice, the website needs to communicate more than services. It should convey professionalism, establish credibility and make it straightforward for visitors to understand the firm's areas of practice and how to get in touch.
+
+That was the central idea behind the redesign of **Kanyi J & Company Advocates**.
+
+The objective was to create a more modern digital experience that reflects the expectations of a professional legal practice while making essential information easier to find.
+
+---
+
+# The Challenge
+
+A law firm's digital presence needs to balance several priorities.
+
+Visitors may arrive looking for information about legal services, the firm's professional background, contact details or a convenient way to initiate an enquiry.
+
+If the information architecture is unclear or the presentation feels dated, visitors may struggle to find what they need.
+
+The redesign therefore focused on improving the presentation and organization of the firm's online presence.
+
+Key considerations included:
+
+- A professional visual identity
+- Clear navigation and page structure
+- Readable typography
+- Consistent spacing and visual hierarchy
+- Accessible contact information
+- A responsive experience across devices
+- A cohesive presentation of legal services
+
+The aim was to make the website feel intentional, credible and easy to use.
+
+---
+
+# The Design Goal
+
+The primary goal was to create a digital experience that supports the firm's professional image without overwhelming visitors with unnecessary visual elements.
+
+For a legal website, simplicity can be a strength.
+
+Visitors should be able to understand the firm's identity, explore its services and locate contact information without navigating through an unnecessarily complicated interface.
+
+The redesign was guided by three principles:
+
+**Clarity:** Present important information in a logical and understandable structure.
+
+**Professionalism:** Use a restrained visual language appropriate for a legal practice.
+
+**Accessibility:** Make the experience usable across desktop computers, tablets and mobile devices.
+
+---
+
+# Reworking the Visual Experience
+
+## A More Cohesive Layout
+
+The website's layout was approached as a connected experience rather than a collection of independent pages.
+
+Consistent spacing, section structure and typography help create a visual rhythm throughout the website.
+
+This also makes the firm's information easier to scan, particularly for visitors accessing the site from smaller screens.
+
+---
+
+## Typography and Readability
+
+Legal services often involve subjects that require careful explanation.
+
+Typography therefore plays an important role in presenting information clearly.
+
+The design approach prioritizes readable text, appropriate heading sizes and sufficient separation between sections.
+
+This allows visitors to identify important information without having to work through dense blocks of content.
+
+---
+
+## Navigation and Information Architecture
+
+A website should help visitors answer three basic questions:
+
+- Who is this firm?
+- What services does it offer?
+- How can I contact it?
+
+These questions informed the approach to organizing the website's content and navigation.
+
+Clear page hierarchy helps visitors move from general information to relevant service details and contact options.
+
+---
+
+# Responsive Design
+
+A modern website must work beyond the desktop browser.
+
+Potential clients may access the firm's website using a mobile phone while travelling, researching a legal issue or looking for contact details.
+
+Responsive design helps ensure that the layout adapts to different screen sizes while preserving readability and access to essential information.
+
+The design considerations include:
+
+- Flexible page layouts
+- Mobile-friendly navigation
+- Appropriate typography scaling
+- Comfortable spacing on smaller screens
+- Clearly accessible contact elements
+
+The goal is a consistent experience regardless of the device being used.
+
+---
+
+# Designing for Trust
+
+Trust is particularly important in the legal profession.
+
+Although a website cannot replace professional reputation or the quality of legal representation, it can support the way a firm communicates its identity.
+
+A well-organized website, consistent branding and clear service information help create a more coherent first impression.
+
+For this project, the website was treated as an extension of the firm's professional identity rather than simply an online brochure.
+
+---
+
+# The Development Perspective
+
+A successful redesign requires attention to both the visible interface and the underlying implementation.
+
+Beyond the visual presentation, a practical business website should consider:
+
+- Maintainable page structures
+- Consistent reusable components
+- Responsive behavior
+- Search-engine-friendly content organization
+- Appropriate image optimization
+- Clear navigation and contact pathways
+
+These considerations help make a website easier to maintain as the firm's information and online needs evolve.
+
+---
+
+# Key Lessons
+
+This project reinforced several important principles of business-focused web design.
+
+## Design Should Serve the User
+
+Visual improvements are valuable when they make information easier to understand and actions easier to complete.
+
+## Consistency Builds Recognition
+
+A coherent combination of typography, layout and branding gives the website a more unified identity.
+
+## Mobile Experience Matters
+
+Responsive design is essential for ensuring that visitors can access important information on the devices they already use.
+
+## Professional Websites Need Structure
+
+A polished appearance is only part of the solution. Information architecture and usability are equally important.
+
+---
+
+# Final Thoughts
+
+The redesign of Kanyi J & Company Advocates was centered on a straightforward objective:
+
+**Create a digital presence that communicates professionalism while making the firm's information easier to access.**
+
+The project reflects my broader approach to web development: understand the purpose of the organization, identify what visitors need and build an experience that brings those priorities together.
+
+A website should not simply look modern. It should help the organization communicate more effectively with the people it serves.
+`,
+},
+  {
+  slug: "building-adoyo-j-company-advocates-digital-presence",
+
+  title:
+    "Building Adoyo J & Company Advocates' Digital Presence: Website, Business Email and Brand Assets",
+
+  date: "2026-10-20",
+
+  excerpt:
+    "A complete digital presence project for Adoyo J & Company Advocates, combining website development, professional email setup and essential digital branding materials for a consistent business identity.",
+
+  author: "Magati Joel",
+
+  authorImage: "/profile.png",
+
+  imageUrl: "/adoyo-advocates/cover_landscape.png",
+
+  content: `
+# Building Adoyo J & Company Advocates' Digital Presence
+
+For a professional services firm, establishing a digital presence involves more than launching a website.
+
+The organization also needs reliable communication channels and consistent branding across the documents and materials it uses every day.
+
+That broader perspective informed my work on **Adoyo J & Company Advocates**.
+
+The project brought together three important areas of digital delivery:
+
+- Website design and development
+- Professional business email setup
+- Digital branding assets and business stationery
+
+The goal was to establish a cohesive digital foundation that supports the firm's professional identity across its online presence and everyday communications.
+
+---
+
+# Understanding the Requirements
+
+A law firm interacts with clients through multiple channels.
+
+Someone may first discover the firm through its website, communicate with the office through email and later receive a formal letter or other document.
+
+When these touchpoints use inconsistent branding or disconnected communication channels, the overall experience can feel fragmented.
+
+The project therefore approached the firm's digital requirements as parts of one connected system.
+
+The website provides an online point of reference.
+
+Professional email supports business communication.
+
+Digital identity assets help maintain consistency across documents, correspondence and other materials.
+
+Together, these elements contribute to a more unified professional presence.
+
+---
+
+# Part One: Website Development
+
+## Establishing an Online Presence
+
+The website serves as a central place where visitors can learn about the firm and explore its legal services.
+
+A professional website should communicate the organization's identity, present information in a clear structure and make it easy for visitors to find relevant contact details.
+
+The development process considered:
+
+- Clear content hierarchy
+- Professional page layouts
+- Readable typography
+- Consistent visual presentation
+- Accessible contact information
+- Responsive layouts for mobile and desktop
+- Maintainable website structure
+
+The intention was to create a website that supports the firm's professional image while remaining straightforward to navigate.
+
+---
+
+## User Experience and Navigation
+
+For a professional services website, visitors should not have to search extensively for basic information.
+
+The structure should guide them naturally from an introduction to the firm toward relevant service information and contact options.
+
+Clear navigation and well-organized sections help reduce unnecessary friction.
+
+The same principles apply across devices, ensuring that the website remains practical for visitors using mobile phones, tablets or desktop computers.
+
+---
+
+## Designing for Maintainability
+
+A website is an ongoing business asset.
+
+The content may change as services evolve, contact information is updated or the firm expands its digital communications.
+
+A maintainable implementation makes these updates easier to manage without requiring an entire redesign every time a small change is needed.
+
+This makes the website useful not only at launch but also as the firm's digital needs develop.
+
+---
+
+# Part Two: Professional Email Setup
+
+## Moving Beyond Personal Email
+
+Professional email is an important component of a business's communication infrastructure.
+
+A domain-based email address gives the firm a consistent identity when communicating with clients, partners and other professional contacts.
+
+It also helps distinguish official business correspondence from personal communication.
+
+The email setup formed a key part of the project's wider digital foundation.
+
+---
+
+## Email Configuration and Usability
+
+Setting up professional email involves more than creating an address.
+
+The configuration needs to support reliable message delivery and practical day-to-day use.
+
+Important considerations include:
+
+- Domain and email service configuration
+- Mailbox setup
+- Sending and receiving messages
+- Access through supported email clients
+- Appropriate DNS records
+- Email authentication where supported by the chosen provider
+
+Records such as SPF, DKIM and DMARC can help authenticate legitimate messages and reduce the risk of email spoofing when configured correctly.
+
+The objective is to give the firm a professional communication channel that can be used consistently in its daily operations.
+
+---
+
+## Why Business Email Matters
+
+Email is frequently used for enquiries, document exchange, correspondence and other business communications.
+
+A properly configured professional email service helps bring these interactions under the firm's own identity.
+
+It also creates a more consistent experience when the same address is used across the website, letterheads and other official materials.
+
+---
+
+# Part Three: Digital Branding and Business Stationery
+
+A website and an email address establish important parts of a firm's digital presence, but the visual identity must also carry through to its documents and correspondence.
+
+This part of the project focused on creating practical digital assets that help the firm present itself consistently.
+
+---
+
+## Logo and Brand Identity
+
+The logo is a central visual identifier.
+
+It needs to remain recognizable across different applications, from a website header to an email signature or document.
+
+A useful digital logo asset should be prepared with consideration for:
+
+- Legibility at different sizes
+- Appropriate file formats
+- Consistent proportions
+- Suitable backgrounds
+- Reuse across digital platforms and documents
+
+A consistent logo treatment helps connect the firm's website, email communications and business stationery.
+
+---
+
+## Letterhead Design
+
+Letterheads remain an important part of formal professional correspondence.
+
+A well-designed letterhead establishes a clear document hierarchy and gives official communications a consistent appearance.
+
+The design needs to balance branding with practical document use.
+
+Key considerations include:
+
+- Firm identification
+- Appropriate placement of contact details
+- Clear document margins
+- Readable typography
+- Space for formal correspondence
+- Print-friendly formatting
+
+The result is a reusable document asset that supports consistent presentation across letters and other formal communications.
+
+---
+
+## Email Signature Design
+
+Email signatures extend the firm's identity into everyday correspondence.
+
+A consistent signature can help recipients identify the sender and locate relevant contact information without searching through previous messages.
+
+Depending on the firm's requirements, an email signature may include:
+
+- The sender's name
+- Professional title
+- Firm name
+- Contact details
+- Website address
+- An appropriately sized logo
+
+The design needs to remain readable across common email clients and devices.
+
+Email signatures also require practical implementation: overly complex layouts, oversized images or unsupported formatting can display inconsistently between email platforms.
+
+---
+
+# Bringing the Pieces Together
+
+The most important aspect of this project was not any single deliverable.
+
+It was the relationship between the deliverables.
+
+The website, business email, logo, letterhead and email signature should reinforce the same professional identity.
+
+For example, a client visiting the website should encounter branding consistent with what appears in a formal email or document.
+
+This consistency helps make the firm's communications feel connected rather than assembled from unrelated materials.
+
+The project can be understood through three complementary layers:
+
+**Online presence:** A website that introduces the firm and provides accessible information.
+
+**Communication infrastructure:** Professional email configured for business use.
+
+**Brand identity:** Reusable digital assets that maintain a consistent visual presentation.
+
+---
+
+# Practical Considerations
+
+Delivering a cohesive digital presence also means accounting for the practical details behind each component.
+
+The website must be usable on different screen sizes.
+
+Email configuration must be tested rather than assumed to work.
+
+Digital assets must be prepared in formats suitable for their intended applications.
+
+Documents should remain readable when viewed on screen or printed.
+
+Branding should be consistent without compromising the usability of the website, emails or stationery.
+
+These details help turn individual deliverables into a usable business toolkit.
+
+---
+
+# What I Learned
+
+This project reinforced the value of approaching digital delivery from a business perspective rather than treating every requirement as an isolated task.
+
+Some of the key lessons included:
+
+- Building websites around clear business objectives
+- Organizing content for usability
+- Designing reusable digital brand assets
+- Understanding domain and email configuration
+- Considering email authentication and deliverability
+- Preparing practical business stationery
+- Maintaining visual consistency across different channels
+- Testing deliverables in their intended environments
+
+It also highlighted how relatively small elements, such as a well-configured email address or a consistent letterhead, contribute to the overall quality of a professional digital presence.
+
+---
+
+# Final Thoughts
+
+The Adoyo J & Company Advocates project brought together website development, professional email setup and digital branding into one coordinated effort.
+
+The underlying idea was simple:
+
+**A professional digital presence should work as a connected whole.**
+
+A website introduces the organization, email supports its communications and branded documents carry its identity into everyday business interactions.
+
+When these components are designed and configured with consistency in mind, they provide a stronger foundation for the firm's ongoing digital operations.
+
+For me, the project was an opportunity to apply a broader approach to digital development—one that combines design, implementation, communication infrastructure and practical business needs.
+`,
+},
+  {
+    slug: "designing-clarity-solutions-digital-experience-concept",
+
+    title:
+      "Designing a Digital Experience for Clarity Solutions: LED, Signage & Visual Technology",
+
+    date: "2026-09-01",
+
+    excerpt:
+      "How I created an unofficial digital experience concept for Clarity Solutions, combining web design, UI/UX, graphic design, social media creatives and LED digital signage.",
+
+    author: "Magati Joel",
+
+    authorImage: "/profile.png",
+
+    imageUrl: "/clarity/hero-led-wall.webp",
+
+    content: `
+# Why I Created the Clarity Solutions Concept
+
+When applying for a creative role, a CV can describe what you know, but a project can demonstrate what you can actually do.
+
+While exploring the **Website & Graphic Designer** opportunity at Clarity Solutions, I decided to create an independent concept project based on the company's work in LED video walls, digital signage and audio-visual solutions.
+
+The result is the **Clarity Solutions — Digital Experience Concept**.
+
+This is an **unofficial concept project** created independently as part of my application process. It is not an official Clarity Solutions project or commissioned work.
+
+The goal was to explore how web design, UI/UX, graphic design and digital marketing materials could work together as one cohesive visual experience.
+
+---
+
+# Understanding the Challenge
+
+Clarity Solutions operates in a highly visual industry.
+
+LED video walls, digital signage and audio-visual installations are designed to capture attention and communicate information through visual experiences.
+
+That creates an interesting design challenge.
+
+A website for a company like this should not simply explain what the company does.
+
+It should also **show what the technology can do**.
+
+For this concept, I wanted to create a digital experience that feels:
+
+- Modern
+- Professional
+- Technology-focused
+- Visually immersive
+- Corporate
+- Easy to navigate
+
+The design needed to communicate the company's capabilities quickly while giving potential clients a reason to explore its services and projects.
+
+---
+
+# The Concept
+
+The concept brings several different design disciplines together:
+
+**Website Design → UI/UX → Graphic Design → Social Media → Digital Signage → Corporate Communication**
+
+Instead of treating each deliverable as a separate design, I approached them as parts of one visual system.
+
+The same design language can therefore be adapted across a website, social media campaign, LED display and company-profile material.
+
+---
+
+# Website Hero Section
+
+The website concept begins with a strong visual hero section.
+
+The objective was to immediately communicate the relationship between Clarity Solutions and large-scale visual technology.
+
+Rather than filling the first screen with information, the concept uses:
+
+- Large typography
+- Strong imagery
+- High-contrast visual elements
+- Clear calls to action
+- LED display imagery
+
+The idea is to create an immediate impression while allowing visitors to discover more about the company's services as they scroll.
+
+---
+
+# LED Digital Signage
+
+LED digital signage is one of the most visually important parts of the concept.
+
+I wanted to show the technology in an environment rather than presenting it as an isolated product.
+
+This helps communicate the potential impact of digital signage to a prospective client.
+
+The concept focuses on the idea:
+
+> **Your message. Magnified.**
+
+A large LED display can transform a physical environment into a communication platform.
+
+Whether used for advertising, corporate communication, events or public information, the visual experience becomes part of the environment itself.
+
+---
+
+# Digital Signage Creative
+
+I also created a standalone digital-signage creative that could be displayed on an LED screen.
+
+The design uses minimal messaging, strong typography and a clear visual hierarchy.
+
+This is particularly important for large-format displays because viewers may only have a few seconds to understand the message.
+
+The creative therefore focuses on:
+
+- Short messaging
+- Strong visual hierarchy
+- Brand visibility
+- Readability
+- High-impact composition
+
+---
+
+# Social Media Design
+
+A company's digital presence extends beyond its website.
+
+For the concept, I explored how the visual identity could be adapted for social platforms including:
+
+- Instagram
+- LinkedIn
+- TikTok
+- WhatsApp
+
+The goal was to create graphics that remain recognisable as part of the same brand while being adapted to the requirements of different platforms.
+
+For example, a LinkedIn creative can communicate a project or corporate announcement, while an Instagram or TikTok graphic can focus more heavily on visual impact.
+
+---
+
+# Responsive Website Design
+
+The website concept was designed with responsive behaviour in mind.
+
+The desktop version provides space for large visual elements, service presentations and project showcases.
+
+The mobile version simplifies the layout while maintaining the same visual hierarchy.
+
+Important considerations included:
+
+- Responsive layouts
+- Clear navigation
+- Mobile usability
+- Typography
+- Spacing
+- Visual hierarchy
+- Accessible interaction
+- Strong calls to action
+
+The objective was to make the experience work effectively across desktop, tablet and mobile devices.
+
+---
+
+# Corporate Company Profile
+
+The visual concept also extends beyond digital screens.
+
+I created a company-profile direction that could form the basis for corporate materials such as:
+
+- Company profiles
+- Brochures
+- Presentations
+- Marketing documents
+- Project proposals
+- Sales materials
+
+This helps demonstrate how a visual identity can remain consistent across different communication channels.
+
+---
+
+# Building a Consistent Visual System
+
+One of the main ideas behind the project was consistency.
+
+A website, Instagram post, LinkedIn graphic and company profile should not feel like completely different designs.
+
+They should feel like parts of the same brand.
+
+The concept therefore uses shared principles across the different materials:
+
+- Typography
+- Layout
+- Visual hierarchy
+- Spacing
+- Imagery
+- Technology-focused visuals
+- Consistent messaging
+
+This makes it easier to extend the design into future marketing materials.
+
+---
+
+# Technology & Tools
+
+The concept combines my design and web-development experience.
+
+For design and visual development, I work with:
+
+- Figma
+- Canva
+- Adobe Photoshop
+- Adobe Illustrator
+
+For web development, my experience includes:
+
+- HTML5
+- CSS3
+- JavaScript
+- TypeScript
+- React
+- Next.js
+- Tailwind CSS
+- WordPress
+- Elementor
+
+The interactive portfolio implementation uses a modern component-based approach with responsive layouts and animation.
+
+---
+
+# Designing and Building
+
+One of the advantages I bring to web projects is the ability to work across both design and development.
+
+I can take an idea from:
+
+**Concept → Wireframe → Visual Design → Development → Responsive Implementation → Deployment**
+
+This makes it possible to consider technical limitations during the design process rather than designing something that becomes difficult to implement later.
+
+For this concept, the same approach was used to turn the visual direction into an interactive portfolio case study.
+
+---
+
+# What I Wanted to Demonstrate
+
+This project was created to demonstrate more than graphic design ability.
+
+I wanted to show that I can think about a company's digital presence as a complete system.
+
+That includes:
+
+- Website design
+- UI/UX
+- Responsive development
+- Graphic design
+- Branding
+- Social media content
+- Digital advertising
+- Digital signage
+- Corporate communication
+
+The individual deliverables are important, but the ability to connect them into one consistent experience is what I found most interesting.
+
+---
+
+# What I Learned
+
+Creating this concept reinforced an important principle:
+
+**Good design starts with understanding the business.**
+
+Before deciding on colours, typography or layouts, it is important to understand:
+
+- What the company does
+- Who its customers are
+- What it needs to communicate
+- Where the communication will be consumed
+- What action the user should take
+
+For a company involved in LED and audio-visual technology, the design itself needs to communicate visual impact.
+
+That became one of the central ideas behind the project.
+
+---
+
+# Final Concept
+
+The final concept brings together several pieces of work:
+
+- Website hero experience
+- LED digital signage concept
+- Social media creatives
+- Responsive website UI
+- Corporate company-profile design
+
+Together, they form a proposed digital experience for a modern audio-visual technology company.
+
+Again, this is an **unofficial concept project** created independently for portfolio and application purposes. It is not an official Clarity Solutions project.
+
+---
+
+# View the Concept
+
+The complete interactive concept is available on my portfolio:
+
+**https://portfolio-mjs.vercel.app/clarity-solution**
+
+The project demonstrates how the different visual assets can come together as one responsive digital experience.
+
+---
+
+# Final Thoughts
+
+Creating this project was an opportunity to combine two areas I enjoy working in:
+
+**Design and technology.**
+
+A strong website should look good, but it should also communicate clearly, work across devices and support the goals of the business behind it.
+
+For a company working with LED displays, digital signage and audio-visual technology, that becomes even more important.
+
+The digital experience should be as clear, modern and visually engaging as the technology being presented.
+
+That was the idea behind the Clarity Solutions concept.
+`,
+  },
+  {
+    slug: "building-a-config-driven-multi-industry-website-starter-kit",
+    title:
+      "Building a Config-Driven Multi-Industry Website with React and TypeScript",
+    date: "2026-07-12",
+    excerpt:
+      "How I designed one reusable React codebase to power business, law, clinic, school, restaurant, hotel, construction, real-estate, and eCommerce websites.",
+    content: `
+## Why This Project Exists
+
+Building websites for different clients often starts with the same familiar routine.
+
+Create a new project. Copy components from an older website. Replace the logo. Change the colors. Rewrite the hero section. Adjust the navigation. Then repeat the process for the next client.
+
+At first, this approach feels fast. However, after building websites for businesses, law firms, clinics, schools, restaurants, hotels, construction companies, real-estate agencies, and online stores, I noticed that most of the code was almost identical.
+
+The industries were different, but the foundations were not.
+
+I wanted to stop rebuilding the same website and start building a system that could produce many websites from one reusable codebase.
+
+## The Problem
+
+Most business websites rely on a similar collection of sections:
+
+- Navigation
+- Hero content
+- Services
+- About information
+- Testimonials
+- Frequently asked questions
+- Contact forms
+- Calls to action
+- Footers
+
+The real differences are usually the wording, images, colors, industry-specific sections, and branding.
+
+Maintaining a separate repository for every client created several problems. A bug fixed in one project still existed in the others. A new feature had to be copied manually across multiple codebases. Design improvements became difficult to distribute consistently.
+
+I needed an architecture where presentation could remain reusable while each client still had a unique identity.
+
+## My Approach
+
+I built a config-driven website platform using React and TypeScript.
+
+Instead of hardcoding one client's content directly into the components, I separated the application into several layers.
+
+The active deployment is selected through \`APP_CONFIG\`. Each industry has a definition in \`clientConfigs\`, including its default section order and available components. Complete website data is stored in \`configMap\`, while \`componentRegistry\` maps section names to reusable React components.
+
+A central \`TemplateRenderer\` reads the active configuration and renders the selected sections in the correct order.
+
+The general flow looks like this:
+
+1. Select the active client or industry.
+2. Load the matching website configuration.
+3. Retrieve the default section list.
+4. Resolve each section through the component registry.
+5. Render the finished website.
+
+This allows the same application to produce websites for multiple industries without duplicating the entire frontend.
+
+## Interesting Challenges
+
+One of the most frustrating bugs came from inconsistent identifiers.
+
+The value in \`APP_CONFIG.client\` needed to match the corresponding keys in both \`configMap\` and \`clientConfigs\`. A single mismatch returned an undefined configuration and caused the application to fail when it attempted to access values such as \`config.theme\`.
+
+The blank screen looked like a rendering problem, but the real cause was a naming inconsistency.
+
+I solved this by introducing stronger TypeScript types, shared identifiers, and defensive fallbacks.
+
+Another challenge was supporting two operating modes.
+
+Builder mode allows me to:
+
+- Switch industries
+- Reorder sections
+- Change themes
+- Customize content
+- Save configuration in local storage
+
+Production mode must behave differently. It hides all editing controls, ignores old builder data, locks the selected client, and presents a finished website.
+
+Keeping builder state from leaking into production required clear boundaries around local storage and configuration loading.
+
+## The Tech Stack
+
+The project uses:
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Motion
+- Lucide React
+- Local Storage
+- Playwright
+- Config-driven architecture
+
+TypeScript became especially valuable as the number of industries and components increased. Strongly typed configurations made it easier to add new templates without accidentally breaking existing ones.
+
+Playwright was later added to automate screenshots across every industry, section, and theme.
+
+## Lessons Learned
+
+The biggest lesson was that configuration deserves the same discipline as application code.
+
+A config-driven system becomes powerful only when its identifiers, interfaces, defaults, and fallbacks are reliable.
+
+I also learned that reuse is not simply about creating generic components. Good reuse requires separating what changes from what remains stable.
+
+In this project:
+
+- Components provide presentation.
+- Configurations provide identity and content.
+- Registries provide discoverability.
+- Renderers provide composition.
+
+That separation made the platform much easier to extend.
+
+## Final Thoughts
+
+This project changed the way I think about website development.
+
+Instead of creating isolated websites, I now have a platform that can generate unique client experiences from one maintainable foundation.
+
+Adding a new client usually involves creating a configuration, selecting sections, replacing images, and registering the deployment URL.
+
+The most rewarding part is that each new website improves the platform rather than creating another codebase to maintain.
+
+I am no longer only building websites. I am building a system that makes future websites faster, cleaner, and more consistent.
+`,
+    author: "Magati Joel",
+    authorImage: "/profile.png",
+    imageUrl: "/projects/starter-kits/business/homepage.png",
+  },
+
+  {
+    slug: "building-a-config-driven-logistics-website-starter-kit",
+
+    title: "Building a Logistics Website",
+
+    date: "2026-08-05",
+
+    excerpt:
+      "How I extended my multi-industry website platform with a complete logistics template featuring shipment tracking, fleet management and reusable architecture.",
+
+    author: "Magati Joel",
+
+    authorImage: "/profile.png",
+
+    imageUrl: "/projects/logistics/homepage.png",
+
+    content: `
 # Hook: Why This Project Exists
 
 Every logistics company needs an online presence, but most websites only act as digital brochures. I wanted to create something businesses could actually build upon—a modern starter kit that not only showcases services but also lays the foundation for shipment tracking, fleet management and customer self-service.
@@ -2602,8 +3450,7 @@ Future improvements include:
 
 The goal isn't just to build attractive websites—it's to create scalable foundations that businesses can continue growing long after launch.
 `,
-},
-
+  },
 
   {
     slug: "automating-data-analysis-with-google-apps-script",
@@ -2715,9 +3562,6 @@ Sometimes the best software solution is not a completely new platform. It is a t
     imageUrl: "/hero-gs.png",
   },
 
-
-
-
   {
     slug: "building-a-church-website-with-django",
     title: "Building a Community Hub: A Church Website with Django",
@@ -2820,8 +3664,7 @@ A successful community website should not require a developer for every announce
 
   {
     slug: "building-fintrack-ai",
-    title:
-      "Building FinTrack AI: An Intelligent Finance Tracker with Next.js",
+    title: "Building FinTrack AI: An Intelligent Finance Tracker with Next.js",
     date: "2024-08-05",
     excerpt:
       "A deep dive into creating FinTrack AI, a personal finance app that uses AI for receipt scanning and offers personalized financial advice.",
