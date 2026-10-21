@@ -131,7 +131,7 @@ The application is built with Flutter and Supabase, combining a modern responsiv
 
     liveUrl: "/farmora",
   },
-    {
+  {
     slug: "flutter-invoice-app",
     title: "Flutter Invoice App",
     description:
@@ -156,36 +156,33 @@ The application is built with Flutter and Supabase, combining a modern responsiv
     //caseStudyUrl: "/invoice-easy",
     liveUrl: "/invoice-easy",
   },
-    {
-  slug: "building-devpilot-personal-productivity-app",
+  {
+    slug: "building-devpilot-personal-productivity-app",
 
-  title: "DevPilot — Personal Productivity and Project Management App",
+    title: "DevPilot — Personal Productivity and Project Management App",
 
-  description:
-    "An independent software project exploring how personal productivity, task management and project planning can come together in a focused digital workspace.",
+    description:
+      "An independent software project exploring how personal productivity, task management and project planning can come together in a focused digital workspace.",
 
-  longDescription:
-    "DevPilot is a personal productivity and project management application built to help organize projects, tasks, daily plans and ongoing work in one place. The project explores responsive UI/UX, cloud-backed data persistence, authentication and a practical workflow for managing multiple projects without unnecessary complexity. Built independently as a personal-first product, DevPilot is designed to evolve into a reliable productivity platform.",
+    longDescription:
+      "DevPilot is a personal productivity and project management application built to help organize projects, tasks, daily plans and ongoing work in one place. The project explores responsive UI/UX, cloud-backed data persistence, authentication and a practical workflow for managing multiple projects without unnecessary complexity. Built independently as a personal-first product, DevPilot is designed to evolve into a reliable productivity platform.",
 
-  imageUrl: "/devpilot/cover_landscape.png",
+    imageUrl: "/devpilot/cover_landscape.png",
 
-  screenshots: [
-    "/devpilot/cover_light.png",
-    "/devpilot/cover_dark.png",
-  ],
+    screenshots: ["/devpilot/cover_light.png", "/devpilot/cover_dark.png"],
 
-  tags: [
-    "Next.js",
-    "TypeScript",
-    "Supabase",
-    "PostgreSQL",
-    "UI/UX",
-    "Productivity",
-    "PWA",
-  ],
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "PostgreSQL",
+      "UI/UX",
+      "Productivity",
+      "PWA",
+    ],
 
-  caseStudyUrl: "/devpilot",
-},
+    caseStudyUrl: "/devpilot",
+  },
   {
     slug: "clarity-solutions-digital-experience-concept",
     title: "Clarity Solutions — Digital Experience Concept",
@@ -327,16 +324,16 @@ The project showcases scalable React architecture, reusable components, configur
     longDescription:
       "FinTrack AI is an intelligent personal finance application designed to help you take full control of your money. It leverages Google's Gemini model to provide smart insights, automated expense tracking via receipt scanning, and personalized financial advice from a chat-based assistant.",
     // To use your own image, place it in `public/` and update the path here, e.g., "/fintrack-ai.png"
-    imageUrl: "/fin-app.png",
+    imageUrl: "/finai/finai_landscape.png",
     screenshots: [
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/fin-add.png",
+      "/finai/dashboard.png",
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/fin-ai.png",
+      "/finai/accounts.png",
       // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/fin-filled.png",
-      "/fin-expe.png",
-      "/fin-budget.png",
+      "/finai/dark.png",
+      "/finai/stock.png",
+      "/finai/finai.png",
     ],
     tags: ["Next.js", "AI", "TypeScript", "Finance"],
   },
@@ -1326,24 +1323,24 @@ And all of these records contribute to the bigger picture of how the farm is per
 That is what makes Farmora one of the most interesting applications I have worked on.
 `,
   },
-{
-  slug: "building-devpilot-personal-productivity-and-project-management-app",
+  {
+    slug: "building-devpilot-personal-productivity-and-project-management-app",
 
-  title:
-    "Building DevPilot: A Personal Productivity and Project Management App",
+    title:
+      "Building DevPilot: A Personal Productivity and Project Management App",
 
-  date: "2026-10-20",
+    date: "2026-10-20",
 
-  excerpt:
-    "How I built DevPilot to bring projects, tasks, daily planning and productivity workflows into one cloud-backed workspace using Next.js, TypeScript and Supabase.",
+    excerpt:
+      "How I built DevPilot to bring projects, tasks, daily planning and productivity workflows into one cloud-backed workspace using Next.js, TypeScript and Supabase.",
 
-  author: "Magati Joel",
+    author: "Magati Joel",
 
-  authorImage: "/profile.png",
+    authorImage: "/profile.png",
 
-  imageUrl: "/devpilot/cover_landscape.png",
+    imageUrl: "/devpilot/cover_landscape.png",
 
-  content: `
+    content: `
 # Why I Built DevPilot
 
 Working on multiple software projects at the same time creates a different kind of challenge.
@@ -1589,7 +1586,7 @@ A useful productivity tool needs to help people decide what matters, preserve th
 
 That is the direction I want to take DevPilot: a focused, dependable workspace that helps turn a growing list of responsibilities into clear, manageable action.
 `,
-},
+  },
 
   {
     slug: "building-a-reusable-payment-engine-for-multiple-saas-products",
@@ -2317,23 +2314,23 @@ The challenge is no longer simply building an invoice screen. It is building the
     imageUrl: "/invoice-easy/cover_landscape.jpg",
   },
   {
-  slug: "redesigning-kanyi-j-company-advocates-website",
+    slug: "redesigning-kanyi-j-company-advocates-website",
 
-  title:
-    "Redesigning Kanyi J & Company Advocates: A Modern Digital Presence for a Law Firm",
+    title:
+      "Redesigning Kanyi J & Company Advocates: A Modern Digital Presence for a Law Firm",
 
-  date: "2026-10-20",
+    date: "2026-10-20",
 
-  excerpt:
-    "How I approached the redesign of Kanyi J & Company Advocates' website to create a more professional, accessible and cohesive digital presence for a legal practice.",
+    excerpt:
+      "How I approached the redesign of Kanyi J & Company Advocates' website to create a more professional, accessible and cohesive digital presence for a legal practice.",
 
-  author: "Magati Joel",
+    author: "Magati Joel",
 
-  authorImage: "/profile.png",
+    authorImage: "/profile.png",
 
-  imageUrl: "/kanyi-advocates/cover_landscape.png",
+    imageUrl: "/kanyi-advocates/cover_landscape.png",
 
-  content: `
+    content: `
 # Redesigning Kanyi J & Company Advocates
 
 A professional website is an important part of how a law firm presents itself to prospective clients, existing clients and the wider business community.
@@ -2507,25 +2504,25 @@ The project reflects my broader approach to web development: understand the purp
 
 A website should not simply look modern. It should help the organization communicate more effectively with the people it serves.
 `,
-},
+  },
   {
-  slug: "building-adoyo-j-company-advocates-digital-presence",
+    slug: "building-adoyo-j-company-advocates-digital-presence",
 
-  title:
-    "Building Adoyo J & Company Advocates' Digital Presence: Website, Business Email and Brand Assets",
+    title:
+      "Building Adoyo J & Company Advocates' Digital Presence: Website, Business Email and Brand Assets",
 
-  date: "2026-10-20",
+    date: "2026-10-20",
 
-  excerpt:
-    "A complete digital presence project for Adoyo J & Company Advocates, combining website development, professional email setup and essential digital branding materials for a consistent business identity.",
+    excerpt:
+      "A complete digital presence project for Adoyo J & Company Advocates, combining website development, professional email setup and essential digital branding materials for a consistent business identity.",
 
-  author: "Magati Joel",
+    author: "Magati Joel",
 
-  authorImage: "/profile.png",
+    authorImage: "/profile.png",
 
-  imageUrl: "/adoyo-advocates/cover_landscape.png",
+    imageUrl: "/adoyo-advocates/cover_landscape.png",
 
-  content: `
+    content: `
 # Building Adoyo J & Company Advocates' Digital Presence
 
 For a professional services firm, establishing a digital presence involves more than launching a website.
@@ -2796,7 +2793,7 @@ When these components are designed and configured with consistency in mind, they
 
 For me, the project was an opportunity to apply a broader approach to digital development—one that combines design, implementation, communication infrastructure and practical business needs.
 `,
-},
+  },
   {
     slug: "designing-clarity-solutions-digital-experience-concept",
 
