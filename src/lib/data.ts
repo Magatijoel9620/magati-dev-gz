@@ -61,11 +61,13 @@ The application is built with Flutter and Supabase, combining a modern cross-pla
     screenshots: [
       "/projects/landlord-ledger/dashboard.jpg",
       "/projects/landlord-ledger/dashboard.png",
+      "/projects/landlord-ledger/listings.png",
       "/projects/landlord-ledger/dashboard2.png",
       "/projects/landlord-ledger/properties.jpg",
       "/projects/landlord-ledger/payments.png",
       "/projects/landlord-ledger/arrears.jpg",
       "/projects/landlord-ledger/analytics.png",
+      "/projects/landlord-ledger/analytics2.png",
       "/projects/landlord-ledger/reports.png",
     ],
 
