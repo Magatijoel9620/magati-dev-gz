@@ -3772,7 +3772,7 @@ The project reinforced an important idea: AI is most valuable when it helps user
 `,
     author: "Magati Joel",
     authorImage: "/author.png",
-    imageUrl: "/fin-filled.png",
+    imageUrl: "/finai/finai_landscape.png",
   },
 
   {
