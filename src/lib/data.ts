@@ -696,7 +696,7 @@ export const posts: Post[] = [
     slug: "building-landlord-ledger-property-management-app",
 
     title:
-      "Building Landlord Ledger: A Property Management App for Modern Landlords",
+      "Landlord Ledger: Bringing Rental Operations Into One Clear Picture",
 
     date: "2026-08-09",
 
@@ -940,7 +940,7 @@ That's what made Landlord Ledger one of the more interesting applications I've w
   {
     slug: "building-farmora-farm-management-app",
 
-    title: "Building Farmora: A Farm Management App for Modern Farm Operations",
+    title: "Farmora: Making Everyday Farm Operations Easier to Manage",
 
     date: "2026-09-17",
 
@@ -1327,7 +1327,7 @@ That is what makes Farmora one of the most interesting applications I have worke
     slug: "building-devpilot-personal-productivity-and-project-management-app",
 
     title:
-      "Building DevPilot: A Personal Productivity and Project Management App",
+      "DevPilot: Turning a Busy Workload Into a Clear Plan",
 
     date: "2026-10-20",
 
@@ -1591,7 +1591,7 @@ That is the direction I want to take DevPilot: a focused, dependable workspace t
   {
     slug: "building-a-reusable-payment-engine-for-multiple-saas-products",
 
-    title: "Building a Reusable Payment Engine for Multiple SaaS Products",
+    title: "One Payment Backbone, Multiple SaaS Products: Inside My Payment Engine",
 
     date: "2026-10-04",
 
@@ -1880,7 +1880,7 @@ The next step is continuing to improve provider resilience, reconciliation, obse
   },
   {
     slug: "building-a-cross-platform-invoice-app-with-flutter",
-    title: "Building a Cross-Platform Invoice App with Flutter",
+    title: "InvoiceEasy: A Smarter Way to Create and Manage Invoices",
     date: "2026-09-14",
     excerpt:
       "How I evolved InvoiceEasy from a lightweight local invoice generator into an offline-first, cloud-enabled business invoicing platform built with Flutter, Supabase, and a modern cross-platform architecture.",
@@ -2317,7 +2317,7 @@ The challenge is no longer simply building an invoice screen. It is building the
     slug: "redesigning-kanyi-j-company-advocates-website",
 
     title:
-      "Redesigning Kanyi J & Company Advocates: A Modern Digital Presence for a Law Firm",
+      "Kanyi J & Company Advocates: A More Modern Digital First Impression",
 
     date: "2026-10-20",
 
@@ -2509,7 +2509,7 @@ A website should not simply look modern. It should help the organization communi
     slug: "building-adoyo-j-company-advocates-digital-presence",
 
     title:
-      "Building Adoyo J & Company Advocates' Digital Presence: Website, Business Email and Brand Assets",
+      "Beyond a Website: Giving Adoyo J & Company Advocates a Cohesive Digital Presence",
 
     date: "2026-10-20",
 
@@ -2798,7 +2798,7 @@ For me, the project was an opportunity to apply a broader approach to digital de
     slug: "designing-clarity-solutions-digital-experience-concept",
 
     title:
-      "Designing a Digital Experience for Clarity Solutions: LED, Signage & Visual Technology",
+      "Clarity Solutions: Turning Visual Technology Into a Clear Online Story",
 
     date: "2026-09-01",
 
@@ -3123,7 +3123,7 @@ That was the idea behind the Clarity Solutions concept.
   {
     slug: "building-a-config-driven-multi-industry-website-starter-kit",
     title:
-      "Building a Config-Driven Multi-Industry Website with React and TypeScript",
+      "One Foundation, Many Industries: My Config-Driven Website System",
     date: "2026-07-12",
     excerpt:
       "How I designed one reusable React codebase to power business, law, clinic, school, restaurant, hotel, construction, real-estate, and eCommerce websites.",
@@ -3259,7 +3259,7 @@ I am no longer only building websites. I am building a system that makes future 
   {
     slug: "building-a-config-driven-logistics-website-starter-kit",
 
-    title: "Building a Logistics Website",
+    title: "A Logistics Website Built Around the Way Freight Businesses Work",
 
     date: "2026-08-05",
 
@@ -3453,7 +3453,7 @@ The goal isn't just to build attractive websites—it's to create scalable found
 
   {
     slug: "automating-data-analysis-with-google-apps-script",
-    title: "Automating Data Analysis with Google Apps Script",
+    title: "From Repetitive Spreadsheets to Faster Insights with Google Apps Script",
     date: "2024-08-15",
     excerpt:
       "Learn how a powerful Google Apps Script can transform raw Google Form data into organized, chart-ready summaries automatically.",
@@ -3563,7 +3563,7 @@ Sometimes the best software solution is not a completely new platform. It is a t
 
   {
     slug: "building-a-church-website-with-django",
-    title: "Building a Community Hub: A Church Website with Django",
+    title: "A Church Website That Brings Community and Information Together",
     date: "2024-08-08",
     excerpt:
       "Discover how to build a feature-rich church website from the ground up using the powerful Django framework, covering everything from blogs to event management.",
@@ -3663,7 +3663,7 @@ A successful community website should not require a developer for every announce
 
   {
     slug: "building-fintrack-ai",
-    title: "Building FinTrack AI: An Intelligent Finance Tracker with Next.js",
+    title: "FinTrack AI: Making Personal Finance Easier to Understand",
     date: "2024-08-05",
     excerpt:
       "A deep dive into creating FinTrack AI, a personal finance app that uses AI for receipt scanning and offers personalized financial advice.",
@@ -3777,7 +3777,7 @@ The project reinforced an important idea: AI is most valuable when it helps user
 
   {
     slug: "building-an-expense-tracker-with-flutter",
-    title: "Building an Expense Tracker with Flutter and Provider",
+    title: "Keeping Spending in Sight: An Expense Tracker Built with Flutter",
     date: "2024-08-02",
     excerpt:
       "A look into how I built a clean, efficient expense tracking app using Flutter, Provider for state management, and fl_chart for data visualization.",
@@ -3874,7 +3874,7 @@ For now, the app succeeds at its original goal: helping users notice where their
 
   {
     slug: "building-a-flutter-food-app-with-firebase",
-    title: "Building a Flutter Food App with Firebase: A Deep Dive",
+    title: "Inside a Flutter Food App: Connecting the Menu, Orders and Firebase",
     date: "2024-07-28",
     excerpt:
       "Explore the architecture and key features of the Foodie App, a real-time mobile ordering application built with Flutter and Firebase.",
@@ -3972,7 +3972,7 @@ The project reinforced a simple principle: every second and every tap matters wh
 
   {
     slug: "developing-a-booking-app-with-nextjs",
-    title: "Developing a Full-Stack Booking App with Next.js and ShadCN UI",
+    title: "A Booking Experience That Feels Simple from First Click to Confirmation",
     date: "2024-07-25",
     excerpt:
       "An overview of building StayZen, a feature-rich accommodation booking platform with a separate admin dashboard.",
@@ -4080,7 +4080,7 @@ The project gave me a deeper appreciation for the amount of logic hidden behind 
 
   {
     slug: "building-an-e-commerce-platform-with-nextjs",
-    title: "Building a Full-Stack E-Commerce Platform with Next.js",
+    title: "From Product Browsing to Checkout: An E-Commerce Platform with Next.js",
     date: "2024-07-22",
     excerpt:
       "A practical look at creating a modern online store with product management, authentication, payments, and an administrative dashboard.",
@@ -4198,7 +4198,7 @@ The project showed me that the best e-commerce experience is built when complex 
 
   {
     slug: "leveraging-ai-for-travel-planning",
-    title: "Leveraging Generative AI for Personalized Travel Itineraries",
+    title: "Planning the Journey with AI: A More Personal Travel Experience",
     date: "2024-07-10",
     excerpt:
       "How I built an AI-powered travel planner that creates custom day-by-day itineraries in seconds.",
@@ -4307,7 +4307,7 @@ The project demonstrated how AI can make complex planning feel lighter while sti
   {
     slug: "designing-my-personal-portfolio",
     title:
-      "How I Designed and Built My Personal Portfolio with Next.js and ShadCN UI",
+      "A Portfolio That Tells the Story Behind the Work",
     date: "2024-06-18",
     excerpt:
       "A behind-the-scenes look at creating Magati.dev, from visual direction and project presentation to deployment and AI integration.",
