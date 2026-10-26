@@ -180,7 +180,7 @@ The application is built with Flutter and Supabase, combining a modern responsiv
       "Productivity",
       "PWA",
     ],
-
+     liveUrl: "https://devpilot.hempongroup.co.ke",
     caseStudyUrl: "/devpilot",
   },
   {
@@ -315,6 +315,7 @@ The project showcases scalable React architecture, reusable components, configur
       "/i-gs.jpg",
     ],
     tags: ["Google Apps Script", "JavaScript", "Automation", "Data Analysis"],
+    
   },
   {
     slug: "fintrack-ai",
@@ -336,6 +337,8 @@ The project showcases scalable React architecture, reusable components, configur
       "/finai/finai.png",
     ],
     tags: ["Next.js", "AI", "TypeScript", "Finance"],
+    
+     liveUrl: "https://finai.hempongroup.co.ke",
   },
 
   {
@@ -3663,7 +3666,7 @@ A successful community website should not require a developer for every announce
 
   {
     slug: "building-fintrack-ai",
-    title: "FinTrack AI: Making Personal Finance Easier to Understand",
+    title: "FinTrack AI (FINAI): Making Personal Finance Easier to Understand",
     date: "2024-08-05",
     excerpt:
       "A deep dive into creating FinTrack AI, a personal finance app that uses AI for receipt scanning and offers personalized financial advice.",
