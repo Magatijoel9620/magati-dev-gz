@@ -190,7 +190,7 @@ The application is built with Flutter and Supabase, combining a modern responsiv
       "An unofficial creative concept exploring how Clarity Solutions could present its LED, digital signage and AV capabilities through a modern digital experience.",
     longDescription:
       "This concept project brings together web design, UI/UX, graphic design and digital-signage direction. It was created independently as part of an application for the Website & Graphic Designer position and is not commissioned work or an official Clarity Solutions design.",
-    imageUrl: "/placeholder.png",
+    imageUrl: "/clarity/clarity.png",
     screenshots: [],
     tags: [
       "UI/UX",
