@@ -25,12 +25,14 @@ export default function AppPage({ app }: { app: AppDefinition }) {
               {app.description}
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href={`/${app.slug}/download`}
-                className="rounded-full bg-[#f1f2ed] px-6 py-3 text-sm font-medium text-black"
-              >
-                Download ↗
-              </Link>
+              {app.downloadUrl && (
+                <Link
+                  href={`/${app.slug}/download`}
+                  className="rounded-full bg-[#f1f2ed] px-6 py-3 text-sm font-medium text-black"
+                >
+                  Download ↗
+                </Link>
+              )}
               <Link
                 href={app.guideUrl}
                 className="rounded-full border border-white/15 px-6 py-3 text-sm text-white/70 hover:border-white/30 hover:text-white"
@@ -90,16 +92,38 @@ export default function AppPage({ app }: { app: AppDefinition }) {
 
         <section className="mt-20 grid gap-5 md:grid-cols-3">
           <div className="rounded-[1.5rem] border border-white/10 bg-[#101213] p-6">
-            <p className="eyebrow">Get the app</p>
+            <p className="eyebrow">{app.downloadUrl ? "Get the app" : "Explore"}</p>
             <h2 className="mt-3 text-xl font-medium">
-              Download the current build.
+              {app.downloadUrl
+                ? "Download the current build."
+                : app.webUrl
+                  ? "Open the web experience."
+                  : "Explore the website design."}
             </h2>
-            <Link
-              href={`/${app.slug}/download`}
-              className="mt-6 inline-flex rounded-full bg-white px-5 py-2.5 text-sm text-black"
-            >
-              Download page ↗
-            </Link>
+            {app.downloadUrl ? (
+              <Link
+                href={`/${app.slug}/download`}
+                className="mt-6 inline-flex rounded-full bg-white px-5 py-2.5 text-sm text-black"
+              >
+                Download page ↗
+              </Link>
+            ) : app.webUrl ? (
+              <a
+                href={app.webUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-6 inline-flex rounded-full bg-white px-5 py-2.5 text-sm text-black"
+              >
+                Open web app ↗
+              </a>
+            ) : (
+              <Link
+                href={app.guideUrl}
+                className="mt-6 inline-flex rounded-full bg-white px-5 py-2.5 text-sm text-black"
+              >
+                Read design guide ↗
+              </Link>
+            )}
           </div>
           <div className="rounded-[1.5rem] border border-white/10 bg-[#101213] p-6">
             <p className="eyebrow">Learn</p>

@@ -156,6 +156,23 @@ The application is built with Flutter and Supabase, combining a modern responsiv
     //caseStudyUrl: "/invoice-easy",
     liveUrl: "/invoice-easy",
   },
+ {
+slug: "civicforge",
+title: "CivicForge — Political Campaign Website Design",
+description:
+"A responsive website design concept for political candidates to introduce themselves, communicate their priorities, and share campaign updates.",
+longDescription:
+ "CivicForge is a web design concept for political campaigns. It focuses on a professional candidate introduction, an easy-to-follow presentation of campaign priorities, public news and announcements, and clear ways for visitors to make contact or follow campaign channels. The responsive design keeps this information accessible on desktop and mobile without presenting the concept as a campaign-management application.",
+  imageUrl: "/election/election_landscape.png",
+  screenshots: ["/election/landscape.png"],
+  tags: [
+    "Web Design",
+    "Political Campaigns",
+    "Responsive Design",
+  ],
+  // Add the live URL when the project is ready to showcase.
+  liveUrl: "",
+},
   {
     slug: "building-devpilot-personal-productivity-app",
 
@@ -341,30 +358,34 @@ The project showcases scalable React architecture, reusable components, configur
      liveUrl: "https://finai.hempongroup.co.ke",
   },
 
-  {
-    slug: "church-website-django",
-    title: "Church Website with Django",
-    description:
-      "A fully functional church website built using Django, featuring a blog, event management, and member engagement tools.",
-    longDescription:
-      "This project is a comprehensive church website built with the Django framework. It includes key features like a blog system for sermons and articles, an event manager for church activities, and a secure user authentication system for administrators. The frontend is built with HTML, CSS, and Bootstrap for a responsive design that works across all devices. The powerful Django Admin panel allows for easy content management.",
-    // To use your own image, place it in `public/` and update the path here, e.g., "/church-website.png"
-    imageUrl: "/church/hero.png",
-    screenshots: [
-      // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/church/intro.png",
-      "/church/services.png",
-      // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/church/team.png",
-      "/church/portfolio.png",
-      "/church/contact.png",
-      "/church/blog.png",
-      // To use your own image, place it in `public/` and update the path here, e.g., "/screenshot.png"
-      "/church/admin.png",
-    ],
-    tags: ["Django", "Python", "Bootstrap", "Web Development"],
-    liveUrl: "https://church-blog-1fse.onrender.com/",
-  },
+ {
+  slug: "church-website-django",
+  title: "Church Blog Revival — Modern Church Website",
+  description:
+    "A modern, responsive church website combining a Next.js frontend with Django-powered content management, a dedicated blog, and an administrator-friendly publishing workflow.",
+  longDescription:
+    "Church Blog Revival is a church-focused web project designed to provide a welcoming digital home for church information, ministry activities, news, and articles. The public-facing website is built with Next.js, featuring responsive layouts, consistent visual styling, and dedicated blog listing and article pages. Django powers the backend and content management, allowing administrators to manage and publish blog posts through the Django Admin interface. The project emphasizes maintainable architecture, a cohesive visual identity, and an accessible experience across desktop and mobile devices.",
+  imageUrl: "/church/hero.png",
+  screenshots: [
+    "/church/intro.png",
+    "/church/services.png",
+    "/church/team.png",
+    "/church/portfolio.png",
+    "/church/contact.png",
+    "/church/blog.png",
+    "/church/admin.png",
+  ],
+  tags: [
+    "Next.js",
+    "Django",
+    "Python",
+    "REST API",
+    "Responsive Design",
+    "Web Development",
+  ],
+  // Add the production URL after deployment.
+  liveUrl: "",
+},
   {
     slug: "stayzen-accommodation-booking-app",
     title: "StayZen - Accommodation Booking App",
@@ -1590,6 +1611,286 @@ A useful productivity tool needs to help people decide what matters, preserve th
 That is the direction I want to take DevPilot: a focused, dependable workspace that helps turn a growing list of responsibilities into clear, manageable action.
 `,
   },
+  {
+  slug: "building-civicforge-political-campaign-platform",
+  title:
+    "CivicForge: Building a Digital Platform for Modern Political Campaigns",
+
+  date: "2026-10-27",
+
+  excerpt:
+    "How I'm building CivicForge to help political candidates establish their online presence, communicate their vision, and manage campaign websites through one centralized platform.",
+
+  author: "Magati Joel",
+
+  authorImage: "/profile.png",
+
+  imageUrl: "/election/election_landscape.png",
+
+  content: `
+# Why I Built CivicForge
+
+A political campaign needs more than posters, social media updates and occasional public announcements.
+
+Candidates need a place where people can learn about them, understand their priorities, explore their public positions and find reliable ways to get in touch.
+
+At the same time, maintaining a campaign website should not require a candidate or their team to depend on a developer for every small content update.
+
+I wanted to build a platform that brings these needs together: a professional public-facing website and a practical workspace for managing its content.
+
+That idea became **CivicForge**.
+
+CivicForge is a campaign website and management platform designed to give candidates a structured digital presence while making it easier to manage campaign information from a centralized workspace.
+
+---
+
+# The Problem
+
+Every campaign has information that needs to be communicated clearly.
+
+A candidate may need to introduce their background, explain their vision, present priorities, publish updates and provide contact information. These details can become scattered across different channels, making it harder for people to find the information they need in one place.
+
+There is also a practical challenge behind the scenes.
+
+A website needs to remain current as campaign information changes. Content must be organized, administrative access must be controlled, and the public experience must work well on phones as well as desktop computers.
+
+I wanted to address a few practical questions:
+
+- How can candidates establish a professional online presence?
+- How can visitors easily explore a candidate's background and priorities?
+- How can campaign teams update website content without rebuilding the site?
+- How can each candidate manage their own campaign workspace?
+- How can the public website and administrative experience work together?
+- How can the platform support multiple campaigns without requiring a separate application for every client?
+
+CivicForge is being developed around these challenges.
+
+---
+
+# The Goal
+
+The goal is to create a reusable campaign platform rather than a collection of unrelated websites.
+
+Each candidate should have a public-facing website that reflects their identity, communicates their information and provides a clear experience for visitors.
+
+Behind that website, an authenticated administrative workspace should make campaign content easier to manage.
+
+The main objectives are to:
+
+- Provide a professional public website for each candidate
+- Present candidate profiles, priorities, positions and updates
+- Make campaign information easy to navigate
+- Support responsive experiences across mobile and desktop
+- Allow authorized users to manage campaign content
+- Give each campaign its own workspace and data boundaries
+- Simplify campaign creation and onboarding
+- Establish a foundation that can grow as platform requirements evolve
+
+The broader idea is to make campaign websites easier to provision, maintain and manage through one reusable platform.
+
+---
+
+# The Public Candidate Website
+
+The public website is the first experience visitors encounter.
+
+It needs to communicate essential information clearly without making people work through complicated navigation.
+
+The website is structured around the information people may want to explore, including:
+
+- **Candidate profile:** Background, biography and public introduction
+- **Vision and priorities:** The candidate's stated goals and areas of focus
+- **Positions:** Information explaining the candidate's stated positions on relevant issues
+- **News and updates:** Space for campaign announcements and published content
+- **Contact information:** Ways to reach the campaign through its published channels
+- **Social links:** Connections to the candidate's official public profiles
+
+The intention is to provide a coherent digital home for campaign information rather than relying entirely on posts distributed across different platforms.
+
+The presentation also needs to remain readable and usable on smaller screens, where many visitors may first encounter the website.
+
+---
+
+# Campaign Priorities and Public Information
+
+A campaign website should do more than display a candidate's name and photograph.
+
+It should give visitors a structured way to explore the information the candidate chooses to publish.
+
+CivicForge treats campaign priorities and public positions as distinct areas of the website. This makes it possible to organize information into meaningful sections rather than presenting everything as one long page.
+
+Clear navigation helps visitors move between a candidate's background, priorities, updates and contact information.
+
+The platform is intended to support the presentation of campaign information, while leaving visitors free to evaluate the published positions and decide which issues matter to them.
+
+---
+
+# The Campaign Management Workspace
+
+A public website is only one part of the product.
+
+Campaign information changes, and someone needs to maintain it.
+
+CivicForge includes an administrative experience intended to let authorized campaign users manage their website content through a dedicated workspace.
+
+The management experience is being built around activities such as:
+
+- Maintaining candidate and campaign information
+- Updating campaign priorities and positions
+- Managing published news and updates
+- Organizing public-facing content
+- Reviewing campaign website information
+- Managing access for authorized team members
+
+The objective is to reduce dependence on manual developer intervention for routine content changes.
+
+Instead of treating each website as a static project, the platform is designed around an ongoing relationship between the public website and the people responsible for maintaining it.
+
+---
+
+# A Reusable Multi-Campaign Platform
+
+One of the central architectural decisions is to build CivicForge as a shared platform.
+
+Creating a separate application for every candidate would introduce repeated setup and maintenance work. A reusable system provides a different approach.
+
+The platform is being designed so that individual campaigns can have their own identity, configuration, content and authorized users while sharing a common application foundation.
+
+This approach supports a more consistent way to provision and maintain campaign websites as the number of clients grows.
+
+The intended benefits include:
+
+- A repeatable campaign creation process
+- Separate workspaces for individual campaigns
+- Campaign-specific public website configurations
+- Clear ownership and membership relationships
+- Consistent application updates across campaigns
+- A foundation for managing client accounts centrally
+
+The objective is to make the platform reusable without making the public websites feel identical.
+
+---
+
+# Onboarding and Account Management
+
+A reusable platform also needs a straightforward onboarding experience.
+
+Campaign creation should be a guided process rather than a collection of manual database changes and developer-managed setup steps.
+
+CivicForge is being developed toward a workflow in which a user can register, authenticate, create a campaign workspace and receive the appropriate owner access.
+
+Account management also needs to support common tasks such as email verification, password recovery and authorized team access.
+
+Campaign ownership and membership are important parts of this design. The platform needs to distinguish between the person who owns a campaign, people invited to help manage it and administrators responsible for platform-level operations.
+
+The longer-term aim is to make campaign provisioning more systematic and reduce the need for manual setup as new clients join.
+
+---
+
+# Security and Data Ownership
+
+When multiple clients use the same platform, separating their information becomes essential.
+
+A campaign management application should not rely solely on hiding information in the interface. Access needs to be enforced by the underlying data and application authorization rules.
+
+CivicForge is being developed with campaign ownership, membership and data isolation as core design considerations.
+
+The intended model ensures that authorized users can manage the campaigns they belong to, while unrelated campaigns remain outside their access.
+
+Platform-level administration is a separate responsibility from campaign ownership. Administrative tools should support client and account management without automatically granting unrestricted access to private campaign content.
+
+These principles are important to the product's long-term reliability as it develops beyond an initial MVP.
+
+---
+
+# Designing for Mobile and Desktop
+
+Campaign websites need to work wherever visitors encounter them.
+
+A website that looks polished on a large monitor but becomes difficult to navigate on a phone creates an unnecessary barrier to accessing information.
+
+CivicForge therefore treats responsive design as a core requirement.
+
+The public experience needs readable typography, clear navigation, accessible content sections and layouts that adapt to different screen sizes.
+
+The administrative workspace has a related challenge: campaign managers should be able to review information and make routine updates without being restricted to a desktop computer.
+
+The broader design principle is simple: make campaign information accessible and campaign management practical across devices.
+
+---
+
+# From Prototype to a Reusable Product
+
+Building the initial experience establishes the visual direction and the main public and administrative workflows.
+
+However, a working prototype is only the beginning.
+
+Turning CivicForge into a dependable platform involves validating the entire campaign lifecycle, from registration and campaign creation to content management, access control and public presentation.
+
+It also means ensuring that a new client receives an independent campaign workspace without relying on manual setup for every account.
+
+The next stages of development focus on strengthening onboarding, enforcing ownership and access boundaries, improving administrative workflows and refining the experience across devices.
+
+These improvements matter because the product is intended to serve an ongoing operational need, not simply demonstrate a candidate website.
+
+---
+
+# What I'm Learning
+
+CivicForge brings together several important areas of product development.
+
+The project provides an opportunity to explore:
+
+- Turning campaign website requirements into reusable product features
+- Designing public-facing websites and administrative dashboards
+- Structuring a multi-tenant application
+- Modeling campaign ownership and team membership
+- Building guided onboarding workflows
+- Separating public content from authenticated management operations
+- Thinking about authorization and data isolation
+- Designing responsive experiences for different users and devices
+- Balancing client-specific presentation with a shared application foundation
+
+One of the central lessons is that a reusable platform requires more than a common design.
+
+It needs a clear model for ownership, content management, onboarding and the relationship between each client's website and the underlying application.
+
+---
+
+# What's Next?
+
+CivicForge is being developed toward a more complete campaign management experience.
+
+Potential areas of continued development include:
+
+- Completing and refining the campaign creation wizard
+- Improving campaign content management
+- Expanding authorized team collaboration
+- Refining the platform administration dashboard
+- Improving mobile navigation and editing workflows
+- Strengthening validation and data isolation
+- Adding clearer campaign setup and publishing guidance
+- Improving the consistency of public website configurations
+- Developing a smoother process for onboarding new clients
+
+The longer-term vision is to provide a structured way for candidates to establish and maintain their digital presence without treating every campaign website as an entirely separate software project.
+
+---
+
+# Final Thoughts
+
+CivicForge started with a practical question:
+
+**Can campaign websites be easier to launch, manage and maintain through one reusable platform?**
+
+Building the platform has highlighted that the challenge goes beyond designing a polished homepage.
+
+A useful campaign platform needs to bring together public communication, content management, account ownership, security and a straightforward experience for the people using it.
+
+That is the direction I want to take CivicForge: a reusable digital platform that helps candidates present their public information and manage their campaign websites through a more structured, accessible workflow.
+`,
+},
+
 
   {
     slug: "building-a-reusable-payment-engine-for-multiple-saas-products",
@@ -3564,106 +3865,123 @@ Sometimes the best software solution is not a completely new platform. It is a t
     imageUrl: "/hero-gs.png",
   },
 
-  {
-    slug: "building-a-church-website-with-django",
-    title: "A Church Website That Brings Community and Information Together",
-    date: "2024-08-08",
-    excerpt:
-      "Discover how to build a feature-rich church website from the ground up using the powerful Django framework, covering everything from blogs to event management.",
-    content: `
+{
+  slug: "building-a-church-website-with-django",
+  title: "Building a Modern Church Website with Next.js and Django",
+  date: "2026-10-27",
+  excerpt:
+    "How I developed a modern digital home for a church community, combining a responsive Next.js frontend with Django-powered content management for news, ministry updates, and church stories.",
+  content: `
 ## Why This Project Exists
 
-A church website should be more than a page containing a location and Sunday service times.
+A church website should be more than an online noticeboard. It can become a digital home for sermons, announcements, ministry activities, church news, and community stories.
 
-It can become a digital home for sermons, announcements, events, ministries, media, and community information.
+For this project, I wanted to create a modern web experience for Coast Central Church (CCC) that serves visitors while giving church administrators a practical way to manage content.
 
-The challenge is that many church teams need to update their content regularly but may not have a developer available every time something changes.
+The goal was to balance visual design, usability, maintainability, and a content workflow that does not require a developer for every update.
 
-I wanted to build a website that looked modern to visitors while remaining manageable for non-technical administrators.
+## The Challenge
 
-## The Problem
+Church communities publish information that changes frequently. Service details, ministry updates, upcoming activities, and blog articles all need to remain accessible and current.
 
-A static website becomes outdated quickly when an organization publishes frequent announcements and events.
+A website that depends on editing source code for every announcement quickly becomes difficult to maintain.
 
-Church administrators need to update:
+The project therefore needed:
 
-- Sermons
-- News
-- Upcoming events
-- Ministry information
-- Media content
-- Service schedules
-- Contact details
-
-Editing source code for every update was not practical.
-
-The website needed a content-management workflow, secure administration, responsive pages, and a structure that could grow as the organization added more content.
+- A modern, responsive public website
+- A dedicated blog and article-reading experience
+- Centralized content management
+- An administrator-friendly publishing workflow
+- A consistent visual identity across pages
+- A foundation that can support future features
 
 ## My Approach
 
-I selected Django because it provides a strong foundation for content-driven websites.
+I structured the application around two complementary technologies: Next.js and Django.
 
-I created separate models for blog posts, sermons, events, ministries, and media content. These models are managed through the Django Admin dashboard, allowing authorized users to publish and update information without touching the codebase.
+### Next.js for the Public Experience
 
-The frontend uses reusable Django templates so shared elements such as the header, footer, navigation, and page layout remain consistent.
+Next.js powers the public-facing website, including the homepage, church information sections, and dedicated blog pages.
 
-I also created dedicated sections for youth, men, children, sermons, news, and upcoming activities.
+I focused on a consistent design system, responsive layouts, clear navigation, and reusable interface elements. The blog follows the same visual language as the rest of the website, helping the experience feel cohesive rather than like a separate application.
 
-The homepage acts as a summary of the entire community, while individual pages provide more detailed content.
+### Django for Content Management
 
-## Interesting Challenges
+Django provides the backend and content-management capabilities.
 
-Content modeling required careful planning.
+Its administrative interface allows authorized users to manage and publish blog content without editing frontend source code. This separates the day-to-day publishing workflow from the public presentation layer.
 
-A sermon is not exactly the same as a blog post. It may need a speaker, scripture reference, audio link, video link, date, series name, and downloadable notes.
+The Next.js frontend retrieves content through the Django API, allowing the public website and the administration workflow to evolve independently.
 
-Events also needed dates, times, locations, descriptions, and status handling for past and upcoming activities.
+## Designing the Church Blog
 
-Deployment introduced another set of challenges. Static files worked locally but initially failed in production. Configuring \`ALLOWED_HOSTS\`, WhiteNoise, static directories, and the deployment environment was essential.
+The blog is an important part of the platform because it gives the church a place to share stories, announcements, reflections, and ministry updates beyond the homepage.
 
-I also had to balance a visually rich homepage with good performance, especially when including carousels, images, and embedded YouTube videos.
+I created a dedicated blog listing page and individual article pages, with links connecting homepage content to the full articles.
 
-## The Tech Stack
+The aim is to make content easy to discover, comfortable to read, and consistent with the wider church website.
 
-The project uses:
+## Design and User Experience
 
-- Python
-- Django
-- Django Admin
-- HTML
-- CSS
-- Bootstrap
-- JavaScript
-- WhiteNoise
-- Render
+I selected a nature-inspired colour palette built around evergreen, mint, honeydew, and neutral grey tones. The palette supports a calm, welcoming visual identity while maintaining contrast between content, backgrounds, and calls to action.
 
-Django's built-in authentication and administration tools made it possible to focus on the organization's needs rather than rebuilding common backend functionality.
+The wider design approach prioritizes:
+
+- Mobile-friendly layouts
+- Clear visual hierarchy
+- Consistent typography and spacing
+- Reusable components
+- Recognizable church branding
+- Straightforward navigation between sections
+
+The intention is to create an experience that feels contemporary without distracting from the church's message and community.
+
+## Making Administration More Approachable
+
+The public website is only one part of a successful content platform. The people responsible for updating it also need a usable interface.
+
+I retained Django Admin as the content-management foundation and worked toward a clearer, more approachable administration experience, with improved presentation of content listings, search, filters, and post imagery.
+
+This reflects an important design principle: the administrator is also a user, and their experience directly affects how useful the website becomes over time.
+
+## Architecture and Maintainability
+
+Separating the Next.js frontend from the Django backend establishes a clearer boundary between presentation and content management.
+
+Next.js handles the visitor-facing experience, while Django manages content and administrative workflows. The API connects these responsibilities.
+
+This structure makes it easier to improve the frontend without rebuilding the content-management system, and to extend backend functionality without coupling every change to the public interface.
 
 ## Lessons Learned
 
-A good content-driven website starts with good data models.
+### Architecture should support the people using the product
 
-If the underlying content structure is unclear, both the admin experience and public pages become difficult to maintain.
+Technology choices matter most when they solve real problems. A clear separation between the public website and content administration makes responsibilities easier to understand and maintain.
 
-I also learned that the administrator is just as important a user as the public visitor. A beautiful website becomes less valuable if updating it is frustrating.
+### Content management is part of the user experience
 
-Deployment should also be considered early. Static files, media uploads, environment variables, and database configuration can affect architectural decisions.
+A website can look impressive and still fail if administrators struggle to publish an article or update information. The publishing workflow deserves the same attention as the public interface.
+
+### Design consistency builds trust
+
+A deliberate colour palette, reusable components, and consistent page layouts help the site feel like one coherent product.
+
+### Integration needs to be tested end to end
+
+When a frontend depends on an API, the full publishing journey matters: create a post, publish it in the admin, retrieve it through the API, and display it correctly on the website. Testing this complete workflow is essential before launch.
 
 ## Final Thoughts
 
-This project showed me how a website can support an active community rather than simply advertise an organization.
+The Coast Central Church project represents my approach to building practical, content-driven web applications: combine thoughtful interface design with a maintainable backend and an administration experience that real people can use.
 
-Django provided the reliability and structure needed for publishing content, managing users, and expanding features over time.
+By using Next.js for the public-facing experience and Django for content management, the project has a foundation for a church website that can grow with its community.
 
-The most satisfying part was creating a platform that could continue serving the church after development was complete.
-
-A successful community website should not require a developer for every announcement. It should give the organization the confidence to manage its own digital presence.
+The goal is simple: help the church maintain its digital presence, share its stories, and keep its community informed without needing a developer for every routine update.
 `,
-    author: "Magati Joel",
-    authorImage: "/author.png",
-    imageUrl: "/church/hero.png",
-  },
-
+  author: "Magati Joel",
+  authorImage: "/author.png",
+  imageUrl: "/church/hero.png",
+},
   {
     slug: "building-fintrack-ai",
     title: "FinTrack AI (FINAI): Making Personal Finance Easier to Understand",

@@ -45,7 +45,7 @@ export default function AppsPage() {
                   </p>
                   <div className="mt-6 flex flex-wrap gap-2">
                     <span className="rounded-full bg-white px-3 py-1.5 text-[10px] text-black">
-                      Download
+                      {app.downloadUrl ? "Download" : app.platform}
                     </span>
                     <span className="rounded-full border border-white/10 px-3 py-1.5 text-[10px] text-white/45">
                       Guide
