@@ -77,7 +77,7 @@ export default function AppGuidePage({ app }: { app: AppDefinition }) {
 
         <section className="mt-12 flex flex-wrap gap-3 border-t border-white/10 pt-8">
           {app.downloadUrl && <Link href={`/${app.slug}/download`} className="rounded-full bg-white px-5 py-3 text-sm text-black">Download {app.name} ↗</Link>}
-          {app.webUrl && <a href={app.webUrl} target="_blank" rel="noreferrer" className="rounded-full bg-white px-5 py-3 text-sm text-black">Open {app.name} ↗</a>}
+          {app.webUrl && <a href={app.webUrl} target="_blank" rel="noreferrer" className="rounded-full bg-white px-5 py-3 text-sm text-black">{app.slug === "civicforge" ? "View demo site ↗" : `Open ${app.name} ↗`}</a>}
           <Link href={`/${app.slug}`} className="rounded-full border border-white/15 px-5 py-3 text-sm text-white/70">{app.slug === "civicforge" ? "Design concept" : "Product page"}</Link>
         </section>
       </div>

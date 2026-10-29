@@ -135,12 +135,12 @@ export const apps: AppDefinition[] = [
   {
   slug: "civicforge",
   name: "CivicForge",
-  kicker: "Political campaign web design · Website concept",
+  kicker: "Political campaign web design · Demo site",
   description:
     "A polished, responsive website design concept for political candidates and campaigns to introduce their candidate, communicate their priorities and share campaign updates with the public.",
   image: "/election/election_landscape.png",
-  platform: "Web design",
-  webUrl: "",
+  platform: "Website design demo",
+  webUrl: "https://campaign-demo-ke-ruddy.vercel.app/",
   projectSlug: "civicforge",
   downloadUrl: "",
   guideUrl: "/civicforge/user-guide",

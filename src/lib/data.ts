@@ -133,7 +133,7 @@ The application is built with Flutter and Supabase, combining a modern responsiv
   },
   {
     slug: "flutter-invoice-app",
-    title: "Flutter Invoice App",
+    title: "Invoice App",
     description:
       "A modern, cross-platform Flutter application for managing invoices, with PDF generation and archiving.",
     longDescription:
@@ -170,8 +170,8 @@ longDescription:
     "Political Campaigns",
     "Responsive Design",
   ],
-  // Add the live URL when the project is ready to showcase.
-  liveUrl: "",
+   // Add the live URL when the project is ready to showcase.
+  liveUrl: "https://campaign-demo-ke-ruddy.vercel.app/",
 },
   {
     slug: "building-devpilot-personal-productivity-app",

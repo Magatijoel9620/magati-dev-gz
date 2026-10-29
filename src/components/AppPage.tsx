@@ -46,7 +46,7 @@ export default function AppPage({ app }: { app: AppDefinition }) {
                   rel="noreferrer"
                   className="rounded-full border border-white/15 px-6 py-3 text-sm text-white/70 hover:border-white/30 hover:text-white"
                 >
-                  Open web app ↗
+                  {app.slug === "civicforge" ? "View demo site ↗" : "Open web app ↗"}
                 </a>
               )}
             </div>
@@ -97,7 +97,9 @@ export default function AppPage({ app }: { app: AppDefinition }) {
               {app.downloadUrl
                 ? "Download the current build."
                 : app.webUrl
-                  ? "Open the web experience."
+                  ? app.slug === "civicforge"
+                    ? "Explore the campaign website demo."
+                    : "Open the web experience."
                   : "Explore the website design."}
             </h2>
             {app.downloadUrl ? (
@@ -114,7 +116,7 @@ export default function AppPage({ app }: { app: AppDefinition }) {
                 rel="noreferrer"
                 className="mt-6 inline-flex rounded-full bg-white px-5 py-2.5 text-sm text-black"
               >
-                Open web app ↗
+                {app.slug === "civicforge" ? "View demo site ↗" : "Open web app ↗"}
               </a>
             ) : (
               <Link

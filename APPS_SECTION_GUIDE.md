@@ -16,7 +16,7 @@ Every app entry is defined as an `AppDefinition` object with the following field
 - `version`: release version when available
 - `platform`: platform description, for example Android APK or Web + PWA
 - `downloadUrl`: download route or direct asset URL
-- `webUrl`: optional public web app URL
+- `webUrl`: optional public web app or demo-site URL
 - `projectSlug`: optional project identifier used for project routing
 - `guideUrl`: route to the app user guide page
 - `features`: list of key product capabilities

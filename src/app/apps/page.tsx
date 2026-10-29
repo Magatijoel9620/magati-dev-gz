@@ -53,6 +53,18 @@ export default function AppsPage() {
                   </div>
                 </div>
               </Link>
+              {app.slug === "civicforge" && app.webUrl && (
+                <div className="border-t border-white/10 px-6 py-4">
+                  <a
+                    href={app.webUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-sm text-white/70 hover:text-white"
+                  >
+                    View demo site ↗
+                  </a>
+                </div>
+              )}
             </article>
           ))}
         </div>

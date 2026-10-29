@@ -38,9 +38,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <p>{project.longDescription}</p>
         </div>
         <div className="flex flex-wrap gap-3 lg:justify-end">
-          {project.liveUrl && (
-            <a href={project.liveUrl} target={project.liveUrl.startsWith("/") ? undefined : "_blank"} rel={project.liveUrl.startsWith("/") ? undefined : "noreferrer"} className="inline-flex items-center gap-3 rounded-full bg-[#f1f2ed] px-6 py-3 text-sm font-medium text-black transition hover:-translate-y-0.5">
-              Open project ↗
+          {(project.liveUrl || app?.webUrl) && (
+            <a
+              href={project.liveUrl || app?.webUrl}
+              target={(project.liveUrl || app?.webUrl)?.startsWith("/") ? undefined : "_blank"}
+              rel={(project.liveUrl || app?.webUrl)?.startsWith("/") ? undefined : "noreferrer"}
+              className="inline-flex items-center gap-3 rounded-full bg-[#f1f2ed] px-6 py-3 text-sm font-medium text-black transition hover:-translate-y-0.5"
+            >
+              {app?.slug === "civicforge" ? "View demo site ↗" : "Open project ↗"}
             </a>
           )}
           {app && (

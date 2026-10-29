@@ -14,10 +14,11 @@ const featuredSlugs = [
   "config-driven-logistics-website-starter-kit",
   "fintrack-ai",
   "google-apps-script-automation",
-  "stayzen-accommodation-booking-app",
-  "foodie-app-firebase",
-  "flutter-expense-tracker",
-    "real-time-chat-app",
+  //"stayzen-accommodation-booking-app",
+  "church-website-django",
+  "building-devpilot-personal-productivity-app",
+    "civicforge",
+    "personal-portfolio",
 ];
 
 const featured = featuredSlugs
