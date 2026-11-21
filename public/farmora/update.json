@@ -1,5 +1,5 @@
 {
-  "version": "0.9.3",
-  "downloadUrl": "https://portfolio-mjs.vercel.app/farmora/download",
+  "version": "0.9.4",
+  "downloadUrl": "https://downloads.hempongroup.co.ke/farmora",
   "releaseNotes": "Improved farm dashboard, sales and expense management, responsive layouts, subscription access controls, and general performance improvements."
 }
