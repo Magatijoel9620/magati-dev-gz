@@ -64,6 +64,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <a className="skip-link" href="#main-content">Skip to content</a>
         <Script
           id="hempon-organization-schema"
           type="application/ld+json"
@@ -74,7 +75,9 @@ export default function RootLayout({
         <SmoothScroll />
         <CursorGlow />
         <SiteNav />
-        {children}
+        <div id="main-content" tabIndex={-1}>
+          {children}
+        </div>
       </body>
     </html>
   );
