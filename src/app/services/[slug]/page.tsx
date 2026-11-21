@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const service = getService(slug);
   if (!service) return { title: "Service not found" };
-  return { title: service.title, description: service.short, openGraph: { title: `${service.title} | Hempon.dev`, description: service.short } };
+  return { title: service.title, description: service.short, alternates: { canonical: `/services/${service.slug}` }, openGraph: { title: `HEMPON.DEV | ${service.title}`, description: service.short } };
 }
 
 export default async function ServiceDetailPage({ params }: Props) {

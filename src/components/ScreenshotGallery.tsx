@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
+import { useCallback, useEffect, useState } from "react";
 export default function ScreenshotGallery({
   title,
   screenshots,
@@ -12,15 +12,25 @@ export default function ScreenshotGallery({
 }) {
   const [active, setActive] = useState<number | null>(null);
 
-  const close = () => setActive(null);
-  const previous = () =>
-    setActive((current) =>
-      current === null ? null : (current - 1 + screenshots.length) % screenshots.length,
-    );
-  const next = () =>
-    setActive((current) =>
-      current === null ? null : (current + 1) % screenshots.length,
-    );
+  const close = useCallback(() => setActive(null), []);
+
+  const previous = useCallback(
+    () =>
+      setActive((current) =>
+        current === null
+          ? null
+          : (current - 1 + screenshots.length) % screenshots.length,
+      ),
+    [screenshots.length],
+  );
+
+  const next = useCallback(
+    () =>
+      setActive((current) =>
+        current === null ? null : (current + 1) % screenshots.length,
+      ),
+    [screenshots.length],
+  );
 
   useEffect(() => {
     if (active === null) return;
@@ -35,7 +45,7 @@ export default function ScreenshotGallery({
       document.removeEventListener("keydown", onKey);
       document.body.style.overflow = "";
     };
-  }, [active]);
+ }, [active, close, next, previous]);
 
   return (
     <>
@@ -56,9 +66,12 @@ export default function ScreenshotGallery({
               className="object-cover transition duration-700 group-hover:scale-[1.035]"
             />
             <span className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-black/75 via-black/20 to-transparent p-5 pt-14 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-              <span className="text-xs text-white/80">View full screenshot</span>
+              <span className="text-xs text-white/80">
+                View full screenshot
+              </span>
               <span className="mono text-[9px] text-white/45">
-                {String(index + 1).padStart(2, "0")} / {String(screenshots.length).padStart(2, "0")}
+                {String(index + 1).padStart(2, "0")} /{" "}
+                {String(screenshots.length).padStart(2, "0")}
               </span>
             </span>
           </button>
@@ -134,11 +147,19 @@ export default function ScreenshotGallery({
                   type="button"
                   onClick={() => setActive(index)}
                   className={`relative h-14 w-20 shrink-0 overflow-hidden rounded-lg border transition sm:h-16 sm:w-24 ${
-                    index === active ? "border-white/70" : "border-white/10 opacity-55 hover:opacity-90"
+                    index === active
+                      ? "border-white/70"
+                      : "border-white/10 opacity-55 hover:opacity-90"
                   }`}
                   aria-label={`Show screenshot ${index + 1}`}
                 >
-                  <Image src={src} alt="" fill sizes="96px" className="object-cover" />
+                  <Image
+                    src={src}
+                    alt=""
+                    fill
+                    sizes="96px"
+                    className="object-cover"
+                  />
                 </button>
               ))}
             </div>
