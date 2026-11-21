@@ -4,20 +4,52 @@ import SmoothScroll from "@/components/SmoothScroll";
 import CursorGlow from "@/components/CursorGlow";
 import SiteNav from "@/components/SiteNav";
 
+const siteUrl = "https://portfolio.hempongroup.co.ke";
+const siteDescription =
+  "Hempon Group designs and builds digital products, business systems, websites, mobile applications, automation and AI-powered experiences.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://magati.dev"),
-  title: "Magati.dev — Digital systems, products & experiences",
-  description: "Magati Joel builds useful digital systems: modern websites, business applications, mobile products, automation and AI-powered experiences.",
-  openGraph: { title: "Magati.dev", description: "Useful digital systems, built with intention.", url: "https://magati.dev", siteName: "Magati.dev", type: "website" },
-  twitter: { card: "summary_large_image", title: "Magati.dev", description: "Useful digital systems, built with intention." },
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Hempon.dev — Digital solutions, software & experiences",
+    template: "%s | Hempon.dev",
+  },
+  description: siteDescription,
+  applicationName: "Hempon.dev",
+  openGraph: {
+    title: "Hempon.dev — Digital solutions, software & experiences",
+    description: siteDescription,
+    url: siteUrl,
+    siteName: "Hempon.dev",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hempon.dev — Digital solutions, software & experiences",
+    description: siteDescription,
+  },
   icons: {
-    icon: "/apple-touch-icon.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/logo/logo.png",
+    apple: "/logo/logo_round.png",
   },
 };
 
-export const viewport: Viewport = { themeColor: "#08090a", colorScheme: "dark" };
+export const viewport: Viewport = {
+  themeColor: "#08090a",
+  colorScheme: "dark",
+};
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body><SmoothScroll /><CursorGlow /><SiteNav />{children}</body></html>;
+export default function RootLayout({
+  children,
+}: Readonly<{ children: React.ReactNode }>) {
+  return (
+    <html lang="en">
+      <body>
+        <SmoothScroll />
+        <CursorGlow />
+        <SiteNav />
+        {children}
+      </body>
+    </html>
+  );
 }

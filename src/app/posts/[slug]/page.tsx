@@ -11,7 +11,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = posts.find((item) => item.slug === slug);
-  return post ? { title: `${post.title} — Magati.dev`, description: post.excerpt } : {};
+  return post ? { title: `${post.title} — Hempon.dev`, description: post.excerpt } : {};
 }
 
 function renderInline(text: string): ReactNode[] {

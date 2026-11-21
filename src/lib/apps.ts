@@ -22,7 +22,7 @@ export const apps: AppDefinition[] = [
     description:
       "A practical farm operations workspace for livestock, inventory, sales, expenses, reporting and everyday farm records.",
     image: "/farmora/cover_landscape.jpg",
-    version: "0.9.3",
+    version: "0.9.4",
     platform: "Android APK + PWA",
     webUrl: "https://farmora.hempongroup.co.ke/",
     projectSlug: "farmora",
@@ -45,6 +45,7 @@ export const apps: AppDefinition[] = [
     description:
       "A focused invoicing workspace for businesses that need customers, products, payments, PDFs, receipts and reporting in one place.",
     image: "/invoice-easy/cover_landscape.jpg",
+    version: "3.0.0 · Build 2",
     platform: "Android APK",
     projectSlug: "flutter-invoice-app",
     downloadUrl: "/api/download/invoice-easy",

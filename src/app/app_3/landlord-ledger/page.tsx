@@ -1,7 +1,7 @@
 import AppPage from "@/components/AppPage";
 import { getApp } from "@/lib/apps";
 
-export const metadata = { title: "landlord-ledger — Magati.dev" };
+export const metadata = { title: "landlord-ledger — Hempon.dev" };
 
 export default function Page() {
   const app = getApp("landlord-ledger");
