@@ -27,11 +27,11 @@ export default function SiteNav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="fixed left-1/2 top-4 z-50 w-[calc(100%-2rem)] max-w-6xl -translate-x-1/2">
-      <div className="flex items-center justify-between gap-2 rounded-full border border-white/15 bg-[#101213]/90 px-3 py-2 shadow-2xl shadow-black/30 backdrop-blur-2xl sm:gap-3 sm:px-4">
+    <header className="sticky top-3 z-50 mx-auto mb-0 w-[calc(100%-1.5rem)] max-w-6xl pt-3 sm:w-[calc(100%-2rem)]">
+      <div className="flex items-center justify-between gap-2 rounded-full border border-white/12 bg-[#08090a]/55 px-3 py-2 shadow-xl shadow-black/20 backdrop-blur-2xl supports-[backdrop-filter]:bg-[#08090a]/40 sm:gap-3 sm:px-4">
         <Link
           href="/"
-          aria-label="Hempon.dev home"
+          aria-label="HEMPON.DEV home"
           onClick={() => setMenuOpen(false)}
           className="flex min-w-0 shrink-0 items-center gap-2.5"
         >
@@ -48,7 +48,7 @@ export default function SiteNav() {
             <Link
               key={link.label}
               href={link.href}
-              className={`${link.className} rounded-full px-2.5 py-2 text-[10px] uppercase tracking-[.12em] text-white/70 transition hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]`}
+              className={`${link.className} rounded-full px-2.5 py-2 text-[10px] uppercase tracking-[.12em] text-white/75 transition hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]`}
             >
               {link.label}
             </Link>
@@ -74,14 +74,14 @@ export default function SiteNav() {
       </div>
 
       {menuOpen && (
-        <nav id="mobile-site-navigation" aria-label="Mobile navigation" className="mt-2 rounded-3xl border border-white/15 bg-[#101213]/95 p-3 shadow-2xl shadow-black/40 backdrop-blur-2xl sm:hidden">
+        <nav id="mobile-site-navigation" aria-label="Mobile navigation" className="mt-2 rounded-3xl border border-white/12 bg-[#08090a]/75 p-3 shadow-2xl shadow-black/35 backdrop-blur-2xl supports-[backdrop-filter]:bg-[#08090a]/60 sm:hidden">
           <div className="grid grid-cols-2 gap-1">
             {mobileLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm text-white/75 transition hover:bg-white/10 hover:text-white focus-visible:bg-white/10"
+                className="rounded-xl px-4 py-3 text-sm text-white/80 transition hover:bg-white/10 hover:text-white focus-visible:bg-white/10"
               >
                 {link.label}
               </Link>
