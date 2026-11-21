@@ -74,15 +74,13 @@ export default function AppPage({ app }: { app: AppDefinition }) {
               </p>
             </div>
             <div className="grid gap-3 sm:grid-cols-2">
-              {app.features.map((feature, index) => (
+              {app.features.map((feature) => (
                 <motion.div
                   key={feature}
                   whileHover={{ x: 5 }}
                   className="border-b border-white/10 py-4 text-sm text-white/65"
                 >
-                  <span className="mono mr-4 text-[9px] text-white/25">
-                    {String(index + 1).padStart(2, "0")}
-                  </span>
+                  <span aria-hidden="true" className="mr-4 inline-block size-1.5 rounded-full bg-[var(--accent)]/70 align-middle" />
                   {feature}
                 </motion.div>
               ))}

@@ -82,7 +82,7 @@ export default function ScreenshotGallery({
             <Image src={src} alt={`${title} screenshot ${index + 1}`} fill sizes="(max-width: 640px) 92vw, 45vw" className="object-cover transition duration-700 group-hover:scale-[1.035]" />
             <span className="absolute inset-x-0 bottom-0 flex items-end justify-between bg-gradient-to-t from-black/75 via-black/20 to-transparent p-5 pt-14 opacity-0 transition-opacity duration-300 group-hover:opacity-100 group-focus-visible:opacity-100">
               <span className="text-xs text-white/80">View full screenshot</span>
-              <span className="mono text-[9px] text-white/45">{String(index + 1).padStart(2, "0")} / {String(screenshots.length).padStart(2, "0")}</span>
+              <span className="text-[9px] uppercase tracking-[.14em] text-white/45">Open image</span>
             </span>
           </button>
         ))}
@@ -101,7 +101,7 @@ export default function ScreenshotGallery({
             <div className="mb-3 flex items-center justify-between px-1 sm:mb-4 sm:px-2">
               <div>
                 <p className="eyebrow">Screenshot gallery</p>
-                <p id="screenshot-gallery-title" className="mt-1 text-sm text-white/70">{title} · {active + 1} / {screenshots.length}</p>
+                <p id="screenshot-gallery-title" className="mt-1 text-sm text-white/70">{title}</p>
               </div>
               <button ref={closeButtonRef} type="button" onClick={close} className="grid size-11 place-items-center rounded-full border border-white/15 bg-white/[.06] text-xl text-white/75 transition hover:bg-white/10 hover:text-white" aria-label="Close screenshot gallery">×</button>
             </div>

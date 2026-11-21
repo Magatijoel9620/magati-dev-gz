@@ -15,7 +15,7 @@ export default function ServiceDiscovery() {
         <div className="mt-8 grid gap-px overflow-hidden rounded-2xl border border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <Link key={service.slug} href={`/services/${service.slug}`} className="group flex min-h-56 flex-col bg-[#0b0d0e] p-6 transition hover:bg-[#121617] sm:p-7">
-              <div className="flex items-center justify-between"><span className="mono text-[10px] text-[#d7ff65]/65">{service.number} / SERVICE</span><span aria-hidden="true" className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white/50 transition group-hover:border-[#d7ff65]/50 group-hover:bg-[#d7ff65] group-hover:text-black">↗</span></div>
+              <div className="flex items-center justify-between"><span className="mono text-[10px] text-[#d7ff65]/65">Service area</span><span aria-hidden="true" className="grid h-9 w-9 place-items-center rounded-full border border-white/15 text-white/50 transition group-hover:border-[#d7ff65]/50 group-hover:bg-[#d7ff65] group-hover:text-black">↗</span></div>
               <h3 className="mt-8 text-xl font-medium tracking-tight">{service.title}</h3>
               <p className="mt-3 text-sm leading-6 text-white/45">{service.short}</p>
               <span className="mt-auto pt-6 text-[10px] uppercase tracking-[.16em] text-white/35 transition group-hover:text-[#d7ff65]">Explore service</span>

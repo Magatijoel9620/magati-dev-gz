@@ -4,6 +4,7 @@ import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
 import CursorGlow from "@/components/CursorGlow";
 import SiteNav from "@/components/SiteNav";
+import SiteFloatingActions from "@/components/SiteFloatingActions";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 const siteUrl = "https://portfolio.hempongroup.co.ke";
@@ -75,6 +76,7 @@ export default function RootLayout({
         <SmoothScroll />
         <CursorGlow />
         <SiteNav />
+        <SiteFloatingActions />
         <div id="main-content" tabIndex={-1}>
           {children}
         </div>

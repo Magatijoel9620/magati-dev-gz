@@ -1,6 +1,5 @@
 export type Service = {
   slug: string;
-  number: string;
   title: string;
   short: string;
   description: string;
@@ -12,7 +11,7 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    slug: "website-development", number: "01", title: "Website Development",
+    slug: "website-development", title: "Website Development",
     short: "Fast, responsive websites that make it easier for the right people to understand your business and take action.",
     description: "Plan and build a purposeful web presence—from company websites and service landing pages to content-rich platforms. The focus is clear messaging, accessible interfaces, responsive behaviour and a maintainable foundation.",
     outcomes: ["A clear route from visitor interest to enquiry", "Responsive experiences across mobile, tablet and desktop", "Structured pages ready for search discovery", "A maintainable website foundation"],
@@ -21,7 +20,7 @@ export const services: Service[] = [
     deliverables: ["Website architecture and page layouts", "Responsive frontend implementation", "Contact and enquiry pathways", "Technical SEO foundations and launch support"],
   },
   {
-    slug: "custom-software", number: "02", title: "Custom Software & Business Systems",
+    slug: "custom-software", title: "Custom Software & Business Systems",
     short: "Purpose-built systems for the workflows, records and operational challenges generic tools do not quite fit.",
     description: "Turn a defined business process into a practical software system. Work can include dashboards, record management, reporting, role-aware workflows and integrations, with careful attention to data integrity and maintainability.",
     outcomes: ["A workflow shaped around how the organisation operates", "More consistent records and process visibility", "Useful dashboards and reporting views", "A foundation that can evolve with the business"],
@@ -30,7 +29,7 @@ export const services: Service[] = [
     deliverables: ["Workflow and requirements definition", "Web-based business application", "Data model and integrations where required", "Testing, handover and technical documentation"],
   },
   {
-    slug: "mobile-app-development", number: "03", title: "Mobile App Development",
+    slug: "mobile-app-development", title: "Mobile App Development",
     short: "Cross-platform mobile applications designed around real users, field conditions and everyday tasks.",
     description: "Build mobile experiences for customers, staff and field teams. The implementation can account for responsive layouts, device capabilities, reliable data handling and offline-aware workflows where the use case calls for them.",
     outcomes: ["A focused mobile experience for the intended users", "Consistent interaction patterns across supported devices", "Practical handling of connectivity and data synchronisation needs", "A maintainable app foundation"],
@@ -39,7 +38,7 @@ export const services: Service[] = [
     deliverables: ["Mobile UX and application structure", "Cross-platform app implementation", "API and data integration as scoped", "Testing and release preparation"],
   },
   {
-    slug: "business-automation", number: "04", title: "Business Automation",
+    slug: "business-automation", title: "Business Automation",
     short: "Reduce repetitive work by connecting tools, standardising hand-offs and automating routine processes.",
     description: "Identify repeatable tasks and improve the way information moves between people and systems. Solutions may use scripts, scheduled jobs, forms, notifications, integrations and approval steps, selected to fit the process.",
     outcomes: ["Less repetitive manual handling", "More consistent process execution", "Clearer hand-offs and notifications", "Better visibility into routine operations"],
@@ -48,7 +47,7 @@ export const services: Service[] = [
     deliverables: ["Process review and automation plan", "Scripts, workflows or integrations", "Notifications and validation rules", "Usage notes and handover"],
   },
   {
-    slug: "ai-solutions", number: "05", title: "AI Solutions & Integrations",
+    slug: "ai-solutions", title: "AI Solutions & Integrations",
     short: "Useful AI features connected to real workflows—with clear boundaries, human oversight and practical value.",
     description: "Explore where AI can assist a product or process, then integrate suitable capabilities into the experience. This can include guided assistants, information extraction, summarisation and workflow support, with attention to privacy, reliability and human review.",
     outcomes: ["An AI use case tied to a defined task", "A clearer experience around AI-assisted work", "Appropriate validation and human oversight", "A measured path from prototype to useful feature"],
@@ -57,7 +56,7 @@ export const services: Service[] = [
     deliverables: ["AI use-case assessment", "Prototype or integrated AI feature", "Prompt, workflow and validation design", "Evaluation notes and operating guidance"],
   },
   {
-    slug: "digital-product-design", number: "06", title: "Digital Product Design",
+    slug: "digital-product-design", title: "Digital Product Design",
     short: "Clear product journeys, useful interfaces and prototypes that help teams make better decisions before building.",
     description: "Improve how a digital product is understood and used. Work can cover user journeys, information architecture, interface design, interaction patterns and clickable prototypes that make product decisions easier to review.",
     outcomes: ["A clearer structure for key product journeys", "More consistent and understandable interfaces", "Prototypes that make ideas easier to validate", "A stronger hand-off into implementation"],

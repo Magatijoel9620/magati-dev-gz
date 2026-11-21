@@ -56,9 +56,9 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           <section className="border-t border-white/10 pt-7">
             <p className="eyebrow">Implementation areas</p>
             <div className="mt-4 grid gap-3 sm:grid-cols-2">
-              {project.tags.filter(Boolean).map((tag, index) => (
+              {project.tags.filter(Boolean).map((tag) => (
                 <div key={tag} className="flex items-center gap-3 border-b border-white/10 py-3 text-sm text-white/65">
-                  <span className="mono text-[9px] text-[#d7ff65]/65">{String(index + 1).padStart(2, "0")}</span>{tag}
+                  <span aria-hidden="true" className="size-1.5 shrink-0 rounded-full bg-[#d7ff65]/65" />{tag}
                 </div>
               ))}
             </div>

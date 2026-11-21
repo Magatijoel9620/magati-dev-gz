@@ -77,7 +77,6 @@ export default function PortfolioHero() {
                 Available for work
               </span>
               <span>Based in Kenya</span>
-              <span className="mono">254-001</span>
             </div>
           </motion.div>
 

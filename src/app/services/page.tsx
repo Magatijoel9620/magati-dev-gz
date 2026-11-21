@@ -21,7 +21,7 @@ export default function ServicesPage() {
         <div className="grid gap-4 md:grid-cols-2">
           {services.map((service) => (
             <article key={service.slug} className="rounded-2xl border border-white/10 bg-[#101213]/80 p-6 md:p-8">
-              <p className="mono text-[10px] tracking-[.18em] text-[#d7ff65]/65">{service.number} / SERVICE AREA</p>
+              <p className="eyebrow">Service area</p>
               <h2 className="mt-5 text-2xl font-medium tracking-tight md:text-3xl">{service.title}</h2>
               <p className="mt-4 max-w-xl text-sm leading-7 text-white/48">{service.short}</p>
               <Link href={`/services/${service.slug}`} className="mt-7 inline-flex items-center gap-3 border-b border-white/20 pb-2 text-sm text-white/75 transition hover:border-[#d7ff65] hover:text-[#d7ff65]">Explore this service <span>↗</span></Link>

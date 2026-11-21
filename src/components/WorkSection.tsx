@@ -68,7 +68,7 @@ export default function WorkSection() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
                 <div className="absolute left-5 top-5 rounded-full border border-white/15 bg-black/30 px-3 py-1.5 text-[9px] uppercase tracking-[.18em] text-white/55 backdrop-blur-md">
-                  {String(index + 1).padStart(2, "0")}
+                  {project.classification ?? "Selected project"}
                 </div>
                 <div className="absolute inset-x-5 bottom-5 flex items-end justify-between gap-5 md:inset-x-7 md:bottom-7">
                   <div className="min-w-0">

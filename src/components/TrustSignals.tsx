@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 const principles = [
-  { number: "01", title: "Evidence over claims", copy: "Projects are labelled by their actual status. Concepts, demos and starter work are not presented as production client deployments." },
-  { number: "02", title: "Scope before promises", copy: "Deliverables, dependencies, assumptions and timelines are discussed before a project commitment is made." },
-  { number: "03", title: "Useful handover", copy: "Documentation, deployment context, access and ongoing support are considered as part of delivery planning." },
+  { title: "Evidence over claims", copy: "Projects are labelled by their actual status. Concepts, demos and starter work are not presented as production client deployments." },
+  { title: "Scope before promises", copy: "Deliverables, dependencies, assumptions and timelines are discussed before a project commitment is made." },
+  { title: "Useful handover", copy: "Documentation, deployment context, access and ongoing support are considered as part of delivery planning." },
 ];
 
 export default function TrustSignals() {
@@ -18,8 +18,8 @@ export default function TrustSignals() {
         </div>
         <div className="grid gap-0 sm:grid-cols-3">
           {principles.map((item) => (
-            <article key={item.number} className="border-t border-white/10 py-6 sm:px-5 sm:first:pl-0 sm:last:pr-0 sm:odd:border-t sm:even:border-l sm:even:border-white/10">
-              <span className="mono text-[10px] text-[#d7ff65]/65">{item.number}</span>
+            <article key={item.title} className="border-t border-white/10 py-6 sm:px-5 sm:first:pl-0 sm:last:pr-0 sm:odd:border-t sm:even:border-l sm:even:border-white/10">
+              <span aria-hidden="true" className="block h-px w-8 bg-[#d7ff65]/65" />
               <h3 className="mt-4 text-lg font-medium text-white">{item.title}</h3>
               <p className="mt-3 text-sm leading-6 text-white/42">{item.copy}</p>
             </article>

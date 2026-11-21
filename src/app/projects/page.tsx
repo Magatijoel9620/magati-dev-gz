@@ -26,12 +26,11 @@ export default function ProjectsPage() {
       </header>
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-        {projects.map((project, index) => (
+        {projects.map((project) => (
           <Link key={project.slug} href={`/projects/${project.slug}`} className="group block overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#101213] transition hover:border-white/25">
             <div className="relative aspect-[1.35] overflow-hidden">
               <Image src={project.imageUrl} alt={`${project.title} project preview`} fill sizes="(max-width: 640px) 92vw, (max-width: 1024px) 45vw, 30vw" className="object-cover transition duration-700 group-hover:scale-[1.04]" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/65 to-transparent" />
-              <span className="absolute left-4 top-4 rounded-full border border-white/15 bg-black/40 px-2.5 py-1 text-[9px] uppercase tracking-[.18em] text-white/65 backdrop-blur-md">{String(index + 1).padStart(2, "0")}</span>
             </div>
             <div className="p-5">
               <p className="mono text-[9px] uppercase tracking-[.16em] text-[#d7ff65]/70">{project.classification ?? "Portfolio project"}</p>

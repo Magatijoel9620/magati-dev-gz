@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import AboutFloatingActions from "@/components/AboutFloatingActions";
 
 export const revalidate = 0;
 
@@ -29,25 +28,21 @@ const skillGroups = [
 
 const focusAreas = [
   {
-    number: "01",
     title: "Websites & digital experiences",
     description:
       "Modern websites and landing experiences that communicate clearly, work across devices and help people take the next step.",
   },
   {
-    number: "02",
     title: "Business systems & applications",
     description:
       "Purpose-built software that brings everyday operations, records and workflows into more useful digital tools.",
   },
   {
-    number: "03",
     title: "Mobile products",
     description:
       "Cross-platform applications designed around real usage, practical workflows and dependable experiences.",
   },
   {
-    number: "04",
     title: "Automation & AI integration",
     description:
       "Thoughtful automation and AI-powered capabilities that support people and reduce repetitive work.",
@@ -162,7 +157,7 @@ export default function AboutPage() {
           </div>
           <div className="grid gap-5 md:grid-cols-2">
             <article className="rounded-2xl border border-white/10 bg-white/[.025] p-6 sm:p-8">
-              <span className="mono text-xs text-[var(--accent)]">01 / THE BEGINNING</span>
+              <span className="eyebrow">Where it started</span>
               <h3 className="mt-4 text-xl font-semibold">From curiosity to development</h3>
               <p className="mt-3 text-sm leading-7 text-white/65">
                 My interest in technology started with wanting to understand how computers,
@@ -173,7 +168,7 @@ export default function AboutPage() {
               </p>
             </article>
             <article className="rounded-2xl border border-white/10 bg-white/[.025] p-6 sm:p-8">
-              <span className="mono text-xs text-[var(--accent)]">02 / THE REAL WORLD</span>
+              <span className="eyebrow">Putting it into practice</span>
               <h3 className="mt-4 text-xl font-semibold">Technology beyond the screen</h3>
               <p className="mt-3 text-sm leading-7 text-white/65">
                 Working in IT within a professional services environment has shown me that
@@ -200,9 +195,8 @@ export default function AboutPage() {
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
             {focusAreas.map((item) => (
-              <article key={item.number} className="group rounded-2xl border border-white/10 bg-white/[.02] p-6 transition hover:border-white/20 hover:bg-white/[.035] sm:p-7">
-                <div className="flex items-center justify-between">
-                  <span className="mono text-xs text-[var(--accent)]">{item.number}</span>
+              <article key={item.title} className="group rounded-2xl border border-white/10 bg-white/[.02] p-6 transition hover:border-white/20 hover:bg-white/[.035] sm:p-7">
+                <div className="flex items-center justify-end">
                   <span aria-hidden="true" className="text-white/25 transition group-hover:translate-x-1 group-hover:text-[var(--accent)]">↗</span>
                 </div>
                 <h3 className="mt-7 text-lg font-semibold">{item.title}</h3>
@@ -220,9 +214,9 @@ export default function AboutPage() {
             </h2>
           </div>
           <div className="grid gap-3 md:grid-cols-3">
-            {principles.map((item, index) => (
+            {principles.map((item) => (
               <article key={item.title} className="rounded-2xl border border-white/10 p-6">
-                <span className="mono text-xs text-white/35">0{index + 1}</span>
+                <span aria-hidden="true" className="block h-px w-8 bg-[var(--accent)]/60" />
                 <h3 className="mt-5 font-semibold">{item.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-white/60">{item.description}</p>
               </article>
@@ -242,10 +236,10 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
-            {skillGroups.map((group, index) => (
+            {skillGroups.map((group) => (
               <article key={group.title} className="rounded-2xl border border-white/10 bg-white/[.02] p-5 sm:p-6">
                 <div className="flex items-center gap-3">
-                  <span className="mono text-xs text-[var(--accent)]">0{index + 1}</span>
+                  <span aria-hidden="true" className="size-1.5 rounded-full bg-[var(--accent)]/75" />
                   <h3 className="font-semibold">{group.title}</h3>
                 </div>
                 <p className="mt-2 text-xs leading-5 text-white/45">{group.description}</p>
@@ -284,7 +278,6 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <AboutFloatingActions />
     </>
   );
 }

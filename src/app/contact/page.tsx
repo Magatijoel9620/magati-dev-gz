@@ -79,13 +79,12 @@ export default function ContactPage() {
           </div>
           <div className="grid gap-0 sm:grid-cols-2">
             {[
-              ["01", "Understand first", "We clarify the problem, intended users and constraints before recommending a build."],
-              ["02", "Scope in writing", "Deliverables, assumptions, dependencies and acceptance points should be clear before implementation."],
-              ["03", "Review as we go", "Important decisions and working outputs are reviewed at agreed checkpoints."],
-              ["04", "Plan the handover", "Deployment, documentation, ownership and post-launch support are addressed in the project scope."],
-            ].map(([number, title, copy]) => (
-              <div key={number} className="border-t border-white/10 py-6 sm:px-6 sm:odd:pl-0 sm:even:border-l sm:even:border-white/10">
-                <span className="mono text-[10px] text-[#d7ff65]/60">{number}</span>
+              ["Understand first", "We clarify the problem, intended users and constraints before recommending a build."],
+              ["Scope in writing", "Deliverables, assumptions, dependencies and acceptance points should be clear before implementation."],
+              ["Review as we go", "Important decisions and working outputs are reviewed at agreed checkpoints."],
+              ["Plan the handover", "Deployment, documentation, ownership and post-launch support are addressed in the project scope."],
+            ].map(([title, copy]) => (
+              <div key={title} className="border-t border-white/10 py-6 sm:px-6 sm:odd:pl-0 sm:even:border-l sm:even:border-white/10">
                 <h3 className="mt-3 text-lg font-medium text-white">{title}</h3>
                 <p className="mt-2 max-w-sm text-sm leading-6 text-white/42">{copy}</p>
               </div>
