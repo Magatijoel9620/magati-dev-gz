@@ -95,9 +95,23 @@ export async function POST(request: NextRequest) {
       cache: "no-store",
     });
 
-    if (!response.ok) {
-      return NextResponse.json({ message: "We could not deliver your enquiry just now. Please email hempongroup@gmail.com directly." }, { status: 502 });
-    }
+ if (!response.ok) {
+  const resendError = await response.text();
+
+  console.error(
+    "Portfolio enquiry rejected by Resend:",
+    response.status,
+    resendError
+  );
+
+  return NextResponse.json(
+    {
+      message:
+        "We could not deliver your enquiry just now. Please email hempongroup@gmail.com directly.",
+    },
+    { status: 502 }
+  );
+}
 
     return NextResponse.json({ message: "Your enquiry has been sent." });
   } catch {
