@@ -1,7 +1,7 @@
 import AppPage from "@/components/AppPage";
 import { getApp } from "@/lib/apps";
 
-export const metadata = { title: "invoice-easy — Magati.dev" };
+export const metadata = { title: "InvoiceEasy | Hempon.dev" };
 
 export default function Page() {
   const app = getApp("invoice-easy");

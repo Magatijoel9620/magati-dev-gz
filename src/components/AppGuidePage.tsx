@@ -67,9 +67,9 @@ export default function AppGuidePage({ app }: { app: AppDefinition }) {
         </header>
 
         <section className="mt-16 grid gap-3">
-          {steps.map((step, index) => (
+          {steps.map((step) => (
             <article key={step.title} className="grid gap-5 rounded-[1.5rem] border border-white/10 bg-[#101213] p-6 md:grid-cols-[100px_1fr] md:p-8">
-              <div><span className="mono text-[10px] uppercase tracking-[.2em] text-[#d7ff65]/70">Step {String(index + 1).padStart(2, "0")}</span></div>
+              <div className="pt-1"><span aria-hidden="true" className="block h-px w-10 bg-[#d7ff65]/60" /></div>
               <div><h2 className="text-xl font-medium md:text-2xl">{step.title}</h2><p className="mt-3 max-w-3xl text-sm leading-7 text-white/45">{step.body}</p></div>
             </article>
           ))}

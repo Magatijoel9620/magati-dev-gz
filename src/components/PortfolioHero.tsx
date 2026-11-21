@@ -1,83 +1,79 @@
 "use client";
+
 import Image from "next/image";
 import { motion, useMotionValue, useSpring, useTransform } from "motion/react";
 import { useRef } from "react";
 
 export default function PortfolioHero() {
-  const ref = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLElement>(null);
   const px = useMotionValue(0);
   const py = useMotionValue(0);
   const sx = useSpring(px, { stiffness: 110, damping: 22 });
   const sy = useSpring(py, { stiffness: 110, damping: 22 });
   const rotateY = useTransform(sx, [-1, 1], [-9, 9]);
   const rotateX = useTransform(sy, [-1, 1], [7, -7]);
-  const move = (e: React.PointerEvent) => {
-    if (e.pointerType === "touch") return;
-    const r = ref.current?.getBoundingClientRect();
-    if (!r) return;
-    px.set(((e.clientX - r.left) / r.width - 0.5) * 2);
-    py.set(((e.clientY - r.top) / r.height - 0.5) * 2);
+
+  const move = (event: React.PointerEvent<HTMLElement>) => {
+    if (event.pointerType === "touch") return;
+    const bounds = ref.current?.getBoundingClientRect();
+    if (!bounds) return;
+    px.set(((event.clientX - bounds.left) / bounds.width - 0.5) * 2);
+    py.set(((event.clientY - bounds.top) / bounds.height - 0.5) * 2);
   };
+
   const reset = () => {
     px.set(0);
     py.set(0);
   };
+
   return (
     <section
       id="top"
       ref={ref}
       onPointerMove={move}
       onPointerLeave={reset}
-      className="relative min-h-[100svh] overflow-hidden border-b border-white/10 hero-grid"
+      className="relative min-h-[calc(100svh-5.5rem)] overflow-hidden border-b border-white/10 hero-grid"
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_74%_43%,rgba(215,255,101,.09),transparent_25%),radial-gradient(circle_at_12%_80%,rgba(255,255,255,.05),transparent_25%)]" />
-      <div className="container relative z-10 flex min-h-[100svh] flex-col py-5 md:py-7">
+      <div className="container relative z-10 flex min-h-[calc(100svh-5.5rem)] flex-col py-5 md:py-7">
         <div className="grid flex-1 items-center gap-10 py-12 lg:grid-cols-[1.08fr_.92fr] lg:py-10">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           >
-            <p className="eyebrow">Full-stack developer · IT solutions</p>
-            <h1 className="display mt-6 max-w-4xl text-[clamp(3.5rem,9vw,8.7rem)] font-semibold leading-[.84]">
-              I BUILD
+            <p className="eyebrow">HEMPON GROUP · Founder-led digital studio</p>
+            <h1 className="display mt-6 max-w-4xl text-[clamp(3.25rem,8.5vw,8.2rem)] font-semibold leading-[.86]">
+              BUILDING
               <br />
               <span className="text-white/72">USEFUL</span>
               <br />
-              <span className="text-white/22">DIGITAL SYSTEMS.</span>
+              <span className="text-white/24">DIGITAL WORK.</span>
             </h1>
-            <p className="mt-7 max-w-xl text-base leading-7 text-white/52 md:text-lg">
-              I&apos;m Magati Joel. I build modern websites, business systems,
-              mobile applications, automation tools, and AI-powered experiences
-              that solve practical problems.
+            <p className="mt-7 max-w-xl text-base leading-7 text-white/60 md:text-lg">
+              I&apos;m Magati Joel, founder of Hempon Group. I lead the work behind our digital portfolio — from websites and business systems to mobile products, automation and AI integrations — turning practical ideas into useful technology.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#work"
                 className="group inline-flex items-center gap-3 rounded-full bg-[#f1f2ed] px-5 py-3 text-sm font-medium text-[#111] transition hover:-translate-y-0.5"
               >
-                Explore selected work{" "}
-                <span className="transition-transform group-hover:translate-x-1">
-                  ↗
-                </span>
+                Explore Hempon&apos;s work
+                <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">↗</span>
               </a>
               <a
-                href="mailto:magatijoel@gmail.com"
-                className="inline-flex items-center gap-3 rounded-full border border-white/15 px-5 py-3 text-sm text-white/75 transition hover:border-white/30 hover:text-white"
+                href="/contact"
+                className="inline-flex items-center gap-3 rounded-full border border-white/15 px-5 py-3 text-sm text-white/80 transition hover:border-white/30 hover:text-white"
               >
-                Start a conversation ↗
+                Work with us ↗
               </a>
             </div>
-            <div className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/35">
+            <div className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-xs text-white/40">
               <span>
-                <i
-                  aria-hidden="true"
-                  className="status-ripple mr-2 inline-block h-1.5 w-1.5 rounded-full bg-emerald-400"
-                />
-                Available for work
+                <i aria-hidden="true" className="status-ripple mr-2 inline-block h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                Open to selected projects
               </span>
-              <span>Based in Kenya</span>
-              <span className="mono">254-001</span>
+              <span>Founded and led from Kenya</span>
             </div>
           </motion.div>
 
@@ -92,7 +88,7 @@ export default function PortfolioHero() {
               >
                 <Image
                   src="/profile.png"
-                  alt="Magati Joel"
+                  alt="Magati Joel, founder of Hempon Group"
                   fill
                   priority
                   sizes="(max-width:1024px) 88vw, 46vw"
@@ -101,24 +97,18 @@ export default function PortfolioHero() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-white/5" />
                 <div className="absolute inset-x-5 bottom-5 flex items-end justify-between">
                   <div>
-                    <p className="mono text-[9px] uppercase tracking-[.25em] text-white/40">
-                      Magati Joel
-                    </p>
-                    <p className="mt-1 text-sm font-medium">
-                      Digital systems / product development
-                    </p>
+                    <p className="mono text-[9px] uppercase tracking-[.25em] text-white/45">Magati Joel</p>
+                    <p className="mt-1 text-sm font-medium">Founder · Hempon Group</p>
                   </div>
-                  <span className="grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-black/30 text-xs">
-                    MJ
-                  </span>
+                  <span className="grid h-10 w-10 place-items-center rounded-full border border-white/15 bg-black/30 text-xs">MJ</span>
                 </div>
               </div>
             </motion.div>
           </div>
         </div>
-        <div className="flex items-center gap-3 pb-2 text-[10px] uppercase tracking-[.28em] text-white/25">
+        <div className="flex items-center gap-3 pb-2 text-[10px] uppercase tracking-[.28em] text-white/30">
           <span className="h-px w-10 bg-white/15" />
-          Take a look around
+          Explore the Hempon portfolio
         </div>
       </div>
     </section>

@@ -31,7 +31,7 @@ export default function AppDownloadPage({ app }: { app: AppDefinition }) {
                 href={app.downloadUrl}
                 className="group rounded-[1.4rem] bg-[#d7ff65] p-5 text-black transition hover:-translate-y-1 hover:bg-[#e2ff91]"
               >
-                <span className="mono text-[9px] uppercase tracking-[.18em] opacity-60">01 · Android</span>
+                <span className="mono text-[9px] uppercase tracking-[.18em] opacity-60">ANDROID APP</span>
                 <span className="mt-3 block text-lg font-semibold">Download APK ↓</span>
                 <span className="mt-1 block text-xs opacity-65">Latest Release</span>
               </a>
@@ -43,7 +43,7 @@ export default function AppDownloadPage({ app }: { app: AppDefinition }) {
                   rel="noopener noreferrer"
                   className="group rounded-[1.4rem] border border-white/15 bg-white/[.04] p-5 text-white transition hover:-translate-y-1 hover:border-white/30"
                 >
-                  <span className="mono text-[9px] uppercase tracking-[.18em] text-white/40">02 · Web app</span>
+                  <span className="mono text-[9px] uppercase tracking-[.18em] text-white/40">WEB APP</span>
                   <span className="mt-3 block text-lg font-medium">Open web app ↗</span>
                   <span className="mt-1 block text-xs text-white/45">No APK required</span>
                 </a>
@@ -102,12 +102,12 @@ export default function AppDownloadPage({ app }: { app: AppDefinition }) {
             <p className="eyebrow">Android quick start</p>
             <div className="mt-4 grid gap-4 sm:grid-cols-3">
               {[
-                ["01", "Download", "Tap Download APK and wait for the file to finish."],
-                ["02", "Open", "Open the downloaded APK and review Android’s prompts."],
-                ["03", "Launch", `Finish installation, then open ${app.name}.`],
-              ].map(([number, title, body]) => (
-                <div key={number}>
-                  <span className="mono text-[9px] text-[#d7ff65]/75">{number}</span>
+                ["Download", "Tap Download APK and wait for the file to finish."],
+                ["Open", "Open the downloaded APK and review Android’s prompts."],
+                ["Launch", `Finish installation, then open ${app.name}.`],
+              ].map(([title, body]) => (
+                <div key={title}>
+                  <span aria-hidden="true" className="mb-3 block h-px w-8 bg-[#d7ff65]/65" />
                   <h3 className="mt-2 text-sm font-medium text-white">{title}</h3>
                   <p className="mt-1 text-xs leading-6 text-white/45">{body}</p>
                 </div>
@@ -143,12 +143,12 @@ export default function AppDownloadPage({ app }: { app: AppDefinition }) {
               </div>
               <div className="grid gap-3 sm:grid-cols-3">
                 {[
-                  ["01", "Open website", "Visit the official web app in a supported browser."],
-                  ["02", "Add to home", "Choose Install app or Add to Home screen if available."],
-                  ["03", "Launch", "Open it from your home screen or app launcher."],
-                ].map(([number, title, body]) => (
-                  <div key={number} className="rounded-[1.4rem] border border-white/10 bg-[#101213] p-5">
-                    <span className="mono text-[9px] text-[#d7ff65]/70">{number}</span>
+                  ["Open website", "Visit the official web app in a supported browser."],
+                  ["Add to home", "Choose Install app or Add to Home screen if available."],
+                  ["Launch", "Open it from your home screen or app launcher."],
+                ].map(([title, body]) => (
+                  <div key={title} className="rounded-[1.4rem] border border-white/10 bg-[#101213] p-5">
+                    <span aria-hidden="true" className="mb-3 block h-px w-8 bg-[#d7ff65]/65" />
                     <h3 className="mt-5 text-sm font-medium">{title}</h3>
                     <p className="mt-2 text-xs leading-6 text-white/45">{body}</p>
                   </div>

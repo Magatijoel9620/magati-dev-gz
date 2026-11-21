@@ -11,6 +11,10 @@ export type Project = {
   // Optional links displayed on the project details/card.
   liveUrl?: string;
   caseStudyUrl?: string;
+  /** Honest portfolio classification; do not imply client delivery for concepts or starter kits. */
+  classification?: string;
+  /** Short evidence/status note shown on the project detail page. */
+  evidenceNote?: string;
   //repositoryUrl?: string;
 };
 
@@ -39,6 +43,8 @@ export const projects: Project[] = [
   {
     slug: "landlord-ledger",
     title: "Landlord Ledger",
+    classification: "Hempon product · Property management",
+    evidenceNote: "Product profile, screenshots and release route are available on this portfolio.",
     description:
       "A modern property management application that helps landlords manage properties, units, tenants, rent, payments, arrears and financial records, while connecting landlords with prospective tenants through an integrated property marketplace.",
 
@@ -88,6 +94,8 @@ The application is built with Flutter and Supabase, combining a modern cross-pla
   {
     slug: "farmora",
     title: "Farmora",
+    classification: "Hempon product · Farm management",
+    evidenceNote: "Product profile, screenshots and release route are available on this portfolio.",
     description:
       "A modern farm management application designed to help farm owners and managers manage livestock, inventory, sales, expenses, customers and day-to-day farm operations from one place.",
 
@@ -133,11 +141,13 @@ The application is built with Flutter and Supabase, combining a modern responsiv
   },
   {
     slug: "flutter-invoice-app",
-    title: "Invoice App",
+    title: "InvoiceEasy",
+    classification: "Hempon product · Business invoicing",
+    evidenceNote: "Product profile, screenshots and release route are available on this portfolio.",
     description:
-      "A modern, cross-platform Flutter application for managing invoices, with PDF generation and archiving.",
+      "A cross-platform invoicing application for businesses to manage customers, products and services, invoices, full and partial payments, receipts and financial reports.",
     longDescription:
-      "A modern, cross-platform Flutter application for managing invoices. Features include creating, viewing, editing, and deleting invoices, archiving, light/dark mode, PDF generation/printing, and local data storage. It's designed for web and mobile with a responsive UI based on Material Design 3 principles.",
+      "InvoiceEasy is a business invoicing application built with Flutter and Supabase. It brings customer records, products and services, invoice creation, full and partial payment tracking, PDF generation, printing, sharing and reporting into one workflow. The current product architecture includes cloud-backed authentication and data storage, offline-aware synchronization and a shared payment-engine integration. The product is designed around one account and one business.",
     imageUrl: "/invoice-easy/cover_landscape.jpg",
     screenshots: [
       "/invoice-easy/dashboard_light.jpg",
@@ -149,9 +159,11 @@ The application is built with Flutter and Supabase, combining a modern responsiv
     tags: [
       "Flutter",
       "Dart",
-      "Mobile App",
+      "Supabase",
+      "PostgreSQL",
+      "Business Invoicing",
+      "Payment Engine",
       "PDF Generation",
-      "State Management",
     ],
     //caseStudyUrl: "/invoice-easy",
     liveUrl: "/invoice-easy",
@@ -159,6 +171,8 @@ The application is built with Flutter and Supabase, combining a modern responsiv
  {
 slug: "civicforge",
 title: "CivicForge — Political Campaign Website Design",
+classification: "Website design concept · Demo",
+evidenceNote: "An independent concept and demo, not a deployed campaign-management system.",
 description:
 "A responsive website design concept for political candidates to introduce themselves, communicate their priorities, and share campaign updates.",
 longDescription:
@@ -175,6 +189,8 @@ longDescription:
 },
   {
     slug: "building-devpilot-personal-productivity-app",
+    classification: "Independent digital product · Web app",
+    evidenceNote: "The public product experience is linked separately from this project record.",
 
     title: "DevPilot — Personal Productivity and Project Management App",
 
@@ -203,6 +219,8 @@ longDescription:
   {
     slug: "clarity-solutions-digital-experience-concept",
     title: "Clarity Solutions — Digital Experience Concept",
+    classification: "Unofficial design concept",
+    evidenceNote: "Created independently; not commissioned by or affiliated with Clarity Solutions.",
     description:
       "An unofficial creative concept exploring how Clarity Solutions could present its LED, digital signage and AV capabilities through a modern digital experience.",
     longDescription:
@@ -221,6 +239,8 @@ longDescription:
   {
     slug: "hempon-group-website",
     title: "HEMPON GROUP - Modern Digital Agency Website",
+    classification: "Hempon Group · Company website",
+    evidenceNote: "The live company website is linked as the public reference.",
     description:
       "A modern, fully responsive website for Hempon Group, designed to showcase its digital products, services, projects, and technology expertise through a polished and engaging user experience.",
     longDescription:
@@ -247,6 +267,8 @@ longDescription:
   {
     slug: "kanyi-j-advocates-website",
     title: "KANYI J & COMPANY ADVOCATES - Law Firm Website Redesign",
+    classification: "Client website · Professional services",
+    evidenceNote: "The firm public website is linked as the live reference.",
     description:
       "A modern, professional website redesign for Kanyi J & Company Advocates, focused on presenting the firm's services and professional identity through a responsive digital experience.",
     longDescription:
@@ -277,6 +299,8 @@ longDescription:
   {
     slug: "config-driven-logistics-website-starter-kit",
     title: "Logistics Website",
+    classification: "Reusable website starter · Demo",
+    evidenceNote: "The shipment-tracking interface uses sample data, as described in the project brief.",
     description:
       "A production-ready logistics website starter kit featuring shipment tracking, fleet management, service coverage, and a modular configuration system.",
 
@@ -315,6 +339,8 @@ The project showcases scalable React architecture, reusable components, configur
   {
     slug: "google-apps-script-automation",
     title: "Google Sheets Data Automation",
+    classification: "Workflow automation",
+    evidenceNote: "The project description documents the spreadsheet automation workflow.",
     description:
       "An advanced Google Apps Script to automate the processing of Google Form data into structured summaries and dynamic charts.",
     longDescription:
@@ -336,11 +362,13 @@ The project showcases scalable React architecture, reusable components, configur
   },
   {
     slug: "fintrack-ai",
-    title: "FinTrack AI - Intelligent Finance Tracker",
+    title: "FinAI — Business Finance & Inventory Platform",
+    classification: "Hempon product · Business finance",
+    evidenceNote: "This page describes the current business-finance product; older development articles retain their historical context.",
     description:
-      "An AI-powered app for expense tracking, receipt scanning, and personalized financial advice.",
+      "An AI-assisted business finance and inventory platform for tracking income, expenses, sales, stock, invoices, customer balances and business performance.",
     longDescription:
-      "FinTrack AI is an intelligent personal finance application designed to help you take full control of your money. It leverages Google's Gemini model to provide smart insights, automated expense tracking via receipt scanning, and personalized financial advice from a chat-based assistant.",
+      "FinAI is a business finance and inventory platform designed to give a business owner a clearer view of day-to-day operations. It brings product and stock management, sales, invoices, customer balances, supplier payables, income and expenses, financial reporting and AI-assisted business insights into one workspace. The current product is built with Next.js, TypeScript and Firebase, with Gemini-powered analysis. This description reflects the current business product rather than the earlier personal-finance direction documented in historical development content.",
     // To use your own image, place it in `public/` and update the path here, e.g., "/fintrack-ai.png"
     imageUrl: "/finai/finai_landscape.png",
     screenshots: [
@@ -353,7 +381,7 @@ The project showcases scalable React architecture, reusable components, configur
       "/finai/stock.png",
       "/finai/finai.png",
     ],
-    tags: ["Next.js", "AI", "TypeScript", "Finance"],
+    tags: ["Next.js", "TypeScript", "Firebase", "Business Finance", "Inventory", "Gemini AI"],
     
      liveUrl: "https://finai.hempongroup.co.ke",
   },
@@ -361,6 +389,8 @@ The project showcases scalable React architecture, reusable components, configur
  {
   slug: "church-website-django",
   title: "Church Blog Revival — Modern Church Website",
+  classification: "Website project · Portfolio build",
+  evidenceNote: "No public production URL is listed for this project.",
   description:
     "A modern, responsive church website combining a Next.js frontend with Django-powered content management, a dedicated blog, and an administrator-friendly publishing workflow.",
   longDescription:
@@ -389,6 +419,8 @@ The project showcases scalable React architecture, reusable components, configur
   {
     slug: "stayzen-accommodation-booking-app",
     title: "StayZen - Accommodation Booking App",
+    classification: "Application concept · Portfolio build",
+    evidenceNote: "The project description identifies in-memory development data; no production booking service is claimed.",
     description:
       "A Next.js web application for finding and booking accommodations, with a user-facing app and an admin dashboard.",
     longDescription:
@@ -513,6 +545,7 @@ The project showcases scalable React architecture, reusable components, configur
   {
     slug: "multi-industry-business-starter-kit",
     title: "Corporate Business Website",
+    classification: "Reusable website starter · Demo",
     description:
       "A polished corporate website template with reusable sections, theme controls, responsive navigation, and configurable client content.",
     longDescription:

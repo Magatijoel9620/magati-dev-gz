@@ -3,8 +3,8 @@ import Link from "next/link";
 import { apps } from "@/lib/apps";
 
 export const metadata = {
-  title: "Apps — Magati.dev",
-  description: "Live applications built by Magati Joel.",
+  title: "Apps — Hempon.dev",
+  description: "Digital products built by Hempon Group.",
 };
 
 export default function AppsPage() {
