@@ -35,7 +35,7 @@ export default function SiteNav() {
           onClick={() => setMenuOpen(false)}
           className="flex min-w-0 shrink-0 items-center gap-2.5"
         >
-          <span className="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-full border border-white/15 bg-white p-1.5">
+          <span className="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-full border border-white/15 bg-[#08090a] p-1.5">
             <Image src="/logo/logo_round.png" alt="" width={36} height={36} className="h-full w-full object-contain" />
           </span>
           <span className="hidden text-xs font-semibold tracking-[.08em] text-white sm:block">

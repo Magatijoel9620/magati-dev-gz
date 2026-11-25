@@ -15,7 +15,7 @@ export default function SiteFooter() {
       {/* Subtle lime glow from the right */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-40 top-[-8rem] -z-10 h-[30rem] w-[34rem] rounded-full bg-[radial-gradient(ellipse_at_center,rgba(215,255,101,.10),rgba(215,255,101,.035)_38%,transparent_72%)] blur-3xl"
+        className="pointer-events-none absolute -right-40 -top-32 -z-10 h-120 w-136 rounded-full bg-[radial-gradient(ellipse_at_center,rgba(215,255,101,.10),rgba(215,255,101,.035)_38%,transparent_72%)] blur-3xl"
       />
 
       <div className="container py-16 md:py-24">
@@ -27,15 +27,15 @@ export default function SiteFooter() {
               aria-label="Hempon.dev home"
               className="inline-flex items-center gap-3"
             >
-              <span className="grid h-12 w-36 place-items-center overflow-hidden rounded-lg bg-white px-3 py-1.5">
-                <Image
-                  src="/logo/logo.png"
-                  alt=""
-                  width={144}
-                  height={48}
-                  className="h-full w-full object-contain"
-                />
-              </span>
+              <Image
+                src="/logo/logo.svg"
+                alt="Hempon Group"
+                width={170}
+                height={56}
+                className="h-auto w-36.25 invert sm:w-42.5"
+                style={{ height: "auto" }}
+                loading="eager"
+              />
 
               <span className="text-sm font-semibold tracking-[.12em] text-white">
                 HEMPON<span className="accent">.DEV</span>
