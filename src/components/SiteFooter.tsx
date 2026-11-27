@@ -69,14 +69,15 @@ export default function SiteFooter() {
           </div>
 
         
+
 {/* Navigation and social links */}
-<div className="grid w-full max-w-md grid-cols-2 gap-12 text-center text-base lg:max-w-none lg:text-left">
+<div className="grid w-full max-w-md grid-cols-2 gap-12 text-center lg:max-w-none lg:text-left">
   <div className="flex flex-col items-center lg:items-start">
-    <p className="mono mb-5 text-[20px] uppercase tracking-[.2em] text-white/35">
+    <p className="mono mb-5 text-[18px] uppercase tracking-[.2em] text-white/35">
       Explore
     </p>
 
-    <div className="grid justify-items-center gap-4 text-white/60 lg:justify-items-start">
+    <div className="grid justify-items-center gap-4 text-[18px] text-white/60 lg:justify-items-start lg:text-[20px]">
       <Link href="/#work" className="ui-btn-text">
         Selected work
       </Link>
@@ -96,11 +97,11 @@ export default function SiteFooter() {
   </div>
 
   <div className="flex flex-col items-center lg:items-start">
-    <p className="mono mb-5 text-[20px] uppercase tracking-[.2em] text-white/35">
+    <p className="mono mb-5 text-[18px] uppercase tracking-[.2em] text-white/35">
       Connect
     </p>
 
-    <div className="grid justify-items-center gap-4 text-white/60 lg:justify-items-start">
+    <div className="grid justify-items-center gap-4 text-[18px] text-white/60 lg:justify-items-start lg:text-[20px]">
       {socials.map(([name, url]) => (
         <a
           key={name}
@@ -115,6 +116,7 @@ export default function SiteFooter() {
     </div>
   </div>
 </div>
+
 
         </div>
 
