@@ -68,64 +68,54 @@ export default function SiteFooter() {
             </a>
           </div>
 
-          {/* Navigation and social links */}
-          <div className="grid w-full max-w-md grid-cols-2 gap-10 text-center text-sm lg:max-w-none lg:text-left">
-            <div className="flex flex-col items-center lg:items-start">
-              <p className="mono mb-4 text-[9px] uppercase tracking-[.2em] text-white/35">
-                Explore
-              </p>
+        
+{/* Navigation and social links */}
+<div className="grid w-full max-w-md grid-cols-2 gap-12 text-center text-base lg:max-w-none lg:text-left">
+  <div className="flex flex-col items-center lg:items-start">
+    <p className="mono mb-5 text-[20px] uppercase tracking-[.2em] text-white/35">
+      Explore
+    </p>
 
-              <div className="grid justify-items-center gap-3 text-white/60 lg:justify-items-start">
-                <Link
-                  href="/#work"
-                  className="ui-btn-text"
-                >
-                  Selected work
-                </Link>
+    <div className="grid justify-items-center gap-4 text-white/60 lg:justify-items-start">
+      <Link href="/#work" className="ui-btn-text">
+        Selected work
+      </Link>
 
-                <Link
-                  href="/services"
-                  className="ui-btn-text"
-                >
-                  Capabilities
-                </Link>
+      <Link href="/services" className="ui-btn-text">
+        Capabilities
+      </Link>
 
-                <Link
-                  href="/about"
-                  className="ui-btn-text"
-                >
-                  About
-                </Link>
+      <Link href="/about" className="ui-btn-text">
+        About
+      </Link>
 
-                <Link
-                  href="/contact"
-                  className="ui-btn-text"
-                >
-                  Contact
-                </Link>
-              </div>
-            </div>
+      <Link href="/contact" className="ui-btn-text">
+        Contact
+      </Link>
+    </div>
+  </div>
 
-            <div className="flex flex-col items-center lg:items-start">
-              <p className="mono mb-4 text-[9px] uppercase tracking-[.2em] text-white/35">
-                Connect
-              </p>
+  <div className="flex flex-col items-center lg:items-start">
+    <p className="mono mb-5 text-[20px] uppercase tracking-[.2em] text-white/35">
+      Connect
+    </p>
 
-              <div className="grid justify-items-center gap-3 text-white/60 lg:justify-items-start">
-                {socials.map(([name, url]) => (
-                  <a
-                    key={name}
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="ui-btn-text"
-                  >
-                    {name} ↗
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
+    <div className="grid justify-items-center gap-4 text-white/60 lg:justify-items-start">
+      {socials.map(([name, url]) => (
+        <a
+          key={name}
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="ui-btn-text"
+        >
+          {name} ↗
+        </a>
+      ))}
+    </div>
+  </div>
+</div>
+
         </div>
 
         <div className="my-12 hairline" />
