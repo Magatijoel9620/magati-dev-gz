@@ -49,11 +49,11 @@ export default function ContactPage() {
             <div className="mt-10 space-y-6 border-t border-white/10 pt-7">
               <div>
                 <p className="mono text-[10px] uppercase tracking-[.18em] text-white/30">Business enquiries</p>
-                <a href="mailto:hempongroup@gmail.com" className="mt-2 inline-block text-lg text-white transition hover:text-[#d7ff65]">hempongroup@gmail.com ↗</a>
+                <a href="mailto:hempongroup@gmail.com" className="ui-btn-text mt-2 inline-block text-lg text-white">hempongroup@gmail.com ↗</a>
               </div>
               <div>
                 <p className="mono text-[10px] uppercase tracking-[.18em] text-white/30">Founder correspondence</p>
-                <a href="mailto:magatijoel@gmail.com" className="mt-2 inline-block text-base text-white/70 transition hover:text-[#d7ff65]">magatijoel@gmail.com ↗</a>
+                <a href="mailto:magatijoel@gmail.com" className="ui-btn-text mt-2 inline-block text-base text-white/70">magatijoel@gmail.com ↗</a>
               </div>
               <p className="max-w-sm text-xs leading-5 text-white/35">No WhatsApp or telephone contact is listed here because a verified business number has not been supplied.</p>
             </div>
@@ -75,7 +75,7 @@ export default function ContactPage() {
             <p className="eyebrow">Before we begin</p>
             <h2 className="display mt-4 text-4xl font-semibold leading-[.95] md:text-5xl">Clear expectations make better projects.</h2>
             <p className="mt-6 max-w-md text-sm leading-7 text-white/45">A good engagement starts with shared context. These are the principles that guide the first conversation and the work that may follow.</p>
-            <Link href="/services" className="mt-8 inline-flex border-b border-[#d7ff65]/50 pb-2 text-sm text-[#d7ff65]">Explore services ↗</Link>
+            <Link href="/services" className="ui-btn-text mt-8 inline-flex border-b border-transparent pb-2 text-sm text-[#d7ff65]">Explore services ↗</Link>
           </div>
           <div className="grid gap-0 sm:grid-cols-2">
             {[
@@ -118,9 +118,9 @@ export default function ContactPage() {
           <p className="eyebrow">Still exploring?</p>
           <h2 className="display mt-4 max-w-3xl text-4xl font-semibold leading-[.95] md:text-6xl">See the work before you decide.</h2>
           <div className="mt-8 flex flex-wrap gap-3">
-            <Link href="/projects" className="rounded-full bg-[#d7ff65] px-6 py-3 text-sm font-semibold text-[#08090a]">Explore projects ↗</Link>
-            <Link href="/apps" className="rounded-full border border-white/15 px-6 py-3 text-sm text-white/75 transition hover:border-white/35">View products ↗</Link>
-            <Link href="/posts" className="rounded-full border border-white/15 px-6 py-3 text-sm text-white/75 transition hover:border-white/35">Read insights ↗</Link>
+            <Link href="/projects" className="ui-btn-primary rounded-full bg-[#d7ff65] px-6 py-3 text-sm font-semibold text-[#08090a]">Explore projects ↗</Link>
+            <Link href="/apps" className="ui-btn-secondary rounded-full border border-white/15 px-6 py-3 text-sm text-white/75">View products ↗</Link>
+            <Link href="/posts" className="ui-btn-secondary rounded-full border border-white/15 px-6 py-3 text-sm text-white/75">Read insights ↗</Link>
           </div>
         </div>
       </section>

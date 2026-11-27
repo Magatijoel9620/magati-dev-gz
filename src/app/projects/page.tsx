@@ -52,7 +52,7 @@ export default function ProjectsPage() {
             <h2 className="display max-w-2xl text-4xl font-semibold md:text-5xl">Let’s discuss the problem you need to solve.</h2>
             <p className="mt-4 max-w-xl text-sm leading-7 text-white/50">Share the context, the people it needs to serve and what a useful outcome would look like.</p>
           </div>
-          <a href="mailto:hempongroup@gmail.com?subject=Project%20enquiry" className="inline-flex shrink-0 rounded-full bg-[#d7ff65] px-6 py-3 text-sm font-semibold text-black transition hover:-translate-y-0.5">Start a project enquiry ↗</a>
+          <a href="mailto:hempongroup@gmail.com?subject=Project%20enquiry" className="ui-btn-primary inline-flex shrink-0 rounded-full bg-[#d7ff65] px-6 py-3 text-sm font-semibold text-black">Start a project enquiry ↗</a>
         </div>
       </section>
     </main>

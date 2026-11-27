@@ -37,7 +37,7 @@ export default function SiteFooter() {
                 loading="eager"
               />
 
-              <span className="text-sm font-semibold tracking-[.12em] text-white">
+              <span className="text-[clamp(18px,2vw,24px)] font-semibold tracking-[.12em] text-white">
                 HEMPON<span className="accent">.DEV</span>
               </span>
             </Link>
@@ -62,7 +62,7 @@ export default function SiteFooter() {
 
             <a
               href="mailto:hempongroup@gmail.com"
-              className="mt-7 inline-flex text-base text-white/70 transition hover:text-white"
+              className="ui-btn-text mt-7 inline-flex text-base text-white/70"
             >
               hempongroup@gmail.com ↗
             </a>
@@ -78,28 +78,28 @@ export default function SiteFooter() {
               <div className="grid justify-items-center gap-3 text-white/60 lg:justify-items-start">
                 <Link
                   href="/#work"
-                  className="transition hover:text-white"
+                  className="ui-btn-text"
                 >
                   Selected work
                 </Link>
 
                 <Link
                   href="/services"
-                  className="transition hover:text-white"
+                  className="ui-btn-text"
                 >
                   Capabilities
                 </Link>
 
                 <Link
                   href="/about"
-                  className="transition hover:text-white"
+                  className="ui-btn-text"
                 >
                   About
                 </Link>
 
                 <Link
                   href="/contact"
-                  className="transition hover:text-white"
+                  className="ui-btn-text"
                 >
                   Contact
                 </Link>
@@ -118,7 +118,7 @@ export default function SiteFooter() {
                     href={url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="transition hover:text-white"
+                    className="ui-btn-text"
                   >
                     {name} ↗
                   </a>
@@ -140,7 +140,7 @@ export default function SiteFooter() {
 
           <a
             href="#top"
-            className="transition hover:text-white"
+            className="ui-btn-text"
           >
             Back to top ↑
           </a>

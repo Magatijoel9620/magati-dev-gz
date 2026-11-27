@@ -18,3 +18,152 @@
 /* M6 accessibility and interaction foundations */
 html{scroll-padding-top:6.5rem}body{min-width:320px}a,button,input,select,textarea,summary{touch-action:manipulation} :where(a,button,input,select,textarea,summary,[tabindex]:not([tabindex="-1"])):focus-visible{outline:2px solid var(--accent);outline-offset:4px} .skip-link{position:fixed;left:1rem;top:1rem;z-index:1000;transform:translateY(-180%);border-radius:999px;background:var(--accent);padding:.8rem 1.1rem;color:#08090a;font-size:.875rem;font-weight:700;transition:transform .18s ease}.skip-link:focus{transform:translateY(0)}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+
+
+/* HEMPON.DEV button interaction uplift — visual effects only; sizing stays with each component. */
+.ui-btn-primary,
+.ui-btn-secondary,
+.ui-btn-text,
+.ui-btn-icon {
+  -webkit-tap-highlight-color: transparent;
+  transform: translateZ(0);
+}
+
+.ui-btn-primary {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px rgba(215,255,101,.08), 0 8px 24px rgba(0,0,0,.16);
+  transition: background-color .28s ease, color .28s ease, border-color .28s ease,
+    box-shadow .32s cubic-bezier(.22,1,.36,1), transform .32s cubic-bezier(.22,1,.36,1), filter .28s ease;
+}
+.ui-btn-primary::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(112deg, transparent 18%, rgba(255,255,255,.28) 48%, transparent 76%);
+  transform: translateX(-135%);
+  transition: transform .7s cubic-bezier(.22,1,.36,1);
+}
+.ui-btn-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 1px rgba(215,255,101,.2), 0 12px 30px rgba(215,255,101,.13);
+  filter: brightness(1.035);
+}
+.ui-btn-primary:hover:not(:disabled)::after { transform: translateX(135%); }
+.ui-btn-primary:active:not(:disabled) { transform: translateY(0) scale(.985); }
+
+.ui-btn-secondary {
+  position: relative;
+  isolation: isolate;
+  transition: color .28s ease, background-color .28s ease, border-color .28s ease,
+    box-shadow .32s ease, transform .32s cubic-bezier(.22,1,.36,1);
+}
+.ui-btn-secondary:hover:not(:disabled) {
+  transform: translateY(-1px);
+  border-color: rgba(215,255,101,.52);
+  background-color: rgba(215,255,101,.055);
+  color: var(--fg);
+  box-shadow: 0 5px 22px rgba(215,255,101,.055);
+}
+.ui-btn-secondary:active:not(:disabled) { transform: translateY(0) scale(.99); }
+
+.ui-btn-text {
+  position: relative;
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  gap: .35rem;
+  transition: color .25s ease;
+}
+.ui-btn-text::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -.28rem;
+  left: 0;
+  height: 1px;
+  background: var(--accent);
+  transform: scaleX(.35);
+  transform-origin: left center;
+  opacity: .55;
+  transition: transform .32s cubic-bezier(.22,1,.36,1), opacity .25s ease;
+}
+.ui-btn-text:hover { color: var(--accent); }
+.ui-btn-text:hover::after, .ui-btn-text:focus-visible::after { transform: scaleX(1); opacity: 1; }
+
+.ui-btn-icon {
+  transition: color .28s ease, background-color .28s ease, border-color .28s ease,
+    box-shadow .3s ease, transform .3s cubic-bezier(.22,1,.36,1);
+}
+.ui-btn-icon:hover:not(:disabled) {
+  transform: translateY(-2px) rotate(3deg);
+  border-color: rgba(215,255,101,.65);
+  color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(215,255,101,.055), 0 8px 22px rgba(0,0,0,.2);
+}
+.ui-btn-icon:active:not(:disabled) { transform: scale(.94); }
+
+/* About page accents: playful Jelly and restrained Neon Edge. */
+.ui-btn-jelly { transform-origin: center; }
+.ui-btn-jelly:hover:not(:disabled),
+.ui-btn-jelly:focus-visible:not(:disabled) { animation: hempon-btn-jelly .58s ease both; }
+@keyframes hempon-btn-jelly {
+  0%, 100% { transform: scale(1,1); }
+  28% { transform: scale(1.055,.94); }
+  48% { transform: scale(.975,1.045); }
+  68% { transform: scale(1.025,.985); }
+}
+.ui-btn-neon {
+  position: relative;
+  isolation: isolate;
+  transition: border-color .28s ease, color .28s ease, background-color .28s ease,
+    box-shadow .32s ease, transform .32s cubic-bezier(.22,1,.36,1);
+}
+.ui-btn-neon::after {
+  content: "";
+  position: absolute;
+  inset: -3px;
+  z-index: -1;
+  border: 1px solid rgba(215,255,101,0);
+  border-radius: inherit;
+  box-shadow: 0 0 0 rgba(215,255,101,0);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+.ui-btn-neon:hover:not(:disabled),
+.ui-btn-neon:focus-visible:not(:disabled) {
+  border-color: rgba(215,255,101,.7);
+  color: var(--accent);
+  background-color: rgba(215,255,101,.045);
+  box-shadow: 0 0 18px rgba(215,255,101,.08);
+}
+.ui-btn-neon:hover:not(:disabled)::after,
+.ui-btn-neon:focus-visible:not(:disabled)::after {
+  opacity: 1;
+  border-color: rgba(215,255,101,.24);
+  box-shadow: 0 0 14px rgba(215,255,101,.12), inset 0 0 12px rgba(215,255,101,.035);
+}
+
+.ui-btn-primary:disabled,
+.ui-btn-secondary:disabled,
+.ui-btn-jelly:disabled,
+.ui-btn-neon:disabled { cursor: not-allowed; }
+@media (hover: none) {
+  .ui-btn-primary:hover:not(:disabled), .ui-btn-secondary:hover:not(:disabled),
+  .ui-btn-icon:hover:not(:disabled), .ui-btn-neon:hover:not(:disabled) {
+    transform: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-btn-jelly:hover:not(:disabled), .ui-btn-jelly:focus-visible:not(:disabled) { animation: none; }
+  .ui-btn-primary::after { display: none; }
+}
+
+.ui-btn-row { position: relative; transition: color .25s ease; }
+.ui-btn-row:hover { color: var(--accent); }
+.ui-btn-row > span:last-child { transition: transform .28s cubic-bezier(.22,1,.36,1), color .25s ease; }
+.ui-btn-row:hover > span:last-child { transform: translateX(4px); color: var(--accent); }

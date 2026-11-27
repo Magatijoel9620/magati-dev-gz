@@ -92,7 +92,7 @@ export default function LeadEnquiryForm() {
 
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <p id="enquiry-privacy" className="max-w-md text-xs leading-5 text-white/35">Your details are used to respond to this enquiry. Please do not include passwords, payment details or other sensitive information.</p>
-        <button type="submit" disabled={state === "sending"} className="inline-flex shrink-0 items-center justify-center rounded-full bg-[#d7ff65] px-7 py-3.5 text-sm font-semibold text-[#08090a] transition hover:bg-[#e5ff9a] disabled:cursor-wait disabled:opacity-60">
+        <button type="submit" disabled={state === "sending"} className="ui-btn-primary inline-flex shrink-0 items-center justify-center rounded-full bg-[#d7ff65] px-7 py-3.5 text-sm font-semibold text-[#08090a] disabled:cursor-wait disabled:opacity-60">
           {state === "sending" ? "Sending…" : "Send enquiry ↗"}
         </button>
       </div>

@@ -41,7 +41,7 @@ export default function WorkSection() {
 
         <Link
           href="/projects"
-          className="inline-flex items-center gap-2 text-sm text-white/50 transition hover:text-white"
+          className="ui-btn-text inline-flex items-center gap-2 text-sm text-white/50"
         >
           Open the full archive <span>↗</span>
         </Link>
@@ -104,7 +104,7 @@ export default function WorkSection() {
                         Case study
                       </span>
 
-                      <span className="grid h-8 w-8 place-items-center rounded-full border border-white/20 bg-black/35 text-sm transition group-hover:-translate-y-1 group-hover:bg-white group-hover:text-black sm:h-10 sm:w-10 sm:text-base md:h-11 md:w-11 md:text-lg">
+                      <span className="ui-btn-icon grid h-8 w-8 place-items-center rounded-full border border-white/20 bg-black/35 text-sm sm:h-10 sm:w-10 sm:text-base md:h-11 md:w-11 md:text-lg">
                         ↗
                       </span>
                     </div>
@@ -130,7 +130,7 @@ export default function WorkSection() {
 
           <Link
             href="/projects"
-            className="inline-flex items-center gap-3 rounded-full border border-white/15 px-5 py-3 text-sm text-white/70 transition hover:border-white/30 hover:bg-white/[.04] hover:text-white"
+            className="ui-btn-secondary inline-flex items-center gap-3 rounded-full border border-white/15 px-5 py-3 text-sm text-white/70"
           >
             Explore every project <span>↗</span>
           </Link>

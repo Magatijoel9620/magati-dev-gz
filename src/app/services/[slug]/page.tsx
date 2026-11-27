@@ -59,13 +59,13 @@ export default async function ServiceDetailPage({ params }: Props) {
         <div className="mt-9 flex flex-wrap gap-3">
           <Link
             href="/contact"
-            className="rounded-full bg-[#d7ff65] px-6 py-3 text-sm font-semibold text-black transition hover:bg-[#e5ff9a]"
+            className="ui-btn-primary rounded-full bg-[#d7ff65] px-6 py-3 text-sm font-semibold text-black"
           >
             Enquire about this service ↗
           </Link>
           <Link
             href="/projects"
-            className="rounded-full border border-white/15 px-6 py-3 text-sm text-white/75 transition hover:border-white/30 hover:text-white"
+            className="ui-btn-secondary rounded-full border border-white/15 px-6 py-3 text-sm text-white/75"
           >
             See selected work ↗
           </Link>
@@ -151,16 +151,16 @@ export default async function ServiceDetailPage({ params }: Props) {
           </p>
           <Link
             href="/contact"
-            className="mt-8 inline-flex rounded-full bg-[#d7ff65] px-6 py-3 text-sm font-semibold text-black transition hover:bg-[#e5ff9a]"
+            className="ui-btn-primary mt-8 inline-flex rounded-full bg-[#d7ff65] px-6 py-3 text-sm font-semibold text-black"
           >
             Discuss {service.title.toLowerCase()} ↗
           </Link>
         </div>
         <div className="mt-10 flex flex-wrap gap-5 text-sm text-white/45">
-          <Link href="/services" className="hover:text-[#d7ff65]">
+          <Link href="/services" className="ui-btn-text">
             Explore other services ↗
           </Link>
-          <Link href="/projects" className="hover:text-[#d7ff65]">
+          <Link href="/projects" className="ui-btn-text">
             Browse projects ↗
           </Link>
         </div>

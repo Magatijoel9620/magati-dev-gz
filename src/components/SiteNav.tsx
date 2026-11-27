@@ -38,17 +38,17 @@ export default function SiteNav() {
           <span className="grid h-9 w-9 shrink-0 place-items-center overflow-hidden rounded-full border border-white/15 bg-[#08090a] p-1.5">
             <Image src="/logo/logo_round.png" alt="" width={36} height={36} className="h-full w-full object-contain" />
           </span>
-          <span className="hidden text-xs font-semibold tracking-[.08em] text-white sm:block">
+          <span className="block text-[clamp(15px,2vw,18px)] font-semibold tracking-[.08em] text-white">
             HEMPON<span className="accent">.DEV</span>
           </span>
         </Link>
 
-        <nav aria-label="Main navigation" className="hidden items-center gap-1 sm:flex sm:gap-2">
+        <nav aria-label="Main navigation" className="hidden items-center gap-1 lg:flex lg:gap-2">
           {links.map((link) => (
             <Link
               key={link.label}
               href={link.href}
-              className={`${link.className} rounded-full px-2.5 py-2 text-[10px] uppercase tracking-[.12em] text-white/75 transition hover:bg-white/10 hover:text-white sm:px-3 sm:text-[11px]`}
+              className={`${link.className} ui-btn-text rounded-full px-2.5 py-2 text-[10px] uppercase tracking-[.12em] text-white/75 sm:px-3 sm:text-[11px]`}
             >
               {link.label}
             </Link>
@@ -56,13 +56,13 @@ export default function SiteNav() {
         </nav>
 
         <div className="ml-auto flex shrink-0 items-center gap-2">
-          <Link href="/contact" className="rounded-full border border-[#d7ff65]/35 bg-[#d7ff65] px-3 py-2 text-[10px] font-semibold text-[#08090a] transition hover:bg-[#e5ff9a] sm:px-4 sm:text-xs">
-            <span className="sm:hidden">Enquire ↗</span>
-            <span className="hidden sm:inline">Start a project ↗</span>
+          <Link href="/contact" className="ui-btn-primary rounded-full border border-[#d7ff65]/35 bg-[#d7ff65] px-3 py-2 text-[10px] font-semibold text-[#08090a] sm:px-4 sm:text-xs">
+            <span className="lg:hidden">Enquire ↗</span>
+            <span className="hidden lg:inline">Start a project ↗</span>
           </Link>
           <button
             type="button"
-            className="grid size-10 place-items-center rounded-full border border-white/15 text-white sm:hidden"
+            className="ui-btn-icon grid size-10 place-items-center rounded-full border border-white/15 text-white lg:hidden"
             aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
             aria-expanded={menuOpen}
             aria-controls="mobile-site-navigation"
@@ -74,7 +74,7 @@ export default function SiteNav() {
       </div>
 
       {menuOpen && (
-        <nav id="mobile-site-navigation" aria-label="Mobile navigation" className="mt-2 rounded-3xl border border-white/12 bg-[#08090a]/75 p-3 shadow-2xl shadow-black/35 backdrop-blur-2xl supports-[backdrop-filter]:bg-[#08090a]/60 sm:hidden">
+        <nav id="mobile-site-navigation" aria-label="Mobile navigation" className="mt-2 rounded-3xl border border-white/12 bg-[#08090a]/75 p-3 shadow-2xl shadow-black/35 backdrop-blur-2xl supports-[backdrop-filter]:bg-[#08090a]/60 lg:hidden">
           <div className="grid grid-cols-2 gap-1">
             {mobileLinks.map((link) => (
               <Link

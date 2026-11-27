@@ -14,7 +14,7 @@ export default function TrustSignals() {
           <p className="eyebrow">How we work</p>
           <h2 className="display mt-4 max-w-xl text-4xl font-semibold leading-[.94] md:text-5xl">Clear work. Honest evidence. Useful outcomes.</h2>
           <p className="mt-6 max-w-md text-sm leading-7 text-white/45">We want prospective clients to understand what has been built, what is still a concept and what a working relationship involves.</p>
-          <Link href="/contact" className="mt-8 inline-flex border-b border-[#d7ff65]/50 pb-2 text-sm text-[#d7ff65]">Discuss your project ↗</Link>
+          <Link href="/contact" className="ui-btn-text mt-8 inline-flex border-b border-transparent pb-2 text-sm text-[#d7ff65]">Discuss your project ↗</Link>
         </div>
         <div className="grid gap-0 sm:grid-cols-3">
           {principles.map((item) => (

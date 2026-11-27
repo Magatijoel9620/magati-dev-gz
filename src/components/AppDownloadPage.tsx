@@ -29,7 +29,7 @@ export default function AppDownloadPage({ app }: { app: AppDefinition }) {
             <div className={`mt-8 grid gap-3 ${hasPWA ? "sm:grid-cols-2" : "sm:max-w-sm"}`}>
               <a
                 href={app.downloadUrl}
-                className="group rounded-[1.4rem] bg-[#d7ff65] p-5 text-black transition hover:-translate-y-1 hover:bg-[#e2ff91]"
+                className="ui-btn-primary group rounded-[1.4rem] bg-[#d7ff65] p-5 text-black"
               >
                 <span className="mono text-[9px] uppercase tracking-[.18em] opacity-60">ANDROID APP</span>
                 <span className="mt-3 block text-lg font-semibold">Download APK ↓</span>
@@ -41,7 +41,7 @@ export default function AppDownloadPage({ app }: { app: AppDefinition }) {
                   href={app.webUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group rounded-[1.4rem] border border-white/15 bg-white/[.04] p-5 text-white transition hover:-translate-y-1 hover:border-white/30"
+                  className="ui-btn-secondary group rounded-[1.4rem] border border-white/15 bg-white/[.04] p-5 text-white"
                 >
                   <span className="mono text-[9px] uppercase tracking-[.18em] text-white/40">WEB APP</span>
                   <span className="mt-3 block text-lg font-medium">Open web app ↗</span>
@@ -54,7 +54,7 @@ export default function AppDownloadPage({ app }: { app: AppDefinition }) {
               {app.projectSlug && (
                 <Link
                   href={`/projects/${app.projectSlug}`}
-                  className="rounded-full border border-white/15 px-5 py-3 text-sm text-white/75 transition hover:border-white/30 hover:text-white"
+                  className="ui-btn-secondary rounded-full border border-white/15 px-5 py-3 text-sm text-white/75"
                 >
                   Explore the project ↗
                 </Link>
@@ -136,7 +136,7 @@ export default function AppDownloadPage({ app }: { app: AppDefinition }) {
                   href={app.webUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-6 inline-flex rounded-full bg-white px-5 py-3 text-sm font-medium text-black transition hover:bg-[#d7ff65]"
+                  className="ui-btn-primary mt-6 inline-flex rounded-full bg-white px-5 py-3 text-sm font-medium text-black"
                 >
                   Open {app.name} web app ↗
                 </a>
@@ -168,7 +168,7 @@ export default function AppDownloadPage({ app }: { app: AppDefinition }) {
           </div>
           <Link
             href={`/projects/${app.projectSlug ?? app.slug}`}
-            className="inline-flex shrink-0 rounded-full border border-white/15 px-5 py-3 text-sm text-white/80 transition hover:border-white/30 hover:text-white"
+            className="ui-btn-secondary inline-flex shrink-0 rounded-full border border-white/15 px-5 py-3 text-sm text-white/80"
           >
             View project details ↗
           </Link>

@@ -99,13 +99,13 @@ export default function AboutPage() {
               <div className="mt-7 flex flex-wrap justify-center gap-3 md:justify-start">
                 <Link
                   href="/contact"
-                  className="inline-flex min-h-11 items-center justify-center rounded-full bg-[var(--accent)] px-5 py-2.5 text-sm font-semibold text-[#08090a] transition hover:-translate-y-0.5 hover:brightness-105"
+                  className="ui-btn-primary ui-btn-jelly inline-flex min-h-11 items-center justify-center rounded-full bg-[var(--accent)] px-5 py-2.5 text-sm font-semibold text-[#08090a]"
                 >
                   Let’s work together <span aria-hidden="true" className="ml-2">↗</span>
                 </Link>
                 <a
                   href="mailto:magatijoel@gmail.com"
-                  className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-white/85 transition hover:border-white/30 hover:bg-white/[.05]"
+                  className="ui-btn-secondary ui-btn-neon inline-flex min-h-11 items-center justify-center rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-white/85"
                 >
                   Email me
                 </a>
@@ -113,7 +113,7 @@ export default function AboutPage() {
                   href="https://github.com/Magatijoel9620"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/10 px-4 py-2.5 text-sm text-white/65 transition hover:border-white/25 hover:text-white"
+                  className="ui-btn-secondary inline-flex min-h-11 items-center justify-center rounded-full border border-white/10 px-4 py-2.5 text-sm text-white/65"
                 >
                   GitHub ↗
                 </a>
@@ -121,7 +121,7 @@ export default function AboutPage() {
                   href="https://www.linkedin.com/in/joel-magati-973972422/"
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/10 px-4 py-2.5 text-sm text-white/65 transition hover:border-white/25 hover:text-white"
+                  className="ui-btn-secondary inline-flex min-h-11 items-center justify-center rounded-full border border-white/10 px-4 py-2.5 text-sm text-white/65"
                 >
                   LinkedIn ↗
                 </a>
@@ -266,13 +266,13 @@ export default function AboutPage() {
             idea you want to explore, let’s start with a conversation.
           </p>
           <div className="mt-7 flex flex-wrap justify-center gap-3">
-            <Link href="/contact" className="inline-flex min-h-11 items-center justify-center rounded-full bg-[var(--accent)] px-5 py-2.5 text-sm font-semibold text-[#08090a] transition hover:-translate-y-0.5">
+            <Link href="/contact" className="ui-btn-primary ui-btn-jelly inline-flex min-h-11 items-center justify-center rounded-full bg-[var(--accent)] px-5 py-2.5 text-sm font-semibold text-[#08090a]">
               Start a conversation ↗
             </Link>
-            <Link href="/projects" className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/15 px-5 py-2.5 text-sm text-white/80 transition hover:bg-white/[.05]">
+            <Link href="/projects" className="ui-btn-secondary ui-btn-neon inline-flex min-h-11 items-center justify-center rounded-full border border-white/15 px-5 py-2.5 text-sm text-white/80">
               Explore my work
             </Link>
-            <Link href="/posts" className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/10 px-5 py-2.5 text-sm text-white/65 transition hover:border-white/25 hover:text-white">
+            <Link href="/posts" className="ui-btn-secondary inline-flex min-h-11 items-center justify-center rounded-full border border-white/10 px-5 py-2.5 text-sm text-white/65">
               Read articles
             </Link>
           </div>

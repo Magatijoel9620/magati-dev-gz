@@ -85,14 +85,14 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
           </div>
           <div className="mt-7 flex flex-col gap-3">
             {externalLink && (
-              <a href={externalLink} target={isInternalLink ? undefined : "_blank"} rel={isInternalLink ? undefined : "noreferrer"} className="inline-flex justify-center rounded-full bg-[#f1f2ed] px-5 py-3 text-sm font-medium text-black transition hover:-translate-y-0.5">
+              <a href={externalLink} target={isInternalLink ? undefined : "_blank"} rel={isInternalLink ? undefined : "noreferrer"} className="ui-btn-primary inline-flex justify-center rounded-full bg-[#f1f2ed] px-5 py-3 text-sm font-medium text-black">
                 {project.classification?.includes("concept") || project.classification?.includes("Demo") ? "Open demo / reference ↗" : "Open listed experience ↗"}
               </a>
             )}
             {app && (
-              <Link href={`/${app.slug}`} className="inline-flex justify-center rounded-full border border-white/15 px-5 py-3 text-sm text-white/75 transition hover:border-white/30 hover:text-white">Explore {app.name} product ↗</Link>
+              <Link href={`/${app.slug}`} className="ui-btn-secondary inline-flex justify-center rounded-full border border-white/15 px-5 py-3 text-sm text-white/75">Explore {app.name} product ↗</Link>
             )}
-            <a href={`mailto:hempongroup@gmail.com?subject=${encodeURIComponent(`Enquiry about a project like ${project.title}`)}`} className="inline-flex justify-center rounded-full border border-white/15 px-5 py-3 text-sm text-white/75 transition hover:border-white/30 hover:text-white">Discuss a similar project ↗</a>
+            <a href={`mailto:hempongroup@gmail.com?subject=${encodeURIComponent(`Enquiry about a project like ${project.title}`)}`} className="ui-btn-secondary inline-flex justify-center rounded-full border border-white/15 px-5 py-3 text-sm text-white/75">Discuss a similar project ↗</a>
           </div>
           <p className="mt-5 text-[11px] leading-5 text-white/30">Project descriptions and visuals are provided as portfolio references. No performance figures or business outcomes are implied unless stated.</p>
         </aside>

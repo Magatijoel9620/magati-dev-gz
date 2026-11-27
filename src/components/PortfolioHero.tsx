@@ -56,14 +56,14 @@ export default function PortfolioHero() {
             <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="#work"
-                className="group inline-flex items-center gap-3 rounded-full bg-[#f1f2ed] px-5 py-3 text-sm font-medium text-[#111] transition hover:-translate-y-0.5"
+                className="ui-btn-primary group inline-flex items-center gap-3 rounded-full bg-[#f1f2ed] px-5 py-3 text-sm font-medium text-[#111]"
               >
                 Explore Hempon&apos;s work
                 <span aria-hidden="true" className="transition-transform group-hover:translate-x-1">↗</span>
               </a>
               <a
                 href="/contact"
-                className="inline-flex items-center gap-3 rounded-full border border-white/15 px-5 py-3 text-sm text-white/80 transition hover:border-white/30 hover:text-white"
+                className="ui-btn-secondary inline-flex items-center gap-3 rounded-full border border-white/15 px-5 py-3 text-sm text-white/80"
               >
                 Work with us ↗
               </a>

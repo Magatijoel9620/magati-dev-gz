@@ -28,14 +28,14 @@ export default function AppPage({ app }: { app: AppDefinition }) {
               {app.downloadUrl && (
                 <Link
                   href={`/${app.slug}/download`}
-                  className="rounded-full bg-[#f1f2ed] px-6 py-3 text-sm font-medium text-black"
+                  className="ui-btn-primary rounded-full bg-[#f1f2ed] px-6 py-3 text-sm font-medium text-black"
                 >
                   Download ↗
                 </Link>
               )}
               <Link
                 href={app.guideUrl}
-                className="rounded-full border border-white/15 px-6 py-3 text-sm text-white/70 hover:border-white/30 hover:text-white"
+                className="ui-btn-secondary rounded-full border border-white/15 px-6 py-3 text-sm text-white/70"
               >
                 User guide
               </Link>
@@ -44,7 +44,7 @@ export default function AppPage({ app }: { app: AppDefinition }) {
                   href={app.webUrl}
                   target="_blank"
                   rel="noreferrer"
-                  className="rounded-full border border-white/15 px-6 py-3 text-sm text-white/70 hover:border-white/30 hover:text-white"
+                  className="ui-btn-secondary rounded-full border border-white/15 px-6 py-3 text-sm text-white/70"
                 >
                   {app.slug === "civicforge" ? "View demo site ↗" : "Open web app ↗"}
                 </a>
@@ -103,7 +103,7 @@ export default function AppPage({ app }: { app: AppDefinition }) {
             {app.downloadUrl ? (
               <Link
                 href={`/${app.slug}/download`}
-                className="mt-6 inline-flex rounded-full bg-white px-5 py-2.5 text-sm text-black"
+                className="ui-btn-primary mt-6 inline-flex rounded-full bg-white px-5 py-2.5 text-sm text-black"
               >
                 Download page ↗
               </Link>
@@ -112,14 +112,14 @@ export default function AppPage({ app }: { app: AppDefinition }) {
                 href={app.webUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-6 inline-flex rounded-full bg-white px-5 py-2.5 text-sm text-black"
+                className="ui-btn-primary mt-6 inline-flex rounded-full bg-white px-5 py-2.5 text-sm text-black"
               >
                 {app.slug === "civicforge" ? "View demo site ↗" : "Open web app ↗"}
               </a>
             ) : (
               <Link
                 href={app.guideUrl}
-                className="mt-6 inline-flex rounded-full bg-white px-5 py-2.5 text-sm text-black"
+                className="ui-btn-primary mt-6 inline-flex rounded-full bg-white px-5 py-2.5 text-sm text-black"
               >
                 Read design guide ↗
               </Link>
@@ -132,7 +132,7 @@ export default function AppPage({ app }: { app: AppDefinition }) {
             </h2>
             <Link
               href={app.guideUrl}
-              className="mt-6 inline-flex rounded-full border border-white/15 px-5 py-2.5 text-sm text-white/75"
+              className="ui-btn-secondary mt-6 inline-flex rounded-full border border-white/15 px-5 py-2.5 text-sm text-white/75"
             >
               Read guide ↗
             </Link>
@@ -144,7 +144,7 @@ export default function AppPage({ app }: { app: AppDefinition }) {
             </h2>
             <Link
               href={`/projects/${app.projectSlug ?? app.slug}`}
-              className="mt-6 inline-flex rounded-full border border-white/15 px-5 py-2.5 text-sm text-white/75"
+              className="ui-btn-secondary mt-6 inline-flex rounded-full border border-white/15 px-5 py-2.5 text-sm text-white/75"
             >
               Open project ↗
             </Link>

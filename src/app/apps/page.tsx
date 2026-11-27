@@ -36,8 +36,8 @@ export default function AppsPage() {
                 </div>
               </Link>
               <div className="flex items-center justify-between border-t border-white/10 px-6 py-4">
-                <Link href={app.guideUrl} className="text-xs text-white/55 transition hover:text-white">Read user guide ↗</Link>
-                <Link href={app.projectSlug ? `/projects/${app.projectSlug}` : `/projects`} className="text-xs text-white/55 transition hover:text-[#d7ff65]">Project details ↗</Link>
+                <Link href={app.guideUrl} className="ui-btn-text text-xs text-white/55">Read user guide ↗</Link>
+                <Link href={app.projectSlug ? `/projects/${app.projectSlug}` : `/projects`} className="ui-btn-text text-xs text-white/55">Project details ↗</Link>
               </div>
             </article>
           ))}

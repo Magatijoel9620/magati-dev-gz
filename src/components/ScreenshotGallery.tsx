@@ -103,13 +103,13 @@ export default function ScreenshotGallery({
                 <p className="eyebrow">Screenshot gallery</p>
                 <p id="screenshot-gallery-title" className="mt-1 text-sm text-white/70">{title}</p>
               </div>
-              <button ref={closeButtonRef} type="button" onClick={close} className="grid size-11 place-items-center rounded-full border border-white/15 bg-white/[.06] text-xl text-white/75 transition hover:bg-white/10 hover:text-white" aria-label="Close screenshot gallery">×</button>
+              <button ref={closeButtonRef} type="button" onClick={close} className="ui-btn-icon grid size-11 place-items-center rounded-full border border-white/15 bg-white/[.06] text-xl text-white/75" aria-label="Close screenshot gallery">×</button>
             </div>
 
             <div className="relative min-h-0 flex-1 overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#080909]">
               <Image src={screenshots[active]} alt={`${title} screenshot ${active + 1}`} fill sizes="100vw" className="object-contain" priority />
-              <button type="button" onClick={previous} className="absolute left-2 top-1/2 grid size-12 -translate-y-1/2 place-items-center rounded-full border border-white/15 bg-black/45 text-2xl text-white/80 backdrop-blur-md transition hover:bg-black/70 hover:text-white sm:left-5 sm:size-14" aria-label="Previous screenshot">‹</button>
-              <button type="button" onClick={next} className="absolute right-2 top-1/2 grid size-12 -translate-y-1/2 place-items-center rounded-full border border-white/15 bg-black/45 text-2xl text-white/80 backdrop-blur-md transition hover:bg-black/70 hover:text-white sm:right-5 sm:size-14" aria-label="Next screenshot">›</button>
+              <button type="button" onClick={previous} className="ui-btn-icon absolute left-2 top-1/2 grid size-12 -translate-y-1/2 place-items-center rounded-full border border-white/15 bg-black/45 text-2xl text-white/80 backdrop-blur-md sm:left-5 sm:size-14" aria-label="Previous screenshot">‹</button>
+              <button type="button" onClick={next} className="ui-btn-icon absolute right-2 top-1/2 grid size-12 -translate-y-1/2 place-items-center rounded-full border border-white/15 bg-black/45 text-2xl text-white/80 backdrop-blur-md sm:right-5 sm:size-14" aria-label="Next screenshot">›</button>
               <div className="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-5 pt-16">
                 <p className="text-xs text-white/60">Use ← → to move · Esc to close · Use the arrows on touch screens</p>
               </div>

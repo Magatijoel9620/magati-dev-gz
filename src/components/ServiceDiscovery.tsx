@@ -24,7 +24,7 @@ export default function ServiceDiscovery() {
         </div>
         <div className="mt-8 flex flex-col gap-4 rounded-2xl border border-[#d7ff65]/20 bg-[#d7ff65]/[.045] p-6 sm:flex-row sm:items-center sm:justify-between sm:p-8">
           <div><p className="text-sm font-medium">Not sure which service fits?</p><p className="mt-1 text-sm text-white/45">Describe the challenge and we can work out a sensible starting point.</p></div>
-          <a href="mailto:hempongroup@gmail.com?subject=Help%20choosing%20a%20digital%20solution" className="inline-flex shrink-0 items-center justify-center rounded-full bg-[#d7ff65] px-5 py-3 text-sm font-semibold text-[#08090a] transition hover:bg-[#e5ff9a]">Talk through your idea ↗</a>
+          <a href="mailto:hempongroup@gmail.com?subject=Help%20choosing%20a%20digital%20solution" className="ui-btn-primary inline-flex shrink-0 items-center justify-center rounded-full bg-[#d7ff65] px-5 py-3 text-sm font-semibold text-[#08090a]">Talk through your idea ↗</a>
         </div>
       </div>
     </section>
